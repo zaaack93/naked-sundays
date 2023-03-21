@@ -405,11 +405,12 @@
       <div class="drawer__body">
         <div class="drawer__content" data-drawer-content>
           <div class="drawer__menu" data-sliderule-pane="0">
-            {%- for link in linklists[main_menu_linklist].links -%}
-              {%- assign animation_delay = animation_delay_increment | times: forloop.index -%}
-              {%- render 'nav-item-mobile', link: link, section: section, index: forloop.index, forloop_index: forloop.index, highlight_item: highlight_item, animation_delay: animation_delay -%}
-            {%- endfor -%}
-
+            <div class="container__primary_navmenu">
+              {%- for link in linklists[main_menu_linklist].links -%}
+                {%- assign animation_delay = animation_delay_increment | times: forloop.index -%}
+                {%- render 'nav-item-mobile-v2-primary', link: link, section: section, index: forloop.index, forloop_index: forloop.index, highlight_item: highlight_item, animation_delay: animation_delay -%}
+              {%- endfor -%}
+            </div>
             {%- unless secondary_menu_linklist == blank -%}
               {%- for link in linklists[secondary_menu_linklist].links -%}
                 {%- assign animation_delay = animation_delay_increment | times: forloop.index | plus: animation_delay -%}
@@ -522,8 +523,8 @@
 <script type="application/ld+json">
   {
   "@context": "http://schema.org",
-      "@type": "Organization",
-      "name": {{ shop.name | json }},
+            "@type": "Organization",
+            "name": {{ shop.name | json }},
   {% if logo %}
     "logo": {{ logo | image_url: logo.width | prepend: "https:" | json }},
   {% endif %}
@@ -549,14 +550,14 @@
   <script type="application/ld+json">
     {
     "@context": "http://schema.org",
-              "@type": "WebSite",
-              "name": {{ shop.name | json }},
+                          "@type": "WebSite",
+                          "name": {{ shop.name | json }},
     "potentialAction": {
-                "@type": "SearchAction",
-                "target": {{ potential_action_target | json }},
+                            "@type": "SearchAction",
+                            "target": {{ potential_action_target | json }},
     "query-input": "required name=search_term_string"
-              },
-              "url": {{ shop.url | append: page.url | json }}
+                          },
+                          "url": {{ shop.url | append: page.url | json }}
     }
   </script>
 {%- endif -%}

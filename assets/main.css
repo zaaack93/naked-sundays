@@ -1,2 +1,20 @@
-
-
+.header-v2 .drawer__body .drawer__content .container__primary_navmenu .primary_menu_links .sliderow {
+  min-height: 77px;
+}
+.header-v2 .drawer__body .drawer__content .container__primary_navmenu .primary_menu_links .sliderow .sliderow__title {
+  padding: 0px;
+  -moz-column-gap: 17px;
+       column-gap: 17px;
+  min-height: 77px;
+  justify-content: flex-start;
+  font-size: 18px;
+  font-weight: 400;
+  border-top: 1px solid #E2DEF9;
+}
+.header-v2 .drawer__body .drawer__content .container__primary_navmenu .primary_menu_links .sliderow .sliderow__title .nav-item_linkimage {
+  width: 121px;
+  aspect-ratio: 1.52;
+}
+.header-v2 .drawer__body .drawer__content .container__primary_navmenu .primary_menu_links:last-child .sliderow__title {
+  border-bottom: 1px solid #E2DEF9;
+}

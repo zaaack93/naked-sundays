@@ -73,7 +73,7 @@
       }
     },
     "header-v2": {
-      "type": "header",
+      "type": "header-v2",
       "settings": {
         "header_sticky": false,
         "header_style": "logo_beside",

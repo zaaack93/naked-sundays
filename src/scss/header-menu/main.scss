@@ -1,0 +1,35 @@
+.header-v2 {
+    .drawer__body {
+        .drawer__content {
+
+            //menu item for primary links
+            .container__primary_navmenu {
+                .primary_menu_links {
+                    .sliderow {
+                        min-height: 77px;
+                        .sliderow__title {
+                            padding: 0px;
+                            column-gap: 17px;
+                            min-height: 77px;
+                            justify-content: flex-start;
+                            font-size: 18px;
+                            font-weight: 400;
+                            border-top: 1px solid #E2DEF9;
+
+                            .nav-item_linkimage {
+                                width: 121px;
+                                aspect-ratio: 1.52;
+                            }
+                        }
+                    }
+
+                    &:last-child {
+                        .sliderow__title {
+                            border-bottom: 1px solid #E2DEF9;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
