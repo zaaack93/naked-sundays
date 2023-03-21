@@ -95,7 +95,13 @@
         "transparent_article": false,
         "transparent_page": false,
         "secondary_menu_linklist": "new-secondary",
-        "tertiary_menu_linklist": "mobile-secondary"
+        "tertiary_menu_linklist": "mobile-secondary",
+        "menu_bottom_button_text": "SHOP ALL SKINCARE",
+        "menu_bottom_button_link": "shopify:\/\/collections",
+        "menu_bottom_button_type": "btn--primary",
+        "menu_bottom_button_size": "",
+        "menu_bottom_button_style": "btn--solid",
+        "menu_button_textrich": "<p><strong>2000+ 5 STAR REVIEWS  <\/strong>★★★★★<strong> <\/strong><\/p>"
       }
     }
   },

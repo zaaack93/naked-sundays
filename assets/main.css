@@ -10,11 +10,74 @@
   font-size: 18px;
   font-weight: 400;
   border-top: 1px solid #E2DEF9;
+  letter-spacing: 0px;
+  color: #000;
 }
 .header-v2 .drawer__body .drawer__content .container__primary_navmenu .primary_menu_links .sliderow .sliderow__title .nav-item_linkimage {
-  width: 121px;
-  aspect-ratio: 1.52;
+  width: auto;
+  aspect-ratio: 1.5;
+  height: 77px;
+}
+.header-v2 .drawer__body .drawer__content .container__primary_navmenu .primary_menu_links .sliderow .sliderow__title:hover {
+  background: #E2DEF9;
 }
 .header-v2 .drawer__body .drawer__content .container__primary_navmenu .primary_menu_links:last-child .sliderow__title {
   border-bottom: 1px solid #E2DEF9;
+}
+.header-v2 .drawer__body .drawer__content .container__secondary_navmenu {
+  margin-top: auto;
+  padding-top: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 19px;
+  justify-content: space-between;
+  padding-left: 34px;
+  padding-right: 22px;
+}
+.header-v2 .drawer__body .drawer__content .container__secondary_navmenu .sliderule__wrapper {
+  width: 40%;
+  padding: 0px;
+}
+.header-v2 .drawer__body .drawer__content .container__secondary_navmenu .sliderule__wrapper .sliderow {
+  height: initial;
+  min-height: initial;
+}
+.header-v2 .drawer__body .drawer__content .container__secondary_navmenu .sliderule__wrapper .sliderow .sliderow__title {
+  height: initial;
+  min-height: initial;
+  padding: 0px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #3D3936;
+  text-transform: capitalize;
+  letter-spacing: 0px;
+}
+.header-v2 .drawer__body .drawer__content .container__secondary_navmenu .sliderule__wrapper .sliderow .sliderow__title:hover {
+  background: transparent;
+}
+.header-v2 .drawer__body .drawer__bottom {
+  padding-bottom: 27px;
+}
+.header-v2 .drawer__body .drawer__bottom::before {
+  display: none;
+}
+.header-v2 .drawer__body .drawer__bottom .hero__button-group {
+  margin: 0px;
+}
+.header-v2 .drawer__body .drawer__bottom .hero__button-group .hero__button {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.header-v2 .drawer__body .drawer__bottom .hero__button-group .hero__button .btn {
+  width: 100%;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  justify-content: center;
+}
+.header-v2 .drawer__body .drawer__bottom .hero__button-group .hero__button .btn .icon {
+  left: 10px;
+  position: relative;
 }

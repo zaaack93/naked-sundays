@@ -382,6 +382,7 @@
   </nav>
 {%- endcapture -%}
 
+{%comment%}add seprate menu mobile here {%endcomment%}
 {%- capture drawer -%}
   <nav
     class="drawer drawer--header{% if settings.type_nav_caps %} caps{% endif %}"
@@ -411,19 +412,39 @@
                 {%- render 'nav-item-mobile-v2-primary', link: link, section: section, index: forloop.index, forloop_index: forloop.index, highlight_item: highlight_item, animation_delay: animation_delay -%}
               {%- endfor -%}
             </div>
-            {%- unless secondary_menu_linklist == blank -%}
-              {%- for link in linklists[secondary_menu_linklist].links -%}
-                {%- assign animation_delay = animation_delay_increment | times: forloop.index | plus: animation_delay -%}
-                {%- render 'nav-item-mobile', link: link, section: section, index: forloop.index, forloop_index: forloop.index, secondary_menu: true, highlight_item: highlight_item, animation_delay: animation_delay -%}
-              {%- endfor -%}
-            {%- endunless -%}
+            <div class="container__secondary_navmenu">
+              {%- unless secondary_menu_linklist == blank -%}
+                {%- for link in linklists[secondary_menu_linklist].links -%}
+                  {%- assign animation_delay = animation_delay_increment | times: forloop.index | plus: animation_delay -%}
+                  {%- render 'nav-item-mobile-v2-secondary', link: link, section: section, index: forloop.index, forloop_index: forloop.index, secondary_menu: true, highlight_item: highlight_item, animation_delay: animation_delay -%}
+                {%- endfor -%}
+              {%- endunless -%}
+            </div>
           </div>
         </div>
 
-        {%- if social or header_popouts -%}
+        {%- if true -%}
           {%- comment -%} Add 200ms for all top level hamburger menu elements {%- endcomment -%}
           {%- assign animation_delay = animation_delay | plus: 200 -%}
           <div class="drawer__bottom{% unless social %} mobile{% endunless %}">
+            <div class="hero__button-group">
+              <div
+                class="hero__button"
+                data-aos="hero"
+                data-aos-anchor="{{ animation_anchor }}"
+                data-aos-order="{{ animation_order }}">
+                <a class="btn {{ section.settings.menu_bottom_button_size }} {{ section.settings.menu_bottom_button_style }} {{ section.settings.menu_bottom_button_type }}" href="{{ section.settings.menu_bottom_button_link }}">
+                  <span>{{ section.settings.menu_bottom_button_text | escape }}</span>
+                  {%- render 'icon-arrow-right' -%}
+                </a>
+              </div>
+            </div>
+
+            <div class="announcement__text">
+              <div class="body-size-2"><p><strong>
+              {{ section.settings.menu_button_textrich | replace: '|', '<span class="announcement__divider"></span>' }}
+              </div>
+            </div>
             {%- if header_popouts -%}
               {%- assign animation_delay = animation_delay | plus: animation_delay_increment -%}
               <div
@@ -523,8 +544,8 @@
 <script type="application/ld+json">
   {
   "@context": "http://schema.org",
-            "@type": "Organization",
-            "name": {{ shop.name | json }},
+                                          "@type": "Organization",
+                                          "name": {{ shop.name | json }},
   {% if logo %}
     "logo": {{ logo | image_url: logo.width | prepend: "https:" | json }},
   {% endif %}
@@ -550,14 +571,14 @@
   <script type="application/ld+json">
     {
     "@context": "http://schema.org",
-                          "@type": "WebSite",
-                          "name": {{ shop.name | json }},
+                                                                                      "@type": "WebSite",
+                                                                                      "name": {{ shop.name | json }},
     "potentialAction": {
-                            "@type": "SearchAction",
-                            "target": {{ potential_action_target | json }},
+                                                                                        "@type": "SearchAction",
+                                                                                        "target": {{ potential_action_target | json }},
     "query-input": "required name=search_term_string"
-                          },
-                          "url": {{ shop.url | append: page.url | json }}
+                                                                                      },
+                                                                                      "url": {{ shop.url | append: page.url | json }}
     }
   </script>
 {%- endif -%}
@@ -743,6 +764,76 @@
         "id": "tertiary_menu_linklist",
         "label": "Navigation menu",
         "info": "Visible on mobile below the header."
+      }, {
+        "type": "header",
+        "content": "Mobile menu footer"
+      }, {
+        "type": "text",
+        "id": "menu_bottom_button_text",
+        "label": "Text"
+      }, {
+        "type": "url",
+        "id": "menu_bottom_button_link",
+        "label": "Link"
+      }, {
+        "type": "select",
+        "id": "menu_bottom_button_type",
+        "label": "Color",
+        "default": "btn--primary",
+        "options": [
+          {
+            "value": "btn--primary",
+            "label": "Primary"
+          }, {
+            "value": "btn--secondary",
+            "label": "Secondary"
+          }, {
+            "value": "btn--white",
+            "label": "White"
+          }, {
+            "value": "btn--black",
+            "label": "Black"
+          }
+        ]
+      }, {
+        "type": "select",
+        "id": "menu_bottom_button_size",
+        "label": "Size",
+        "default": "",
+        "options": [
+          {
+            "label": "Small",
+            "value": "btn--small"
+          }, {
+            "label": "Medium",
+            "value": ""
+          }, {
+            "label": "Large",
+            "value": "btn--large"
+          }
+        ]
+      }, {
+        "type": "select",
+        "id": "menu_bottom_button_style",
+        "label": "Style",
+        "default": "btn--solid",
+        "options": [
+          {
+            "label": "Solid",
+            "value": "btn--solid"
+          }, {
+            "label": "Outline",
+            "value": "btn--outline"
+          }, {
+            "label": "Text",
+            "value": "btn--text"
+          }
+        ]
+      }, {
+        "type": "richtext",
+        "id": "menu_button_textrich",
+        "label": "Text",
+        "default": "<p>New customers save 10% with code <strong>GET10</strong></p>"
       }
     ],
     "blocks": [
