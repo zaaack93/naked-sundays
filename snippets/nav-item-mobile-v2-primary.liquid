@@ -33,7 +33,10 @@
   {% assign imgAssetLink = 'menu-link-' | append: link.handle %}
   {% assign imgAssetLink = imgAssetLink | append: '.png' %}
   {% if imgAssetLink != blank %}
-    <img class="nav-item_linkimage" src="{{ imgAssetLink | lowercase | file_url }}">
+    <img
+      class="nav-item_linkimage"
+      src="{{ imgAssetLink | file_url }}"
+      loading="lazy">
   {% endif %}
 {% endcapture %}
 {%- capture link_markup -%}
