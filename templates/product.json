@@ -1,0 +1,522 @@
+{
+  "sections": {
+    "9c017c4f-8cf4-4a50-ad3d-a3d667c05380": {
+      "type": "section-announcement",
+      "disabled": true,
+      "blocks": {
+        "template--16696976474370__9c017c4f-8cf4-4a50-ad3d-a3d667c05380-16771500449a41f595-0": {
+          "type": "text",
+          "settings": {
+            "text": "<p>★★★★★<strong> 1000+ FIVE STAR REVIEWS <\/strong><\/p>",
+            "target_device_enabled": false,
+            "target_device": "mobile"
+          }
+        },
+        "template--16696976474370__9c017c4f-8cf4-4a50-ad3d-a3d667c05380-16771500449a41f595-1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p><strong>Create a free shipping countdown<\/strong><\/p>",
+            "target_device_enabled": false,
+            "target_device": "mobile"
+          }
+        },
+        "template--16696976474370__9c017c4f-8cf4-4a50-ad3d-a3d667c05380-16771500449a41f595-2": {
+          "type": "message",
+          "disabled": true,
+          "settings": {
+            "show_wheel": false,
+            "message": "You are ||amount|| away from free shipping.",
+            "target_device_enabled": false,
+            "target_device": "mobile"
+          }
+        },
+        "template--16696976474370__9c017c4f-8cf4-4a50-ad3d-a3d667c05380-16771500449a41f595-3": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p><strong>Create a scrolling marquee or a simple announcement<\/strong><\/p>",
+            "target_device_enabled": false,
+            "target_device": "mobile"
+          }
+        }
+      },
+      "block_order": [
+        "template--16696976474370__9c017c4f-8cf4-4a50-ad3d-a3d667c05380-16771500449a41f595-0",
+        "template--16696976474370__9c017c4f-8cf4-4a50-ad3d-a3d667c05380-16771500449a41f595-1",
+        "template--16696976474370__9c017c4f-8cf4-4a50-ad3d-a3d667c05380-16771500449a41f595-2",
+        "template--16696976474370__9c017c4f-8cf4-4a50-ad3d-a3d667c05380-16771500449a41f595-3"
+      ],
+      "settings": {
+        "layout": "slider",
+        "slider_speed": 7,
+        "marquee_speed": 100,
+        "text_size": 2,
+        "bg_color": "#fbffc9",
+        "color": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "main": {
+      "type": "product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "subheading_option": "collection",
+            "show_rating": false,
+            "enable_star_rating": true,
+            "show_rating_count": false,
+            "padding_bottom": 10
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "padding_bottom": 10
+          }
+        },
+        "d0a39884-abaf-4ce6-bf85-5b725e5cde77": {
+          "type": "shopify:\/\/apps\/stamped-product-reviews-ugc\/blocks\/star-rating-badge\/a103faaf-2125-4b0e-89fa-de5149736723",
+          "settings": {
+            "use_metafields": false,
+            "sku_tagtype": "sku",
+            "is_featured_product": false,
+            "featured_product_handle": ""
+          }
+        },
+        "fab81f98-3315-4186-b532-6c7401377e28": {
+          "type": "text",
+          "settings": {
+            "title": "",
+            "text": "<p>{{ product.metafields.my_fields.short_description | metafield_tag }}<\/p>",
+            "padding_bottom": 10
+          }
+        },
+        "354bcc6f-2b5a-4be8-847c-ac0140464160": {
+          "type": "icon",
+          "settings": {
+            "icon_name": "icon-heart",
+            "icon_size": 20,
+            "icon_color": "#ffa3e1",
+            "title": "{{ product.metafields.custom.key_benefit_1.value }}",
+            "width": "full",
+            "padding_bottom": 6
+          }
+        },
+        "4daa77ee-af23-4026-b933-d80a5b825775": {
+          "type": "icon",
+          "settings": {
+            "icon_name": "icon-heart",
+            "icon_size": 20,
+            "icon_color": "#ffa3e1",
+            "title": "{{ product.metafields.custom.key_benefit_2.value }}",
+            "width": "full",
+            "padding_bottom": 6
+          }
+        },
+        "43f9c98e-061b-4757-8d43-fba3927464a7": {
+          "type": "icon",
+          "settings": {
+            "icon_name": "icon-heart",
+            "icon_size": 20,
+            "icon_color": "#ffa3e1",
+            "title": "{{ product.metafields.custom.key_benefit_3.value }}",
+            "width": "full",
+            "padding_bottom": 20
+          }
+        },
+        "variants": {
+          "type": "variants",
+          "settings": {
+            "info_page": "",
+            "subscriptions_enable_selectors": false,
+            "padding_bottom": 16
+          }
+        },
+        "2019a4a1-fe94-43a2-89b9-5a280e901a20": {
+          "type": "shopify:\/\/apps\/recharge-subscriptions\/blocks\/subscription-widget\/371eed76-0b44-4869-9813-730372ea378e",
+          "settings": {
+            "product": "{{product}}"
+          }
+        },
+        "buttons": {
+          "type": "buttons",
+          "settings": {
+            "show_quantity": true,
+            "show_payment_button": false,
+            "padding_bottom": 8
+          }
+        },
+        "icon_2": {
+          "type": "icon",
+          "settings": {
+            "icon_name": "icon-truck",
+            "icon_size": 30,
+            "icon_color": "#ffa3e1",
+            "title": "Free AU Shipping over $49",
+            "width": "half",
+            "padding_bottom": 10
+          }
+        },
+        "icon_1": {
+          "type": "icon",
+          "settings": {
+            "icon_name": "icon-smile",
+            "image": "shopify:\/\/shop_images\/ap.png",
+            "icon_size": 30,
+            "icon_color": "#ffa3e1",
+            "title": "Afterpay & Zip Available",
+            "width": "half",
+            "padding_bottom": 10
+          }
+        },
+        "tabs": {
+          "type": "tab_richtext",
+          "settings": {
+            "show_read_more": false,
+            "style": "accordions",
+            "title_1": "{{ product.metafields.my_fields.title_how_to_use_.value }}",
+            "raw_content_1": "<p>{{ product.metafields.my_fields.how_to_use | metafield_tag }}<\/p>",
+            "title_2": "{{ product.metafields.my_fields.added_benefits_title.value }}",
+            "raw_content_2": "<p>{{ product.metafields.my_fields.added_benefits | metafield_tag }}<\/p>",
+            "title_3": "{{ product.metafields.my_fields.ingredients_title.value }}",
+            "raw_content_3": "<p>{{ product.metafields.my_fields.ingredients | metafield_tag }}<\/p>",
+            "title_4": "",
+            "raw_content_4": "",
+            "title_5": "",
+            "raw_content_5": "",
+            "padding_bottom": 30
+          }
+        },
+        "upsell": {
+          "type": "upsell",
+          "settings": {
+            "bg_color": "#f7f9fa",
+            "padding_bottom": 30
+          }
+        },
+        "854ee2b3-f488-4675-b9f8-0a54c1159a11": {
+          "type": "features",
+          "settings": {
+            "icon_name": "icon-shield",
+            "icon_size": 30,
+            "title": "ALWAYS READ THE LABEL AND FOLLOW DIRECTIONS FOR USE",
+            "text": "<p>Sunscreen is only one form of sun protection. Prolonged high-risk sun exposure should be avoided. Reapply as directed.<\/p>",
+            "bg_color": "#fbffc9",
+            "color": "#212121",
+            "padding_bottom": 18
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "price",
+        "d0a39884-abaf-4ce6-bf85-5b725e5cde77",
+        "fab81f98-3315-4186-b532-6c7401377e28",
+        "354bcc6f-2b5a-4be8-847c-ac0140464160",
+        "4daa77ee-af23-4026-b933-d80a5b825775",
+        "43f9c98e-061b-4757-8d43-fba3927464a7",
+        "variants",
+        "2019a4a1-fe94-43a2-89b9-5a280e901a20",
+        "buttons",
+        "icon_2",
+        "icon_1",
+        "tabs",
+        "upsell",
+        "854ee2b3-f488-4675-b9f8-0a54c1159a11"
+      ],
+      "settings": {
+        "product_sticky_enable": true,
+        "image_layout": "grid-1",
+        "image_size": "normal",
+        "show_cart_bar": true,
+        "enable_zoom": true,
+        "enable_video_looping": false,
+        "mobile_image_style": "slider",
+        "padding_top": 20,
+        "padding_bottom": 40
+      }
+    },
+    "faq": {
+      "type": "section-accordion",
+      "disabled": true,
+      "blocks": {
+        "faq-1": {
+          "type": "text",
+          "settings": {
+            "title": "Frequently asked question",
+            "text": "<p>Use this to answer some common questions you hear from your customers. You could discuss product details, size fit, shipping policies, or anything you think would help merchants make an informed decision about your products. This section will appear across all products.<\/p>"
+          }
+        },
+        "faq-2": {
+          "type": "text",
+          "settings": {
+            "title": "Frequently asked question",
+            "text": "<p>Use this to answer some common questions you hear from your customers. You could discuss product details, size fit, shipping policies, or anything you think would help merchants make an informed decision about your products. This section will appear across all products.<\/p>"
+          }
+        },
+        "faq-3": {
+          "type": "text",
+          "settings": {
+            "title": "Frequently asked question",
+            "text": "<p>Use this to answer some common questions you hear from your customers. You could discuss product details, size fit, shipping policies, or anything you think would help merchants make an informed decision about your products. This section will appear across all products.<\/p>"
+          }
+        },
+        "faq-4": {
+          "type": "text",
+          "settings": {
+            "title": "Frequently asked question",
+            "text": "<p>Use this to answer some common questions you hear from your customers. You could discuss product details, size fit, shipping policies, or anything you think would help merchants make an informed decision about your products. This section will appear across all products.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq-1",
+        "faq-2",
+        "faq-3",
+        "faq-4"
+      ],
+      "settings": {
+        "title": "FAQ",
+        "bg_color": "",
+        "color": "",
+        "border_color": "",
+        "width": "wrapper",
+        "padding_top": 30,
+        "padding_bottom": 0
+      }
+    },
+    "shipping": {
+      "type": "section-accordion",
+      "disabled": true,
+      "blocks": {
+        "shipping-0": {
+          "type": "icon",
+          "settings": {
+            "icon_name": "icon-fast-shipment",
+            "icon_size": 20,
+            "icon_color": "#aaaaaa",
+            "title": "Fast shipping",
+            "text": "<p>Use this to answer some common questions you hear from your customers. You could discuss product details, size fit, shipping policies, or anything you think would help merchants make an informed decision about your products. This section will appear across all products.<\/p>"
+          }
+        },
+        "shipping-1": {
+          "type": "icon",
+          "settings": {
+            "icon_name": "icon-box",
+            "icon_size": 20,
+            "icon_color": "#aaaaaa",
+            "title": "Order tracking",
+            "text": "<p>Use this to answer some common questions you hear from your customers. You could discuss product details, size fit, shipping policies, or anything you think would help merchants make an informed decision about your products. This section will appear across all products.<\/p>"
+          }
+        },
+        "shipping-2": {
+          "type": "icon",
+          "settings": {
+            "icon_name": "icon-chat",
+            "icon_size": 20,
+            "icon_color": "#aaaaaa",
+            "title": "Get in touch",
+            "text": "<p>Use this to answer some common questions you hear from your customers. You could discuss product details, size fit, shipping policies, or anything you think would help merchants make an informed decision about your products. This section will appear across all products.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "shipping-0",
+        "shipping-1",
+        "shipping-2"
+      ],
+      "settings": {
+        "title": "Shipping",
+        "bg_color": "",
+        "color": "",
+        "border_color": "",
+        "width": "wrapper",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "about": {
+      "type": "section-accordion",
+      "disabled": true,
+      "blocks": {
+        "about-0": {
+          "type": "image",
+          "settings": {
+            "title": "Image heading",
+            "text": "<p>Use this to answer some common questions you hear from your customers. You could discuss product details, size fit, shipping policies, or anything you think would help merchants make an informed decision about your products. This section will appear across all products.<\/p>",
+            "aspect_ratio": 0.6
+          }
+        },
+        "about-1": {
+          "type": "image",
+          "settings": {
+            "title": "Image heading",
+            "text": "<p>Use this to answer some common questions you hear from your customers. You could discuss product details, size fit, shipping policies, or anything you think would help merchants make an informed decision about your products. This section will appear across all products.<\/p>",
+            "aspect_ratio": 0.6
+          }
+        },
+        "about-2": {
+          "type": "image",
+          "settings": {
+            "title": "Image heading",
+            "text": "<p>Use this to answer some common questions you hear from your customers. You could discuss product details, size fit, shipping policies, or anything you think would help merchants make an informed decision about your products. This section will appear across all products.<\/p>",
+            "aspect_ratio": 0.6
+          }
+        }
+      },
+      "block_order": [
+        "about-0",
+        "about-1",
+        "about-2"
+      ],
+      "settings": {
+        "title": "About us",
+        "bg_color": "",
+        "color": "",
+        "border_color": "",
+        "width": "wrapper",
+        "padding_top": 0,
+        "padding_bottom": 30
+      }
+    },
+    "custom": {
+      "type": "section-custom-content",
+      "disabled": true,
+      "blocks": {
+        "custom-0": {
+          "type": "image",
+          "settings": {
+            "overlay_opacity": 0,
+            "overlay_color": "#000000",
+            "show_overlay_text": false,
+            "title": "",
+            "heading_size": 7,
+            "description": "",
+            "text_size": 3,
+            "flex_align": "align--middle-center",
+            "bg_color": "",
+            "color": "#ffffff",
+            "link_text": "",
+            "link": "",
+            "button_type": "btn--primary hero__btn",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false
+          }
+        },
+        "custom-1": {
+          "type": "text",
+          "settings": {
+            "subheading": "Introducing",
+            "subheading_size": 3,
+            "title": "Product feature",
+            "heading_size": 7,
+            "text": "<p>Use this section to create unique side-by-side layouts with various content blocks. Pair text with images, newsletter blocks, products, videos, testimonials and more.<\/p>",
+            "text_size": 3,
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary hero__btn",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "show_social_links": false,
+            "text_columns": 1,
+            "align_text": "text-left",
+            "bg_color": "#f7f7f7",
+            "color": ""
+          }
+        }
+      },
+      "block_order": [
+        "custom-0",
+        "custom-1"
+      ],
+      "settings": {
+        "height": "screen-height-one-half",
+        "mobile_height": "screen-height-one-half--mobile",
+        "width": "wrapper--full-padded",
+        "borders": false,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "16768882936ee97b0f": {
+      "type": "apps",
+      "blocks": {
+        "5face0ee-f3f5-4225-ba83-50722213d176": {
+          "type": "shopify:\/\/apps\/stamped-product-reviews-ugc\/blocks\/main-widget\/a103faaf-2125-4b0e-89fa-de5149736723",
+          "settings": {
+            "animation": true,
+            "tags_exclude": "",
+            "tags_include": "",
+            "search": "",
+            "linkify": true,
+            "use_metafields": false,
+            "sku_tagtype": "sku"
+          }
+        }
+      },
+      "block_order": [
+        "5face0ee-f3f5-4225-ba83-50722213d176"
+      ],
+      "settings": {
+        "include_margins": false
+      }
+    },
+    "reviews": {
+      "type": "reviews",
+      "disabled": true,
+      "settings": {
+        "enable_product_reviews": false,
+        "enable_accordion": false,
+        "padding_top": 0,
+        "padding_bottom": 30
+      }
+    },
+    "related": {
+      "type": "related",
+      "blocks": {
+        "c575c953-d325-4e92-ae84-69f998e12aab": {
+          "type": "related",
+          "settings": {
+            "product_recommendations_heading": "Pairs Well With",
+            "limit": 4
+          }
+        },
+        "19498c33-1c3e-4ef3-872a-0dc261a88897": {
+          "type": "recent",
+          "settings": {
+            "product_recently_heading": "Recently viewed",
+            "product_recently_limit": 4
+          }
+        }
+      },
+      "block_order": [
+        "c575c953-d325-4e92-ae84-69f998e12aab",
+        "19498c33-1c3e-4ef3-872a-0dc261a88897"
+      ],
+      "settings": {
+        "enable_tabs": true,
+        "bg_color": "",
+        "color": "",
+        "border_color": "",
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    }
+  },
+  "order": [
+    "9c017c4f-8cf4-4a50-ad3d-a3d667c05380",
+    "main",
+    "faq",
+    "shipping",
+    "about",
+    "custom",
+    "16768882936ee97b0f",
+    "reviews",
+    "related"
+  ]
+}

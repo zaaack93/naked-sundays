@@ -1,0 +1,72 @@
+{
+  "type": "custom.pre_footer",
+  "name": "Pre-footer",
+  "sections": {
+    "section-newsletter": {
+      "type": "section-newsletter",
+      "blocks": {
+        "newsletter-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/TGP_6460_Edit_cc77fe0c-08cf-4db3-8423-eabc1f6ba06c.jpg",
+            "overlay_opacity": 0,
+            "overlay_color": "#000000",
+            "show_overlay_text": false,
+            "title": "",
+            "heading_size": 7,
+            "description": "",
+            "text_size": 3,
+            "flex_align": "align--middle-center",
+            "bg_color": "",
+            "color": "#ffffff",
+            "link_text": "",
+            "link": "",
+            "button_type": "btn--primary hero__btn",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false
+          }
+        },
+        "newsletter-1": {
+          "type": "newsletter",
+          "settings": {
+            "subheading": "SPF FOMO is real",
+            "subheading_size": 3,
+            "heading": "We send out the BEST emails (promise!)",
+            "heading_size": 6,
+            "text": "<p>Subscribe to get special offers, exceptional giveaways, and be first to learn about our new SPF drops.<\/p>",
+            "text_size": 3,
+            "text_columns": 1,
+            "align_text": "text-left",
+            "bg_color": "#fbffc9",
+            "color": "",
+            "show_name": false,
+            "button_text": "Join",
+            "show_arrow": false,
+            "terms": false,
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_social_links": false
+          }
+        }
+      },
+      "block_order": [
+        "newsletter-0",
+        "newsletter-1"
+      ],
+      "settings": {
+        "height": "four-fifty-height-hero",
+        "mobile_height": "screen-height-one-half--mobile",
+        "width": "wrapper--full",
+        "bg_color": "",
+        "color": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    }
+  },
+  "order": [
+    "section-newsletter"
+  ]
+}

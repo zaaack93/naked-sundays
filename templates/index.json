@@ -1,0 +1,783 @@
+{
+  "sections": {
+    "225ff90c-3487-4e28-804a-5be2aec799e2": {
+      "type": "section-announcement",
+      "blocks": {
+        "template--16696976507138__225ff90c-3487-4e28-804a-5be2aec799e2-16768868190ffaacf1-0": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>2000+ 5 STAR REVIEWS  <\/strong>★★★★★<strong> <\/strong><\/p>",
+            "target_device_enabled": false,
+            "target_device": "mobile"
+          }
+        }
+      },
+      "block_order": [
+        "template--16696976507138__225ff90c-3487-4e28-804a-5be2aec799e2-16768868190ffaacf1-0"
+      ],
+      "settings": {
+        "layout": "slider",
+        "slider_speed": 5,
+        "marquee_speed": 100,
+        "text_size": 2,
+        "bg_color": "#f7f7f7",
+        "color": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "slideshow": {
+      "type": "section-slideshow",
+      "blocks": {
+        "slideshow-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/tgp_6957_edit.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/WhatsApp_Image_2022-09-19_at_12.24.53_PM.jpg",
+            "overlay_opacity": 0,
+            "overlay_color": "#000000",
+            "show_overlay_text": false,
+            "title": "AWARD-WINNING, 100% VEGAN SPF SKINCARE",
+            "heading_size": 7,
+            "description": "World First Formulations with Natural Australian Botanicals",
+            "text_size": 4,
+            "flex_align": "align--middle-center",
+            "bg_color": "",
+            "color": "#ffffff",
+            "first_button_text": "SHOP ALL PRODUCTS",
+            "first_button_link": "shopify:\/\/collections\/all",
+            "first_button_type": "btn--secondary",
+            "first_button_size": "btn--large",
+            "first_button_style": "btn--solid",
+            "first_button_show_arrow": true,
+            "second_button_text": "",
+            "second_button_link": "",
+            "second_button_type": "btn--white",
+            "second_button_size": "",
+            "second_button_style": "btn--solid",
+            "second_button_show_arrow": false
+          }
+        }
+      },
+      "block_order": [
+        "slideshow-0"
+      ],
+      "settings": {
+        "height": "screen-height-full",
+        "mobile_height": "screen-height-two-thirds--mobile",
+        "width": "wrapper--full",
+        "transition": "slide",
+        "show_arrows": true,
+        "autoplay": false,
+        "autoplay_speed": 8
+      }
+    },
+    "logos": {
+      "type": "section-press-logos",
+      "blocks": {
+        "logos-0": {
+          "type": "logo-item",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Harpers_Bazaar_logo_logotype.png",
+            "logo_width": 140,
+            "link": "",
+            "description": "<p>\"Naked Sundays SPF Face Mist is a genius product\"<\/p>",
+            "heading_size": 5
+          }
+        },
+        "logos-1": {
+          "type": "logo-item",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Vanity_Fair_Logo_svg.png",
+            "logo_width": 140,
+            "link": "",
+            "description": "<p>\"Naked Sundays is practicality & brilliance come together\"<\/p>",
+            "heading_size": 5
+          }
+        },
+        "logos-2": {
+          "type": "logo-item",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Mamamia-800x450_Large-removebg-preview.png",
+            "logo_width": 140,
+            "link": "",
+            "description": "<p>\"Sunscreen Queens Naked Sundays have done it again\"<\/p>",
+            "heading_size": 5
+          }
+        },
+        "610ad99d-d085-4ae9-a832-e3c1e9099df1": {
+          "type": "logo-item",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Untitled_design-33.png",
+            "logo_width": 140,
+            "link": "",
+            "description": "<p>\"Made for multitasking, it can replace your primer and serum\"<\/p>",
+            "heading_size": 5
+          }
+        },
+        "622a60cc-9c57-43d8-a925-984944938313": {
+          "type": "logo-item",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/vogue_ad2cba07-192e-413f-aef8-d9bef36547eb.png",
+            "logo_width": 140,
+            "link": "",
+            "description": "<p>\"Sunscreen is nonnegotiable on a daily basis\"<\/p>",
+            "heading_size": 5
+          }
+        }
+      },
+      "block_order": [
+        "logos-0",
+        "logos-1",
+        "logos-2",
+        "610ad99d-d085-4ae9-a832-e3c1e9099df1",
+        "622a60cc-9c57-43d8-a925-984944938313"
+      ],
+      "settings": {
+        "title": "",
+        "enable_heading_slider": true,
+        "logo_opacity": 100,
+        "bg_color": "#e2def9",
+        "color": "",
+        "padding_top": 42,
+        "padding_bottom": 81
+      }
+    },
+    "a3473369-da2f-473c-be68-ecc18d54fc2b": {
+      "type": "section-tab-collections",
+      "blocks": {
+        "template--16696976507138__a3473369-da2f-473c-be68-ecc18d54fc2b-1678100436b3ec2915-0": {
+          "type": "collection",
+          "settings": {
+            "title": "NEW RELEASES & BESTSELLERS",
+            "featured_collection": "all",
+            "show_image": false,
+            "image": "shopify:\/\/shop_images\/TGP_5152_Edit.jpg",
+            "align_with_product_images": false,
+            "overlay_opacity": 15,
+            "overlay_color": "#000000",
+            "description": "<h6>Upgrade your SPF with Naked Sundays  BeautyScreens™<\/h6>",
+            "color": "#ffffff",
+            "link_text": "SHOP ALL",
+            "link": "shopify:\/\/collections\/all",
+            "button_type": "btn--primary hero__btn",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false
+          }
+        },
+        "template--16696976507138__a3473369-da2f-473c-be68-ecc18d54fc2b-1678100436b3ec2915-1": {
+          "type": "collection",
+          "disabled": true,
+          "settings": {
+            "title": "BUNDLE & SAVE",
+            "featured_collection": "summer-bundle-save",
+            "show_image": false,
+            "align_with_product_images": false,
+            "overlay_opacity": 0,
+            "overlay_color": "#000000",
+            "description": "",
+            "color": "#ffffff",
+            "link_text": "SHOP THE BUNDLES",
+            "link": "shopify:\/\/collections\/summer-bundle-save",
+            "button_type": "btn--primary hero__btn",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false
+          }
+        }
+      },
+      "block_order": [
+        "template--16696976507138__a3473369-da2f-473c-be68-ecc18d54fc2b-1678100436b3ec2915-0",
+        "template--16696976507138__a3473369-da2f-473c-be68-ecc18d54fc2b-1678100436b3ec2915-1"
+      ],
+      "settings": {
+        "title": "SPF ESSENTIALS",
+        "text": "",
+        "layout": "inline",
+        "show_product_count": false,
+        "bg_color": "",
+        "color": "",
+        "padding_top": 48,
+        "padding_bottom": 47
+      }
+    },
+    "d63c2c88-85d6-452d-80d8-ad29995b9403": {
+      "type": "section-before-after",
+      "settings": {
+        "heading": "Where Beauty Meets SPF",
+        "description": "<p>Transform your morning (and lunchtime and afternoon!) skin routine, with Naked Sundays science-backed SPF that can be worn with or OVER your makeup, the world's only SPF brand created with topping up your SPF at the forefront of our mission to decrease melanoma rates. <\/p><p>Our world-first formulations & unique delivery mechanisms, means your skin gets extra protection without interrupting your makeup. <\/p><p>Going where most SPF hasn't gone before; eyelids, lips, under your eyes... Gentle, 100% Vegan, Cruelty Free, and cute to boot. <\/p><p>Winner of multiple awards, with makeup artists tick of approval. Don't leave home without us! <\/p><p><em>RIGHT: SEE OUR <\/em><a href=\"\/products\/spf50-100-mineral-glow-collagen-sunscreen-naked-sundays\" title=\"SPF50+ Collagen Glow 100% Mineral Perfecting Priming Lotion\"><em>100% MINERAL PERFECTING PRIMING LOTION<\/em><\/a><em> with our exclusive Vegan Collagen Blend for a flawless finish<\/em><\/p>",
+        "link_text": "SHOP MINERAL LOTION",
+        "link_url": "shopify:\/\/products\/spf50-100-mineral-glow-collagen-sunscreen-naked-sundays",
+        "button_type": "btn--secondary hero__btn",
+        "button_size": "btn--large",
+        "button_style": "btn--solid",
+        "show_arrow": false,
+        "image_1": "shopify:\/\/shop_images\/product_only.jpg",
+        "image_2": "shopify:\/\/shop_images\/bare_skin.jpg",
+        "aspect_ratio": 1,
+        "width": "wrapper",
+        "bg_color": "#e2def9",
+        "color": "",
+        "padding_top": 50,
+        "padding_bottom": 50
+      }
+    },
+    "c5175ed1-9d0d-4aef-b1cc-f032ade42334": {
+      "type": "section-reviews",
+      "disabled": true,
+      "blocks": {
+        "template--16696976507138__c5175ed1-9d0d-4aef-b1cc-f032ade42334-16778133845d221380-0": {
+          "type": "review",
+          "settings": {
+            "title": "Charlotte Begg",
+            "subheading": "Mamamia's lifestyle writer",
+            "review_text": "The first thing I noticed was the smell. The watermelon scent is refreshing, especially on a very hot day. \n\nThe other thing I observed was how lightweight it feels. The mist is extremely fine, and it dries almost instantly.",
+            "featured_image": "shopify:\/\/shop_images\/Screen_Shot_2023-03-03_at_2.49.54_pm.png",
+            "bio_image": "shopify:\/\/shop_images\/Screen_Shot_2023-03-03_at_2.51.47_pm.png",
+            "review_url": "shopify:\/\/blogs\/press\/mamamia-tried-tested-i-tried-the-luminous-new-sunscreen-mist-you-can-spray-over-makeup"
+          }
+        },
+        "template--16696976507138__c5175ed1-9d0d-4aef-b1cc-f032ade42334-16778133845d221380-1": {
+          "type": "review",
+          "settings": {
+            "title": "Ruby Feneley",
+            "subheading": "Popsugar Beauty Editor",
+            "review_text": "I am very happy to have a TGA-approved primer and sunscreen hybrid in my daily rotation. As usual, Naked Sundays has nailed identifying a gap in the market and delivering a clever product that makes our lives easier. I look forward to poreless, sun-safe days ahead.",
+            "featured_image": "shopify:\/\/shop_images\/Screen_Shot_2023-03-03_at_3.02.13_pm.png",
+            "bio_image": "shopify:\/\/shop_images\/Screen_Shot_2023-03-03_at_3.02.45_pm.png",
+            "review_url": ""
+          }
+        },
+        "template--16696976507138__c5175ed1-9d0d-4aef-b1cc-f032ade42334-16778133845d221380-2": {
+          "type": "review",
+          "settings": {
+            "title": "Kenneth Powell",
+            "subheading": "Industry Expert",
+            "review_text": "Use this text to showcase a review from one of your customers. A great review is honest and speaks to the concerns of your customers.",
+            "review_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16696976507138__c5175ed1-9d0d-4aef-b1cc-f032ade42334-16778133845d221380-0",
+        "template--16696976507138__c5175ed1-9d0d-4aef-b1cc-f032ade42334-16778133845d221380-1",
+        "template--16696976507138__c5175ed1-9d0d-4aef-b1cc-f032ade42334-16778133845d221380-2"
+      ],
+      "settings": {
+        "show_featured_image": true,
+        "image_aspect_ratio": 1.2,
+        "show_quotation_marks": true,
+        "text_align": "text-left",
+        "text_size": 4,
+        "bg_color": "",
+        "color": "#000000",
+        "card_bg_color": "#f7f9fa",
+        "padding_top": 50,
+        "padding_bottom": 50
+      }
+    },
+    "fb80c6f7-db35-47da-98c3-98b67edf0858": {
+      "type": "section-announcement",
+      "blocks": {
+        "template--16696976507138__fb80c6f7-db35-47da-98c3-98b67edf0858-1678103234cccdd505-0": {
+          "type": "text",
+          "settings": {
+            "text": "<p>100% Vegan <\/p>",
+            "target_device_enabled": false,
+            "target_device": "mobile"
+          }
+        },
+        "template--16696976507138__fb80c6f7-db35-47da-98c3-98b67edf0858-1678103234cccdd505-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Cruelty Free<\/strong><\/p>",
+            "target_device_enabled": false,
+            "target_device": "mobile"
+          }
+        },
+        "template--16696976507138__fb80c6f7-db35-47da-98c3-98b67edf0858-1678103234cccdd505-2": {
+          "type": "message",
+          "disabled": true,
+          "settings": {
+            "show_wheel": false,
+            "message": "You are ||amount|| away from free shipping.",
+            "target_device_enabled": false,
+            "target_device": "mobile"
+          }
+        },
+        "template--16696976507138__fb80c6f7-db35-47da-98c3-98b67edf0858-1678103234cccdd505-3": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>High Performance SPF<\/strong><\/p>",
+            "target_device_enabled": false,
+            "target_device": "mobile"
+          }
+        }
+      },
+      "block_order": [
+        "template--16696976507138__fb80c6f7-db35-47da-98c3-98b67edf0858-1678103234cccdd505-0",
+        "template--16696976507138__fb80c6f7-db35-47da-98c3-98b67edf0858-1678103234cccdd505-1",
+        "template--16696976507138__fb80c6f7-db35-47da-98c3-98b67edf0858-1678103234cccdd505-2",
+        "template--16696976507138__fb80c6f7-db35-47da-98c3-98b67edf0858-1678103234cccdd505-3"
+      ],
+      "settings": {
+        "layout": "marquee",
+        "slider_speed": 7,
+        "marquee_speed": 100,
+        "text_size": 2,
+        "bg_color": "#fbffc9",
+        "color": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "22179801-27bd-4e3b-9c1c-43be4bc983d9": {
+      "type": "section-multicolumn",
+      "blocks": {
+        "template--16719977808130__22179801-27bd-4e3b-9c1c-43be4bc983d9-16793496224672f7cf-0": {
+          "type": "icon",
+          "settings": {
+            "column_width": 33,
+            "icon_name": "icon-leaf",
+            "icon_size": 60,
+            "icon_alignment": "icon--top",
+            "icon_color": "#545454",
+            "title": "100% VEGAN",
+            "heading_size": 5,
+            "text": "<p>Making sunscreen is no easy feat and we fight to ensure that our products are 100% vegan and of course, cruelty free. We are only tested on SPF-loving humans and all our ingredients are sustainably sourced.<\/p>",
+            "text_size": 3
+          }
+        },
+        "template--16719977808130__22179801-27bd-4e3b-9c1c-43be4bc983d9-16793496224672f7cf-1": {
+          "type": "icon",
+          "settings": {
+            "column_width": 33,
+            "icon_name": "icon-shield",
+            "icon_size": 60,
+            "icon_alignment": "icon--top",
+            "icon_color": "#545454",
+            "title": "High Performance SPF",
+            "heading_size": 5,
+            "text": "<p>Our science-backed products adhere to worldwide SPF standards with rigorous testing of every single batch we put out into the world. <\/p>",
+            "text_size": 3
+          }
+        },
+        "template--16719977808130__22179801-27bd-4e3b-9c1c-43be4bc983d9-16793496224672f7cf-2": {
+          "type": "icon",
+          "settings": {
+            "column_width": 33,
+            "icon_name": "icon-heart",
+            "icon_size": 60,
+            "icon_alignment": "icon--top",
+            "icon_color": "#545454",
+            "title": "Our Mission",
+            "heading_size": 5,
+            "text": "<p>We are dedicated to the mission of lowering melanoma rates for the next generation, with a percent of all profits going towards melanoma research and finding a cure.<\/p>",
+            "text_size": 3
+          }
+        }
+      },
+      "block_order": [
+        "template--16719977808130__22179801-27bd-4e3b-9c1c-43be4bc983d9-16793496224672f7cf-0",
+        "template--16719977808130__22179801-27bd-4e3b-9c1c-43be4bc983d9-16793496224672f7cf-1",
+        "template--16719977808130__22179801-27bd-4e3b-9c1c-43be4bc983d9-16793496224672f7cf-2"
+      ],
+      "settings": {
+        "title": "Our Values We Stand For",
+        "heading_size": 5,
+        "align_text": "text-left",
+        "align_columns": "flex-align-top",
+        "width": "wrapper--full-padded",
+        "bg_color": "",
+        "color": "",
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "layout_mobile": "carousel"
+      }
+    },
+    "2fe7d0b3-0def-4a86-a25c-cf00b9c897c4": {
+      "type": "section-custom-content",
+      "blocks": {
+        "template--16720755917058__2fe7d0b3-0def-4a86-a25c-cf00b9c897c4-1679355286a553e2bf-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/NS_JULY14_WEB-2_bc3bf3a4-aed6-4997-a007-da89259fa94f.jpg",
+            "overlay_opacity": 0,
+            "overlay_color": "#000000",
+            "show_overlay_text": false,
+            "title": "Bundle & Save",
+            "heading_size": 7,
+            "description": "",
+            "text_size": 3,
+            "flex_align": "align--top-left",
+            "bg_color": "",
+            "color": "#ffffff",
+            "link_text": "Shop Bundles",
+            "link": "shopify:\/\/collections\/summer-bundle-save",
+            "button_type": "btn--secondary",
+            "button_size": "btn--large",
+            "button_style": "btn--solid",
+            "show_arrow": true
+          }
+        },
+        "3c69ffb8-55e4-4b9b-a7a8-cecfa085d77f": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Naked_Sundays_054.jpg",
+            "overlay_opacity": 0,
+            "overlay_color": "#000000",
+            "show_overlay_text": false,
+            "title": "About Us",
+            "heading_size": 7,
+            "description": "",
+            "text_size": 3,
+            "flex_align": "align--top-left",
+            "bg_color": "",
+            "color": "#ffffff",
+            "link_text": "HEAR OUR STORY",
+            "link": "shopify:\/\/pages\/our-story-1",
+            "button_type": "btn--secondary",
+            "button_size": "btn--large",
+            "button_style": "btn--solid",
+            "show_arrow": true
+          }
+        }
+      },
+      "block_order": [
+        "template--16720755917058__2fe7d0b3-0def-4a86-a25c-cf00b9c897c4-1679355286a553e2bf-0",
+        "3c69ffb8-55e4-4b9b-a7a8-cecfa085d77f"
+      ],
+      "settings": {
+        "height": "screen-height-three-quarters",
+        "mobile_height": "screen-height-one-half--mobile",
+        "width": "wrapper--full",
+        "borders": false,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "45414fc8-0094-492c-98fc-addb168077a1": {
+      "type": "section-announcement",
+      "blocks": {
+        "template--16696976507138__45414fc8-0094-492c-98fc-addb168077a1-16771490071b2d9372-3": {
+          "type": "text",
+          "settings": {
+            "text": "<p>\"THE MINERAL SPF50+ SUNSCREEN THAT SOLD OUT 3 MONTHS WORTH OF STOCK IN 24 HOURS WHEN LAUNCHED\" - <em>news.com.au<\/em><\/p>",
+            "target_device_enabled": false,
+            "target_device": "mobile"
+          }
+        }
+      },
+      "block_order": [
+        "template--16696976507138__45414fc8-0094-492c-98fc-addb168077a1-16771490071b2d9372-3"
+      ],
+      "settings": {
+        "layout": "marquee",
+        "slider_speed": 7,
+        "marquee_speed": 100,
+        "text_size": 2,
+        "bg_color": "#fbffc9",
+        "color": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "03b974bb-e03d-4adc-b037-9e30f1be9180": {
+      "type": "section-collection",
+      "settings": {
+        "heading": "Shop Bundles",
+        "description": "<p>We are suckers for a good skincare routine around here (and a bargain).<\/p>",
+        "layout": "center",
+        "link_text": "Shop All Bundles",
+        "link_url": "shopify:\/\/collections\/summer-bundle-save",
+        "button_type": "btn--primary hero__btn",
+        "button_size": "btn--large",
+        "button_style": "btn--solid",
+        "show_arrow": true,
+        "featured_collection": "summer-bundle-save",
+        "style": "grid",
+        "grid": 4,
+        "rows": 2,
+        "layout_mobile": "2",
+        "bg_color": "",
+        "color": "",
+        "padding_top": 50,
+        "padding_bottom": 50
+      }
+    },
+    "fcec5d1c-384d-4e1e-9f85-e613f0a948f3": {
+      "type": "section-blog",
+      "settings": {
+        "blog_name": "how-to-spf-with-naked-sundays",
+        "title": "HOW TO SPF with Naked Sundays",
+        "grid": 4,
+        "rows": 1,
+        "aspect_ratio": 1,
+        "show_tags": false,
+        "show_author": false,
+        "show_date": false,
+        "show_button": true,
+        "show_comments": false,
+        "bg_color": "#e2def9",
+        "color": "",
+        "padding_top": 55,
+        "padding_bottom": 55
+      }
+    },
+    "42acbffd-cd87-4523-8c0f-678d874bc275": {
+      "type": "section-collections-list",
+      "disabled": true,
+      "blocks": {
+        "template--16696976507138__42acbffd-cd87-4523-8c0f-678d874bc275-16781015809761670c-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "spf-mineral-collection",
+            "collection_image": "shopify:\/\/shop_images\/9601417A_M_VA_AV_SPF50MINERAL_copy.jpg",
+            "title": "SHOP MINERAL"
+          }
+        },
+        "template--16696976507138__42acbffd-cd87-4523-8c0f-678d874bc275-16781015809761670c-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "body-collection",
+            "collection_image": "shopify:\/\/shop_images\/IMG_2901_2_copy_SQUARE.jpg",
+            "title": "SHOP BODY"
+          }
+        },
+        "template--16696976507138__42acbffd-cd87-4523-8c0f-678d874bc275-16781015809761670c-3": {
+          "type": "collection",
+          "settings": {
+            "collection": "face-mist-collection",
+            "collection_image": "shopify:\/\/shop_images\/WhatsApp_Image_2022-11-18_at_10.20.26_AM_3.jpg",
+            "title": "SHOP MISTS"
+          }
+        },
+        "template--16696976507138__42acbffd-cd87-4523-8c0f-678d874bc275-16781015809761670c-2": {
+          "type": "collection",
+          "settings": {
+            "collection": "subscription",
+            "title": "SHOP SUBSCRIPTIONS"
+          }
+        }
+      },
+      "block_order": [
+        "template--16696976507138__42acbffd-cd87-4523-8c0f-678d874bc275-16781015809761670c-0",
+        "template--16696976507138__42acbffd-cd87-4523-8c0f-678d874bc275-16781015809761670c-1",
+        "template--16696976507138__42acbffd-cd87-4523-8c0f-678d874bc275-16781015809761670c-3",
+        "template--16696976507138__42acbffd-cd87-4523-8c0f-678d874bc275-16781015809761670c-2"
+      ],
+      "settings": {
+        "title": "",
+        "description": "",
+        "layout": "grid",
+        "aspect_ratio": 1.3,
+        "grid": 4,
+        "enable_slider": true,
+        "bg_color": "",
+        "color": "",
+        "padding_top": 40,
+        "padding_bottom": 41
+      }
+    },
+    "d4148cce-b701-4e61-ac94-70d0941f4b23": {
+      "type": "section-collections-list-hover",
+      "blocks": {
+        "template--16719977808130__d4148cce-b701-4e61-ac94-70d0941f4b23-16793514144f6483e6-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "spf-mineral-collection",
+            "image": "shopify:\/\/shop_images\/NS_DEC1_WEB-2_2.jpg",
+            "title": "MINERAL"
+          }
+        },
+        "template--16719977808130__d4148cce-b701-4e61-ac94-70d0941f4b23-16793514144f6483e6-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "body",
+            "image": "shopify:\/\/shop_images\/NS_DEC1_WEB-16.jpg",
+            "title": "BODY"
+          }
+        },
+        "1c08bdc1-f66a-410c-adb1-94be0128f221": {
+          "type": "collection",
+          "settings": {
+            "collection": "face-mist-collection",
+            "image": "shopify:\/\/shop_images\/NakedSundays-October-10_Large_43c68971-249f-42d5-9536-fa21ace8716e.jpg",
+            "title": "MISTS"
+          }
+        },
+        "7b595d58-5814-4113-80b6-de93c189abb8": {
+          "type": "collection",
+          "settings": {
+            "collection": "subscription",
+            "image": "shopify:\/\/shop_images\/ns_oct26th_web-8.jpg",
+            "title": "SUBSCRIPTIONS"
+          }
+        }
+      },
+      "block_order": [
+        "template--16719977808130__d4148cce-b701-4e61-ac94-70d0941f4b23-16793514144f6483e6-0",
+        "template--16719977808130__d4148cce-b701-4e61-ac94-70d0941f4b23-16793514144f6483e6-1",
+        "1c08bdc1-f66a-410c-adb1-94be0128f221",
+        "7b595d58-5814-4113-80b6-de93c189abb8"
+      ],
+      "settings": {
+        "height": "screen-height-three-quarters",
+        "mobile_height": "screen-height-three-quarters--mobile",
+        "overlay_opacity": 0,
+        "overlay_color": "#000000",
+        "show_overlay_text": false,
+        "heading_size": 7,
+        "bg_color": "",
+        "color": "#fbffc9",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "fd8fa684-c28e-4380-94a5-87d01c512cde": {
+      "type": "section-rich-text",
+      "disabled": true,
+      "blocks": {
+        "template--16696976507138__fd8fa684-c28e-4380-94a5-87d01c512cde-16778140812e7530ef-0": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Naked Sundays in the Wild",
+            "text_size": 3
+          }
+        },
+        "template--16696976507138__fd8fa684-c28e-4380-94a5-87d01c512cde-16778140812e7530ef-1": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "title": "Rich text",
+            "text_size": 8
+          }
+        },
+        "template--16696976507138__fd8fa684-c28e-4380-94a5-87d01c512cde-16778140812e7530ef-2": {
+          "type": "text",
+          "settings": {
+            "text": "<h6>Tag us on Instagram for a chance to get featured<\/h6>",
+            "text_size": 3,
+            "text_style": "font-body"
+          }
+        },
+        "template--16696976507138__fd8fa684-c28e-4380-94a5-87d01c512cde-16778140812e7530ef-3": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_text": "Learn more",
+            "button_url": "",
+            "button_type": "btn--primary hero__btn",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false
+          }
+        }
+      },
+      "block_order": [
+        "template--16696976507138__fd8fa684-c28e-4380-94a5-87d01c512cde-16778140812e7530ef-0",
+        "template--16696976507138__fd8fa684-c28e-4380-94a5-87d01c512cde-16778140812e7530ef-1",
+        "template--16696976507138__fd8fa684-c28e-4380-94a5-87d01c512cde-16778140812e7530ef-2",
+        "template--16696976507138__fd8fa684-c28e-4380-94a5-87d01c512cde-16778140812e7530ef-3"
+      ],
+      "settings": {
+        "width": "wrapper--full-padded",
+        "align_text": "text-left",
+        "bg_color": "",
+        "color": "",
+        "padding_top": 100,
+        "padding_bottom": 0
+      }
+    },
+    "75d0398b-4990-421f-880d-4af0f1270179": {
+      "type": "section-columns",
+      "blocks": {
+        "a8117010-5499-4558-a540-5d8f8b40b6e3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Screen_Shot_2023-03-03_at_2.32.37_pm.png",
+            "title": "",
+            "heading_size": 4,
+            "text": "<p>@<a href=\"https:\/\/www.instagram.com\/milkayemima\/\">milkayemima<\/a><\/p>",
+            "text_size": 3,
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary hero__btn",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false
+          }
+        },
+        "54e4c86d-f79c-4308-8b89-f37940a27bf5": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Screen_Shot_2023-03-03_at_2.38.14_pm.png",
+            "title": "",
+            "heading_size": 4,
+            "text": "<p>@<a href=\"https:\/\/www.instagram.com\/mel.libra_\/\">mel.libra_<\/a><\/p>",
+            "text_size": 3,
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary hero__btn",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false
+          }
+        },
+        "36db573b-e390-45a2-b314-c02188527d98": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Screen_Shot_2023-03-03_at_2.41.40_pm.png",
+            "title": "",
+            "heading_size": 4,
+            "text": "<p>@<a href=\"https:\/\/www.instagram.com\/iamioulia\/\">iamioulia<\/a><\/p>",
+            "text_size": 3,
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary hero__btn",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false
+          }
+        }
+      },
+      "block_order": [
+        "a8117010-5499-4558-a540-5d8f8b40b6e3",
+        "54e4c86d-f79c-4308-8b89-f37940a27bf5",
+        "36db573b-e390-45a2-b314-c02188527d98"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": 5,
+        "align_text": "text-left",
+        "align_columns": "flex-align-center",
+        "width": "wrapper--full-padded",
+        "photo_aspect_ratio": 1,
+        "bg_color": "rgba(0,0,0,0)",
+        "color": "",
+        "padding_top": 60,
+        "padding_bottom": 60,
+        "layout_mobile": "carousel"
+      }
+    }
+  },
+  "order": [
+    "225ff90c-3487-4e28-804a-5be2aec799e2",
+    "slideshow",
+    "logos",
+    "a3473369-da2f-473c-be68-ecc18d54fc2b",
+    "d63c2c88-85d6-452d-80d8-ad29995b9403",
+    "c5175ed1-9d0d-4aef-b1cc-f032ade42334",
+    "fb80c6f7-db35-47da-98c3-98b67edf0858",
+    "22179801-27bd-4e3b-9c1c-43be4bc983d9",
+    "2fe7d0b3-0def-4a86-a25c-cf00b9c897c4",
+    "45414fc8-0094-492c-98fc-addb168077a1",
+    "03b974bb-e03d-4adc-b037-9e30f1be9180",
+    "fcec5d1c-384d-4e1e-9f85-e613f0a948f3",
+    "42acbffd-cd87-4523-8c0f-678d874bc275",
+    "d4148cce-b701-4e61-ac94-70d0941f4b23",
+    "fd8fa684-c28e-4380-94a5-87d01c512cde",
+    "75d0398b-4990-421f-880d-4af0f1270179"
+  ]
+}
