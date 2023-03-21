@@ -47,6 +47,33 @@
     },
     "header": {
       "type": "header",
+      "disabled": true,
+      "settings": {
+        "header_sticky": false,
+        "header_style": "logo_beside",
+        "show_icons": true,
+        "icon_as_circle": false,
+        "cart_icon_family": "bag",
+        "logo": "shopify:\/\/shop_images\/NakedSundays-Logo_MultiColor_96377f91-8300-4353-82d8-04ad28d845cd.png",
+        "logo_max_limit": 160,
+        "main_menu_linklist": "new-main-menu",
+        "enable_search": true,
+        "show_social_icons": false,
+        "show_locale_selector": false,
+        "show_currency_selector": false,
+        "type": "currency",
+        "highlight_item": "Sale",
+        "highlight_item_color": "#d02e2e",
+        "transparent_home": false,
+        "transparent_collection": false,
+        "transparent_article": false,
+        "transparent_page": false,
+        "secondary_menu_linklist": "new-secondary",
+        "tertiary_menu_linklist": "mobile-secondary"
+      }
+    },
+    "header-v2": {
+      "type": "header",
       "settings": {
         "header_sticky": false,
         "header_style": "logo_beside",
@@ -74,6 +101,7 @@
   },
   "order": [
     "announcement",
-    "header"
+    "header",
+    "header-v2"
   ]
 }
