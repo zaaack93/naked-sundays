@@ -1,0 +1,12 @@
+.slideshow-v2{
+    @media only screen and (max-width: 749px){
+        .desktop {
+            display: none !important;
+        }
+    }
+    @media only screen and (min-width: 748px){
+        .mobile {
+            display: none !important;
+        }
+    }
+}
