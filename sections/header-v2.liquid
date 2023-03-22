@@ -401,6 +401,14 @@
 
           {%- render 'icon-cancel' -%}
         </button>
+        {% if section.settings.logo_mobile !=blank %}
+        <a
+        class="header__logo__link_mobile-nav"
+        href="{{ routes.root_url }}">
+            {% render 'image', image: section.settings.logo_mobile, modifier:'image_logo-mobile-nav',aspect_ratio:section.settings.logo_mobile.aspect_ratio %} 
+          </a>
+        {%endif%}
+
       </header>
 
       <div class="drawer__body">
@@ -426,7 +434,7 @@
         {%- if true -%}
           {%- comment -%} Add 200ms for all top level hamburger menu elements {%- endcomment -%}
           {%- assign animation_delay = animation_delay | plus: 200 -%}
-          <div class="drawer__bottom{% unless social %} mobile{% endunless %}">
+          <div class="drawer__bottom">
             <div class="hero__button-group">
               <div
                 class="hero__button"
@@ -754,7 +762,16 @@
         "type": "header",
         "content": "Mobile menu",
         "info": "These menus won't show dropdown items."
-      }, {
+      },{
+        "type": "image_picker",
+        "id": "logo_mobile",
+        "label": "Image"
+      },{
+        "type": "header",
+        "content": "Navigation"
+      },
+      
+      {
         "type": "link_list",
         "id": "secondary_menu_linklist",
         "label": "Secondary menu",

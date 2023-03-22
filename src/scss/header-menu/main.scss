@@ -1,16 +1,30 @@
 .header-v2 {
+    //drawer head
+    .drawer__head{
+        display: flex;
+        justify-content: center;
+        padding-top: 21px;
+        padding-bottom: 21px;
+        .header__logo__link_mobile-nav{
+            width: 134px;
+        }
+        .drawer__close{
+            position: absolute;
+            padding: 0;
+            left: 15px;
+        }
+    }
     .drawer__body {
         .drawer__content {
-
             //menu item for primary links
             .container__primary_navmenu {
                 .primary_menu_links {
                     .sliderow {
-                        min-height: 77px;
+                        min-height: 75px;
                         .sliderow__title {
                             padding: 0px;
                             column-gap: 17px;
-                            min-height: 77px;
+                            min-height: 75px;
                             justify-content: flex-start;
                             font-size: 18px;
                             font-weight: 400;
@@ -19,8 +33,8 @@
                             color: #000;
                             .nav-item_linkimage {
                                 width: auto;
-                                aspect-ratio: 1.50;
-                                height: 77px;
+                                aspect-ratio: 1.59;
+                                height: 75px;
                             }
                             &:hover{
                                 background: #E2DEF9;
@@ -81,6 +95,7 @@
                 .hero__button{
                     margin-left: 0px;
                     margin-right: 0px;
+                    width: 100%;
                     .btn{
                         width: 100%;
                         padding-top: 12px;
@@ -92,6 +107,13 @@
                             position: relative;
                         }
                     }
+                }
+            }
+            .announcement__text{
+                .body-size-2{
+                    margin: 0;
+                    text-align: center;
+                    width: 100%;
                 }
             }
         }
