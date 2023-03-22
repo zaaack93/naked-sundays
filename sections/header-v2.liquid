@@ -505,6 +505,7 @@
             {%- comment -%} Add 200ms for all top level hamburger menu elements {%- endcomment -%}
             {%- assign animation_delay = animation_delay | plus: 200 -%}
             <div class="drawer__bottom">
+              {% if section.settings.menu_bottom_button_text!=blank and section.settings.menu_bottom_button_link != blank %}
               <div class="hero__button-group">
                 <div
                   class="hero__button"
@@ -517,12 +518,14 @@
                   </a>
                 </div>
               </div>
-
-              <div class="announcement__text">
-                <div class="body-size-2"><p><strong>
-                {{ section.settings.menu_button_textrich | replace: '|', '<span class="announcement__divider"></span>' }}
+              {%endif%}
+              {% if section.settings.menu_button_textrich != blank %}
+                <div class="announcement__text">
+                  <div class="body-size-2"><p><strong>
+                  {{ section.settings.menu_button_textrich | replace: '|', '<span class="announcement__divider"></span>' }}
+                  </div>
                 </div>
-              </div>
+              {%endif%}
               {%- if header_popouts -%}
                 {%- assign animation_delay = animation_delay | plus: animation_delay_increment -%}
                 <div
