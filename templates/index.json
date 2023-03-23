@@ -26,45 +26,45 @@
         "padding_bottom": 0
       }
     },
-    "slideshow": {
-      "type": "section-slideshow",
+    "5f5af74b-0113-4994-b2ab-f942f40a46ca": {
+      "type": "section-slideshow-v2",
       "blocks": {
-        "slideshow-0": {
+        "template--16720755917058__5f5af74b-0113-4994-b2ab-f942f40a46ca-167949130042901170-0": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/tgp_6957_edit.jpg",
+            "image": "shopify:\/\/shop_images\/tgp_6957_edit_f0420fd9-7f10-49a8-9fb5-f1d2f972dc34.jpg",
             "mobile_image": "shopify:\/\/shop_images\/WhatsApp_Image_2022-09-19_at_12.24.53_PM_f556715d-49ec-453d-9eda-aaf76a244fd2.jpg",
             "overlay_opacity": 0,
             "overlay_color": "#000000",
             "show_overlay_text": false,
-            "title": "AWARD-WINNING, 100% VEGAN SPF SKINCARE",
+            "title": "<p>AWARD-WINNING, <br\/>100% VEGAN SPF SKINCARE<\/p>",
             "heading_size": 7,
-            "description": "World First Formulations with Natural Australian Botanicals",
+            "description": "<p>World First Formulation<br\/>with Natural Australian Botanicals<\/p>",
             "text_size": 4,
             "flex_align": "align--middle-center",
             "bg_color": "",
             "color": "#ffffff",
             "first_button_text": "SHOP ALL PRODUCTS",
             "first_button_link": "shopify:\/\/collections\/all",
-            "first_button_type": "btn--secondary",
+            "first_button_type": "btn--primary",
             "first_button_size": "btn--large",
             "first_button_style": "btn--solid",
             "first_button_show_arrow": true,
-            "second_button_text": "",
-            "second_button_link": "",
-            "second_button_type": "btn--white",
-            "second_button_size": "",
+            "second_button_text": "SHOP BESTSELLERS",
+            "second_button_link": "shopify:\/\/collections",
+            "second_button_type": "btn--secondary",
+            "second_button_size": "btn--large",
             "second_button_style": "btn--solid",
-            "second_button_show_arrow": false
+            "second_button_show_arrow": true
           }
         }
       },
       "block_order": [
-        "slideshow-0"
+        "template--16720755917058__5f5af74b-0113-4994-b2ab-f942f40a46ca-167949130042901170-0"
       ],
       "settings": {
         "height": "screen-height-full",
-        "mobile_height": "screen-height-two-thirds--mobile",
+        "mobile_height": "screen-height-one-half--mobile",
         "width": "wrapper--full",
         "transition": "slide",
         "show_arrows": true,
@@ -760,57 +760,11 @@
         "padding_bottom": 60,
         "layout_mobile": "carousel"
       }
-    },
-    "5f5af74b-0113-4994-b2ab-f942f40a46ca": {
-      "type": "section-slideshow-v2",
-      "blocks": {
-        "template--16720755917058__5f5af74b-0113-4994-b2ab-f942f40a46ca-167949130042901170-0": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/tgp_6957_edit_f0420fd9-7f10-49a8-9fb5-f1d2f972dc34.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/WhatsApp_Image_2022-09-19_at_12.24.53_PM_f556715d-49ec-453d-9eda-aaf76a244fd2.jpg",
-            "overlay_opacity": 0,
-            "overlay_color": "#000000",
-            "show_overlay_text": false,
-            "title": "<p>AWARD-WINNING, <br\/>100% VEGAN SPF SKINCARE<\/p>",
-            "heading_size": 7,
-            "description": "<p>World First Formulation<br\/>with Natural Australian Botanicals<\/p>",
-            "text_size": 4,
-            "flex_align": "align--middle-center",
-            "bg_color": "",
-            "color": "#ffffff",
-            "first_button_text": "SHOP ALL PRODUCTS",
-            "first_button_link": "shopify:\/\/collections\/all",
-            "first_button_type": "btn--primary",
-            "first_button_size": "btn--large",
-            "first_button_style": "btn--solid",
-            "first_button_show_arrow": true,
-            "second_button_text": "SHOP BESTSELLERS",
-            "second_button_link": "shopify:\/\/collections",
-            "second_button_type": "btn--secondary",
-            "second_button_size": "btn--large",
-            "second_button_style": "btn--solid",
-            "second_button_show_arrow": true
-          }
-        }
-      },
-      "block_order": [
-        "template--16720755917058__5f5af74b-0113-4994-b2ab-f942f40a46ca-167949130042901170-0"
-      ],
-      "settings": {
-        "height": "screen-height-full",
-        "mobile_height": "screen-height-one-half--mobile",
-        "width": "wrapper--full",
-        "transition": "slide",
-        "show_arrows": true,
-        "autoplay": false,
-        "autoplay_speed": 8
-      }
     }
   },
   "order": [
     "225ff90c-3487-4e28-804a-5be2aec799e2",
-    "slideshow",
+    "5f5af74b-0113-4994-b2ab-f942f40a46ca",
     "logos",
     "a3473369-da2f-473c-be68-ecc18d54fc2b",
     "d63c2c88-85d6-452d-80d8-ad29995b9403",
@@ -824,7 +778,6 @@
     "42acbffd-cd87-4523-8c0f-678d874bc275",
     "d4148cce-b701-4e61-ac94-70d0941f4b23",
     "fd8fa684-c28e-4380-94a5-87d01c512cde",
-    "75d0398b-4990-421f-880d-4af0f1270179",
-    "5f5af74b-0113-4994-b2ab-f942f40a46ca"
+    "75d0398b-4990-421f-880d-4af0f1270179"
   ]
 }
