@@ -397,7 +397,13 @@
           </div>
         {%- endif -%}
 
+
+          <span class="stamped-product-reviews-badge stamped-main-badge" data-id="{{ product.id }}" data-product-title="{{ product.title | escape }}" data-product-type="{{ product.type }}" style="display: block;"></span>
+
         <p class="product-item__title">{{ product.title | strip_html | escape }}</p>
+
+
+
 
         <div class="product-item__price__holder{% if has_siblings %} has-siblings{% endif %}">
           {%- if has_siblings or product_item_cutline != blank -%}

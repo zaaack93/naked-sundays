@@ -79,6 +79,7 @@
         },
         "d0a39884-abaf-4ce6-bf85-5b725e5cde77": {
           "type": "shopify:\/\/apps\/stamped-product-reviews-ugc\/blocks\/star-rating-badge\/a103faaf-2125-4b0e-89fa-de5149736723",
+          "disabled": true,
           "settings": {
             "use_metafields": false,
             "sku_tagtype": "sku",

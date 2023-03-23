@@ -33,7 +33,7 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/tgp_6957_edit.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/WhatsApp_Image_2022-09-19_at_12.24.53_PM.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/WhatsApp_Image_2022-09-19_at_12.24.53_PM_f556715d-49ec-453d-9eda-aaf76a244fd2.jpg",
             "overlay_opacity": 0,
             "overlay_color": "#000000",
             "show_overlay_text": false,
@@ -797,7 +797,7 @@
           "type": "image",
           "settings": {
             "overlay_opacity": 0,
-            "overlay_color": "#000",
+            "overlay_color": "#000000",
             "show_overlay_text": false,
             "title": "Image slide",
             "heading_size": 11,
@@ -805,7 +805,7 @@
             "text_size": 5,
             "flex_align": "align--middle-center",
             "bg_color": "",
-            "color": "#FFFFFF",
+            "color": "#ffffff",
             "first_button_text": "View products",
             "first_button_link": "",
             "first_button_type": "btn--primary",

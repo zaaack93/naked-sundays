@@ -305,7 +305,38 @@
     {%- endcomment -%}
   <!-- Paste marketing code or third party scripts below this comment line ============== -->
 
+<!-- Stamped - Begin script -->
+<script async type="text/javascript" id="stamped-script-widget" data-api-key="pubkey-6n65E39870som559RFoV43klBKx6xe" src="https://cdn1.stamped.io/files/widget.min.js"></script>
+<!-- Stamped - End script -->
+  
+{% if template == "product" %}
+  
+  <style>
 
+   .product__block.review-flex {
+    display: flex !important;
+}
+    
+    @media only screen and (min-width: 1200px) {
+  .stamped-badge{
+    
+    position: relative;
+    left: 290px;
+    
+  }
+}
+      @media only screen and (max-width: 600px) {
+  .stamped-badge{
+    
+    position: relative;
+    left: 97px;
+    
+  }
+}
+
+  </style>
+
+{% endif%}
 
     <!-- And above this comment line ================================================== -->
   </body>

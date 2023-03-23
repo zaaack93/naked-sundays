@@ -8,7 +8,7 @@
   endif
 -%}
 
-<div class="product__block" {{ block_style }}>
+<div class="product__block review-flex" {{ block_style }}>
   <div class="product__price__wrap">
     <div class="product__price{% if has_units %} product__price--has-units{% endif %}" data-price-wrapper>
       <span data-product-price {% if current_variant.compare_at_price > current_variant.price %} class="product__price--sale"{% endif %}>
@@ -70,6 +70,11 @@
       </span>
     {%- endif -%}
   </div>
+
+        <span class="stamped-product-reviews-badge stamped-main-badge" data-id="{{ product.id }}" data-product-title="{{ product.title | escape }}" data-product-type="{{ product.type }}" ></span>
+
+
+  
 
   {% comment %} Shop pay split payment terms {% endcomment %}
   <div class="shop-pay-terms">

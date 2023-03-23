@@ -72,10 +72,8 @@
         "secondary_menu_linklist": "new-secondary",
         "tertiary_menu_linklist": "mobile-secondary",
         "menu_bottom_button_text": "SHOP ALL SKINCARE",
-        "menu_bottom_button_link": "shopify:\/\/collections",
+        "menu_bottom_button_link": "shopify:\/\/collections\/all",
         "menu_bottom_button_type": "btn--primary",
-        "menu_bottom_button_size": "btn--small",
-        "menu_bottom_button_style": "btn--solid",
         "menu_button_textrich": "<p><strong>OVER 2000 5 STAR REVIEWS  <\/strong>★★★★★<strong> <\/strong><\/p>"
       }
     }
