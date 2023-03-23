@@ -229,7 +229,6 @@
     <!-- Theme Javascript ============================================================== -->
     <script src="{{ 'vendor.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'theme.js' | asset_url }}" defer="defer"></script>
-
     {%- comment -%}
     If you need to do some edits in Theme JS use theme.dev.js file
 
@@ -320,8 +319,8 @@
     @media only screen and (min-width: 1200px) {
   .stamped-badge{
     
-    position: relative;
-    left: 290px;
+    float: right !important;
+}
     
   }
 }
@@ -329,7 +328,7 @@
   .stamped-badge{
     
     position: relative;
-    left: 97px;
+    left: 127px;
     
   }
 }
@@ -338,6 +337,25 @@
 
 {% endif%}
 
+{% if template != "product" %}
+
+  <style>
+
+
+      .stamped-badge-caption[data-reviews][data-label][data-version="2"]>span, .stamped-badge-caption {
+      font-size: 0px;
+      }
+      
+         .stamped-product-reviews-badge .stamped-badge-caption[data-reviews][data-label][data-version="2"]:after {
+           content: '('attr(data-reviews)') ' !Important;
+           font-size:  14px;
+       }
+  
+
+    
+  </style>
+    
+{% endif%}
     <!-- And above this comment line ================================================== -->
   </body>
 </html>
