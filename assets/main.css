@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap);
 .header-v2 .optimazed__version .drawer__head {
   display: flex;
   justify-content: center;
@@ -64,7 +65,7 @@
   font-weight: 400;
   font-size: 14px;
   color: #3D3936;
-  text-transform: capitalize;
+  text-transform: uppercase;
   letter-spacing: 0px;
 }
 .header-v2 .optimazed__version .drawer__body .drawer__content .container__secondary_navmenu .sliderule__wrapper .sliderow .sliderow__title:hover {
@@ -106,9 +107,71 @@
   .slideshow-v2 .desktop {
     display: none !important;
   }
+  .slideshow-v2 .frame {
+    grid-template-columns: none !important;
+    grid-template-rows: auto;
+    overflow-x: hidden;
+  }
+  .slideshow-v2 .frame .hero__image {
+    position: relative;
+  }
+  .slideshow-v2 .frame .hero__image .image__hero__frame {
+    position: relative;
+  }
+  .slideshow-v2 .frame .hero__content__wrapper {
+    grid-row-start: 2;
+  }
+  .slideshow-v2 .frame .hero__content__wrapper .hero__content {
+    padding-top: 34px;
+    padding-bottom: 26px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .slideshow-v2 .frame .hero__content__wrapper .hero__content .hero__title {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 35px;
+    text-align: center;
+    color: #000000;
+  }
+  .slideshow-v2 .frame .hero__content__wrapper .hero__content .hero__title p {
+    margin: 0px;
+  }
+  .slideshow-v2 .frame .hero__content__wrapper .hero__content .hero__description {
+    margin-top: 9px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    text-align: center;
+    color: #000000;
+  }
+  .slideshow-v2 .frame .hero__content__wrapper .hero__content .hero__description p {
+    margin: 0px;
+  }
+  .slideshow-v2 .secondary_button_wrapper {
+    position: absolute;
+    bottom: 30px;
+    right: 0px;
+    z-index: 20;
+  }
+  .slideshow-v2 .secondary_button_wrapper .btn {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
 }
 @media only screen and (min-width: 748px) {
   .slideshow-v2 .mobile {
     display: none !important;
   }
+}
+.slideshow-v2 .subordonate-item {
+  display: none;
+  position: relative;
+}
+.slideshow-v2 .slideshow__slide {
+  position: relative;
 }
