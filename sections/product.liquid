@@ -30,9 +30,7 @@
   data-tall-layout="{% if section.settings.image_layout == 'stacked' or section.settings.image_layout == 'grid-1' or section.settings.image_layout == 'grid-2' %}true{% else %}false{% endif %}"
   data-slideshow-disabled-mobile='{% if section.settings.mobile_image_style == 'slider' %}true{% else %}false{% endif %}'
   data-cart-bar="{{ show_cart_bar }}"
-  data-image-zoom-enable="{{ section.settings.enable_zoom }}">
-
-  <!-- /snippets/product.liquid -->
+  data-image-zoom-enable="{{ section.settings.enable_zoom }}"><!-- /snippets/product.liquid -->
 
   {% comment %}
   Renders product content
@@ -787,8 +785,8 @@
 <script type="application/ld+json">
   {
   "@context": "http://schema.org/",
-    "@type": "Product",
-    "name": {{ product.title | json }},
+          "@type": "Product",
+          "name": {{ product.title | json }},
   "url": {{ shop.url | append: product.url | json }},
   {%- if product.featured_media -%}
     {%- assign media_size = product.featured_media.preview_image.width -%}
@@ -803,7 +801,7 @@
   {%- if product.metafields.reviews.rating.value != blank -%}
     "aggregateRating": {
     "@type": "AggregateRating",
-          "ratingValue": "{{ product.metafields.reviews.rating.value }}",
+                      "ratingValue": "{{ product.metafields.reviews.rating.value }}",
     "ratingCount": "{{ product.metafields.reviews.rating_count.value }}",
     "bestRating": "{{ product.metafields.reviews.rating.value.scale_max }}",
     "worstRating": "{{ product.metafields.reviews.rating.value.scale_min }}"
@@ -811,7 +809,7 @@
   {%- endif -%}
   "brand": {
   "@type": "Organization",
-      "name": {{ product.vendor | json }}
+            "name": {{ product.vendor | json }}
   },
   "offers": [
   {%- for variant in product.variants -%}
