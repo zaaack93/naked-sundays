@@ -1,0 +1,10 @@
+.template-product{
+    @media only screen and (max-width: 749px){
+        .product__title__wrapper{
+            padding-right: 0px;
+            .product__title{
+                font-size: 20px;
+            }
+        }
+    }
+}
