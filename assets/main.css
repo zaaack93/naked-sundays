@@ -188,3 +188,9 @@
   padding-bottom: 0px;
   margin-bottom: 5px;
 }
+.template-product .rc-widget {
+  padding-bottom: 15px !important;
+}
+.template-product .rc-widget .rc-subscription-details {
+  display: none;
+}

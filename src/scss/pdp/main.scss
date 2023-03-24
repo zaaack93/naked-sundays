@@ -12,4 +12,12 @@
         padding-bottom: 0px;
         margin-bottom: 5px;
     }
+
+    //rc otpimisation
+    .rc-widget{
+        padding-bottom: 15px !important;
+        .rc-subscription-details{
+            display: none;
+        }
+    }
 }
