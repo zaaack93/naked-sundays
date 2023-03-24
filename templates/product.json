@@ -154,7 +154,7 @@
           "type": "icon",
           "settings": {
             "icon_name": "icon-truck",
-            "icon_size": 30,
+            "icon_size": 25,
             "icon_color": "#ffa3e1",
             "title": "Free AU Shipping over $49",
             "width": "half",
@@ -166,7 +166,7 @@
           "settings": {
             "icon_name": "icon-smile",
             "image": "shopify:\/\/shop_images\/ap.png",
-            "icon_size": 30,
+            "icon_size": 25,
             "icon_color": "#ffa3e1",
             "title": "Afterpay & Zip Available",
             "width": "half",
