@@ -194,3 +194,7 @@
 .template-product .rc-widget .rc-subscription-details {
   display: none;
 }
+.template-product .radio__button input[type=radio]:checked + label {
+  background: #E2DEF9;
+  /* add any other styles you want for the active state */
+}

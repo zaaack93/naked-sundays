@@ -20,4 +20,11 @@
             display: none;
         }
     }
+    //highlight label selected css
+    .radio__button{
+        input[type="radio"]:checked + label {
+            background: #E2DEF9;
+            /* add any other styles you want for the active state */
+        }
+    }
 }
