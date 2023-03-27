@@ -31,7 +31,7 @@
 -%}
 {% capture image_link %}
   {% assign imgAssetLink = 'menu-link-' | append: link.handle %}
-  {% assign imgAssetLink = imgAssetLink | append: '.png' %}
+  {% assign imgAssetLink = imgAssetLink | append: '.jpg' %}
   {% assign imgAssetLink = imgAssetLink | file_url %}
   {% if imgAssetLink != blank %}
     <img
