@@ -4,6 +4,7 @@
   "sections": {
     "section-newsletter": {
       "type": "section-newsletter",
+      "disabled": true,
       "blocks": {
         "newsletter-0": {
           "type": "image",
