@@ -122,7 +122,7 @@
   }
   .slideshow-v2 .frame .hero__content__wrapper .hero__content {
     padding-top: 34px;
-    padding-bottom: 26px;
+    padding-bottom: 35px;
     padding-left: 0px;
     padding-right: 0px;
   }
@@ -134,12 +134,14 @@
     line-height: 35px;
     text-align: center;
     color: #000000;
+    margin-bottom: 0px;
   }
   .slideshow-v2 .frame .hero__content__wrapper .hero__content .hero__title p {
     margin: 0px;
   }
   .slideshow-v2 .frame .hero__content__wrapper .hero__content .hero__description {
-    margin-top: 9px;
+    margin-top: 8px;
+    margin-bottom: 0px;
     font-family: "Poppins";
     font-style: normal;
     font-weight: 400;
@@ -150,6 +152,13 @@
   }
   .slideshow-v2 .frame .hero__content__wrapper .hero__content .hero__description p {
     margin: 0px;
+  }
+  .slideshow-v2 .frame .hero__content__wrapper .hero__content .hero__button-group {
+    margin: 0px;
+  }
+  .slideshow-v2 .frame .hero__content__wrapper .hero__content .hero__button-group .hero__button {
+    margin-top: 26px;
+    margin-bottom: 0px;
   }
   .slideshow-v2 .secondary_button_wrapper {
     position: absolute;
