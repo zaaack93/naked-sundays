@@ -1,0 +1,17 @@
+{% assign tabsProud = product.metafields.custom.product_prod_to_be.value %}
+{% if tabsProud != blank %}
+  <ul class="tab-proud-be">
+    {% for prod in tabsProud %}
+      {% assign i = forloop.index0 %}
+      <div class="item item--{{ i }}">
+        {% if prod.proud-image != blank %}
+          <img src="{{ prod.proud-image | img_url:"master" }}" alt="{{prod.proud-title}}">
+        {% endif %}
+
+        {% if prod.proud-title != blank %}
+          <li>{{ prod.proud-title }}</li>
+        {% endif %}
+      </div>
+    {% endfor %}
+  </ul>
+{% endif %}

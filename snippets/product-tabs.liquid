@@ -1,16 +1,14 @@
 <!-- /snippets/product-tabs.liquid -->
 {% comment %}
-    Renders product tabs
+Renders product tabs
 
-    Accepts:
-    - section: {Object} Current section (required)
-    - product: {Object} Current product (optional)
+Accepts:
+- section: {Object} Current section (required)
+- product: {Object} Current product (optional)
 
-    Usage:
-    {% render 'product-tabs', section: section, product: product  %}
-{% endcomment %}
-
-{%- liquid
+Usage:
+{% render 'product-tabs', section: section, product: product  %}
+{% endcomment %}{%- liquid
   assign product_description_content = product.description | strip
   assign truncate_string = 'products.general.read_more' | t
   assign show_more_button = block.settings.show_read_more
@@ -27,15 +25,20 @@
   endif
 -%}
 
-{%- if block.settings.style == 'tabs' -%}
+  {%- if block.settings.style == 'tabs' -%}
   {%- assign tab_links_html = '' -%}
   {%- assign tab_contents_html = '' -%}
   {%- assign count = 0 -%}
 
-  {%- if product_description_content != blank -%}
-    {%- capture tab_links_html -%}
-      <li class="tab-link tab-link-0" data-block-id="{{ section.id | append: '-0' }}" data-focus-element data-tab="0" tabindex="0" data-attributes-placeholder>
-        <span>{{ 'products.general.description' | t }}</span>
+    {%- if product_description_content != blank -%}
+      {%- capture tab_links_html -%}
+        <li
+        class="tab-link tab-link-0"
+        data-block-id="{{ section.id | append: '-0' }}"
+        data-focus-element
+        data-tab="0"
+        tabindex="0"
+        data-attributes-placeholder> <span>{{ 'products.general.description' | t }}</span>
       </li>
     {%- endcapture -%}
 
@@ -46,6 +49,9 @@
             <div class="tab-content__entry" data-truncated-content="tab-content__entry--truncate">
               {{ product_description_content }}
             </div>
+            {%- if product.metafields.my_fields.enable_tab_proud_to_be -%}
+              {% render 'tab-prod-to-be' %}
+            {%- endif -%}
           </div>
 
           {%- if show_more_button -%}
@@ -71,7 +77,13 @@
       {%- capture tab_links_html -%}
         {{ tab_links_html }}
 
-        <li class="tab-link tab-link-{{ count }}" data-focus-element data-tab="{{ count }}" data-block-id="{{ block.id }}" tabindex="0" {{ block.shopify_attributes }}>
+        <li
+          class="tab-link tab-link-{{ count }}"
+          data-focus-element
+          data-tab="{{ count }}"
+          data-block-id="{{ block.id }}"
+          tabindex="0"
+          {{ block.shopify_attributes }}>
           <span>{{ title }}</span>
         </li>
       {%- endcapture -%}
@@ -91,16 +103,25 @@
   {%- if tab_contents_html -%}
     <div class="product-tabs" data-tabs-holder>
       <div class="tabs__head product-tabs__head">
-        <ul class="tabs product-tabs-title" data-scrollbar data-scrollbar-slider>
+        <ul
+          class="tabs product-tabs-title"
+          data-scrollbar
+          data-scrollbar-slider>
           {{ tab_links_html }}
         </ul>
 
-        <button type="button" class="tabs__arrow tabs__arrow--prev product-tabs__arrow product-tabs__arrow--prev is-hidden" data-scrollbar-arrow-prev>
+        <button
+          type="button"
+          class="tabs__arrow tabs__arrow--prev product-tabs__arrow product-tabs__arrow--prev is-hidden"
+          data-scrollbar-arrow-prev>
           {%- render 'icon-nav-arrow-left' -%}
           <span class="visually-hidden">{{ 'products.general.see_all' | t }}</span>
         </button>
 
-        <button type="button" class="tabs__arrow tabs__arrow--next product-tabs__arrow product-tabs__arrow--next is-hidden" data-scrollbar-arrow-next>
+        <button
+          type="button"
+          class="tabs__arrow tabs__arrow--next product-tabs__arrow product-tabs__arrow--next is-hidden"
+          data-scrollbar-arrow-next>
           {%- render 'icon-nav-arrow-right' -%}
           <span class="visually-hidden">{{ 'products.general.see_all' | t }}</span>
         </button>
@@ -110,7 +131,10 @@
     </div>
   {%- endif -%}
 {%- elsif block.settings.style == 'accordions' -%}
-  <div class="product-accordion" data-accordion data-accordion-expand="true">
+  <div
+    class="product-accordion"
+    data-accordion
+    data-accordion-expand="true">
     <div class="accordion">
       {%- assign accordion_blocks_html = '' -%}
       {%- assign accordion_description_attr = '' -%}
@@ -127,7 +151,13 @@
             {{ accordion_blocks_html }}
 
             <div class="accordion-row">
-              <p class="accordion-toggle" tabindex="0" data-focus-element data-accordion-toggle data-block-id="{{ block.id }}-{{ forloop.index }}" {{ block.shopify_attributes }}>
+              <p
+                class="accordion-toggle"
+                tabindex="0"
+                data-focus-element
+                data-accordion-toggle
+                data-block-id="{{ block.id }}-{{ forloop.index }}"
+                {{ block.shopify_attributes }}>
                 {{ title }}
 
                 {%- render 'icon-plus' -%}
@@ -144,7 +174,12 @@
 
       {%- if product_description_content != blank -%}
         <div class="accordion-row">
-          <p class="accordion-toggle" tabindex="0" data-focus-element data-accordion-toggle {{ accordion_description_attr }}>
+          <p
+            class="accordion-toggle"
+            tabindex="0"
+            data-focus-element
+            data-accordion-toggle
+            {{ accordion_description_attr }}>
             {{ 'products.general.description' | t }}
 
             {%- render 'icon-plus' -%}
@@ -157,6 +192,9 @@
                 <div class="accordion-content__entry" data-truncated-content="accordion-content__entry--truncate">
                   {{ product_description_content }}
                 </div>
+                {%- if product.metafields.my_fields.enable_tab_proud_to_be -%}
+                  {% render 'tab-prod-to-be' %}
+                {%- endif -%}
               </div>
               {%- if show_more_button -%}
                 <div class="accordion-content__actions">

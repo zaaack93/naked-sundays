@@ -207,3 +207,21 @@
   background: #E2DEF9;
   /* add any other styles you want for the active state */
 }
+.template-product ul.tab-proud-be {
+  list-style: none;
+  display: flex;
+  margin-top: 20px;
+  flex-wrap: wrap;
+  margin-left: 0px;
+}
+.template-product ul.tab-proud-be div.item {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  padding-bottom: 10px;
+}
+.template-product ul.tab-proud-be div.item img {
+  max-width: 70px;
+  height: auto;
+  margin: 10px 20px 10px 0px !important;
+}
