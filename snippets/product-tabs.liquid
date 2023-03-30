@@ -49,9 +49,7 @@ Usage:
             <div class="tab-content__entry" data-truncated-content="tab-content__entry--truncate">
               {{ product_description_content }}
             </div>
-            {%- if product.metafields.my_fields.enable_tab_proud_to_be -%}
-              {% render 'tab-prod-to-be' %}
-            {%- endif -%}
+            {% render 'tab-prod-to-be' %}
           </div>
 
           {%- if show_more_button -%}
@@ -192,9 +190,7 @@ Usage:
                 <div class="accordion-content__entry" data-truncated-content="accordion-content__entry--truncate">
                   {{ product_description_content }}
                 </div>
-                {%- if product.metafields.my_fields.enable_tab_proud_to_be -%}
-                  {% render 'tab-prod-to-be' %}
-                {%- endif -%}
+                {% render 'tab-prod-to-be' %}
               </div>
               {%- if show_more_button -%}
                 <div class="accordion-content__actions">

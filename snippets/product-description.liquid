@@ -32,9 +32,7 @@
               <div class="product__description__content__entry" data-truncated-content="product__description__content__entry--truncate">
                 {{ product_description_content }}
               </div>
-              {%- if product.metafields.my_fields.enable_tab_proud_to_be -%}
-                {% render 'tab-prod-to-be' %}
-              {%- endif -%}
+              {% render 'tab-prod-to-be' %}
             </div>
 
             <div class="product__description__content__actions">
