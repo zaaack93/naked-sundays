@@ -103,7 +103,7 @@
             "icon_color": "#ffa3e1",
             "title": "{{ product.metafields.custom.key_benefit_1.value }}",
             "width": "full",
-            "padding_bottom": 6
+            "padding_bottom": 10
           }
         },
         "4daa77ee-af23-4026-b933-d80a5b825775": {
@@ -114,7 +114,7 @@
             "icon_color": "#ffa3e1",
             "title": "{{ product.metafields.custom.key_benefit_2.value }}",
             "width": "full",
-            "padding_bottom": 6
+            "padding_bottom": 10
           }
         },
         "43f9c98e-061b-4757-8d43-fba3927464a7": {

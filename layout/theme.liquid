@@ -311,37 +311,34 @@
 
 <!--Normal Product Pages without sale-->
 
-{% if product.compare_at_price < product.price and template == "product" %}
-  
+{% if product.price > product.compare_at_price %}     
   <style>
 
-   .product__block.review-flex {
+  .product__block.review-flex {
     display: flex !important;
-}    
-    
+}
     @media only screen and (min-width: 1200px) {
   .stamped-badge{
     position: absolute;
-    right: 57px;
-}
+    right: 115px;
+  }
+  
 }
 
-      @media only screen and (max-width: 600px) {
-  .stamped-badge{
-    
+ @media only screen and (max-width: 600px) {
+  .stamped-badge{    
     position: relative;
-    left: 127px;
-    
+    left: 93px;  
   }
 }
-  </style>
+  </style> 
 
-{% endif%}
+{% endif %} 
 <!--Normal Product Pages without sale-->
 
 <!--Changes on the collection pages-->
 
-{% if template != "product" %}
+{% if template == "collection" %}
 
   <style>
 
@@ -391,7 +388,6 @@
 </style>
 {% endif%}
 <!-- if product on Sale-->
-
     <!-- And above this comment line ================================================== -->
   </body>
 </html>
