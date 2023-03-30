@@ -10330,6 +10330,7 @@
      * Init slider
      */
     initSliders() {
+      here
       this.slider = new Slider(this.barHolder);
 
       if (this.slider.flkty) {

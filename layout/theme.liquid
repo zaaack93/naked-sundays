@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="{{ settings.accent_primary }}">
     <link rel="canonical" href="{{ canonical_url }}">
-    <link rel="preconnect"
+    <link
+    rel="preconnect"
       href="https://cdn.shopify.com"
       crossorigin>
     <!-- ======================= Broadcast Theme V4.0.0 ========================= -->
@@ -302,92 +303,118 @@
     just cut this next line and paste it outside this comment:
     <script src="{{ 'custom.js' | asset_url }}" defer="defer"></script>
     {%- endcomment -%}
-  <!-- Paste marketing code or third party scripts below this comment line ============== -->
+    <!-- Paste marketing code or third party scripts below this comment line ============== -->
 
-<!-- Stamped - Begin script -->
-<script async type="text/javascript" id="stamped-script-widget" data-api-key="pubkey-6n65E39870som559RFoV43klBKx6xe" src="https://cdn1.stamped.io/files/widget.min.js"></script>
-<!-- Stamped - End script -->
+    <!-- Stamped - Begin script --><script
+      async
+      type="text/javascript"
+      id="stamped-script-widget"
+      data-api-key="pubkey-6n65E39870som559RFoV43klBKx6xe"
+      src="https://cdn1.stamped.io/files/widget.min.js"> </script>
+    <!-- Stamped - End script -->
+    <script>
+      let intervalId = setInterval(function() {
+        if (isInitializedStamped) {
+
+// Your code here...
+// Get the current width and height of the page
+// Add a 1px border to the HTML element
+          document.documentElement.style.border = '1px solid black';
+
+// Wait for 100 milliseconds
+          setTimeout(() => {
+
+// Remove the border from the HTML element
+            document.documentElement.style.border = '';
+          }, 1000);
+
+// Stop the interval
+          clearInterval(intervalId);
+        }
+      }, 1000);
+    </script>
 
 
-<!--Normal Product Pages without sale-->
+    <!--Normal Product Pages without sale-->
 
-{% if product.price > product.compare_at_price %}     
-  <style>
+    {% if product.price > product.compare_at_price %}
+      <style>
 
-  .product__block.review-flex {
-    display: flex !important;
-}
-    @media only screen and (min-width: 1200px) {
-  .stamped-badge{
-    position: absolute;
-    right: 115px;
-  }
-  
-}
+        .product__block.review-flex {
+          display: flex !important;
+        }
+        @media only screen and (min-width: 1200px) {
+          .stamped-badge {
+            position: absolute;
+            right: 115px;
+          }
 
- @media only screen and (max-width: 600px) {
-  .stamped-badge{    
-    position: relative;
-    left: 93px;  
-  }
-}
-  </style> 
+        }
 
-{% endif %} 
-<!--Normal Product Pages without sale-->
+        @media only screen and (max-width: 600px) {
+          .stamped-badge {
+            position: relative;
+            left: 93px;
+          }
+        }
+      </style>
 
-<!--Changes on the collection pages-->
+    {% endif %}
+    <!--Normal Product Pages without sale-->
 
-{% if template == "collection" %}
+    <!--Changes on the collection pages-->
 
-  <style>
+    {% if template == "collection" %}
 
-      .stamped-badge-caption[data-reviews][data-label][data-version="2"]>span, .stamped-badge-caption {
-      font-size: 0px;
-      }
-      
-         .stamped-product-reviews-badge .stamped-badge-caption[data-reviews][data-label][data-version="2"]:after {
-           content: '('attr(data-reviews)') ' !Important;
-           font-size:  14px;
-       }
-    
-  </style>
-    
-{% endif%}
+      <style>
 
- <!--Changes on the collection pages-->
+        .stamped-badge-caption[data-reviews][data-label][data-version="2"] > span,
+        .stamped-badge-caption {
+          font-size: 0;
+        }
 
-    
+        .stamped-product-reviews-badge .stamped-badge-caption[data-reviews][data-label][data-version="2"]:after {
+          content: '('attr(data-reviews)') ' !Important;
+          font-size: 14px;
+        }
+      </style>
+
+    {% endif %}
+
+    <!--Changes on the collection pages-->
+
+
 
     <!-- if product on Sale-->
 
-{% if product.compare_at_price > product.price and template == "product" %}
+    {% if product.compare_at_price > product.price and template == "product" %}
 
-<style>
+      <style>
 
-@media only screen and (min-width: 1200px){
-  .stamped-main-badge{
-   position: absolute;
-    right: 125px;}
+        @media only screen and (min-width: 1200px) {
+          .stamped-main-badge {
+            position: absolute;
+            right: 125px;
+          }
 
-.product__block.review-flex {
-    display: flex !important;
-}    
-}
+          .product__block.review-flex {
+            display: flex !important;
+          }
+        }
 
-    @media only screen and (max-width: 600px) {
-     .product__block.review-flex {
-    display: block !important;
-}
-    .stamped-badge{
-     position: inherit;
-      padding:5px 0px;
-    }
-    
-}
-</style>
-{% endif%}
-<!-- if product on Sale-->
+        @media only screen and (max-width: 600px) {
+          .product__block.review-flex {
+            display: block !important;
+          }
+          .stamped-badge {
+            position: inherit;
+            padding: 5px 0;
+          }
+
+        }
+      </style>
+    {% endif %}
+    <!-- if product on Sale-->
     <!-- And above this comment line ================================================== -->
   </body>
 </html>
