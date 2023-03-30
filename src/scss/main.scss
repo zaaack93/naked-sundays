@@ -2,3 +2,12 @@
 @import "./slide-show/main.scss";
 
 @import "./pdp/main.scss";
+//stamp container
+
+.product-grid {
+    .product-item {
+        .product-link {
+            padding-bottom: 20px;
+        }
+    }
+}
