@@ -226,6 +226,20 @@
   height: auto;
   margin: 10px 20px 10px 0px !important;
 }
+.template-product .price_with_reviews_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  row-gap: 10px;
+}
+.template-product .price_with_reviews_container .stamped-badge {
+  display: flex;
+  align-items: center;
+  left: 0;
+}
 
 .product-grid .product-item .product-link {
   padding-bottom: 20px;

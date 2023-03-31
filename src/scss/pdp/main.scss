@@ -47,4 +47,20 @@
             }
         }
     }
+
+    //product price with reviews
+    .price_with_reviews_container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        row-gap: 10px;
+        .stamped-badge{
+            display: flex;
+            align-items: center;
+            left: 0;
+        }
+    }
 }
