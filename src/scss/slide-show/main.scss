@@ -81,4 +81,11 @@
     .slideshow__slide {
         position: relative;
     }
+    .hero__content__wrapper {
+        .hero__content {
+            .hero__title p ,.hero__description p{
+                margin: 0px;
+            }
+        }
+    }
 }
