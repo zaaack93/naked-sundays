@@ -9,20 +9,20 @@ Accepts:
 Usage:
 {% render 'product-tabs', section: section, product: product  %}
 {% endcomment %}{%- liquid
-  assign product_description_content = product.description | strip
-  assign truncate_string = 'products.general.read_more' | t
-  assign show_more_button = block.settings.show_read_more
+assign product_description_content = product.description | strip
+assign truncate_string = 'products.general.read_more' | t
+assign show_more_button = block.settings.show_read_more
 
-  assign truncated_holder = ''
-  if show_more_button
-      assign truncated_holder = 'data-truncated-holder'
-  endif
+assign truncated_holder = ''
+if show_more_button
+    assign truncated_holder = 'data-truncated-holder'
+endif
 
-  assign truncate_html = '<button type="button" class="caps--link" data-truncated-button>' | append: truncate_string | append: '</button>'
+assign truncate_html = '<button type="button" class="caps--link" data-truncated-button>' | append: truncate_string | append: '</button>'
 
-  if product == nil
-    assign product_description_content = 'home_page.onboarding.no_description' | t
-  endif
+if product == nil
+  assign product_description_content = 'home_page.onboarding.no_description' | t
+endif
 -%}
 
   {%- if block.settings.style == 'tabs' -%}
@@ -132,7 +132,7 @@ Usage:
   <div
     class="product-accordion"
     data-accordion
-    data-accordion-expand="true">
+    data-accordion-expand="false">
     <div class="accordion">
       {%- assign accordion_blocks_html = '' -%}
       {%- assign accordion_description_attr = '' -%}
