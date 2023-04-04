@@ -4775,7 +4775,9 @@
 
       slideToggle(body);
 
-      this.closeOtherAccordions(element);
+      if(!element.attributes.includes('data-not-toggled')){
+        this.closeOtherAccordions(element);
+      }
 
       element.dispatchEvent(
         new CustomEvent('theme:form:sticky', {

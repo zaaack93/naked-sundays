@@ -154,6 +154,7 @@ endif
                 tabindex="0"
                 data-focus-element
                 data-accordion-toggle
+                data-not-toggled
                 data-block-id="{{ block.id }}-{{ forloop.index }}"
                 {{ block.shopify_attributes }}>
                 {{ title }}
@@ -176,6 +177,7 @@ endif
             class="accordion-toggle"
             tabindex="0"
             data-focus-element
+            data-not-toggled
             data-accordion-toggle
             {{ accordion_description_attr }}>
             {{ 'products.general.description' | t }}
