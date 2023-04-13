@@ -31,9 +31,8 @@
 document.addEventListener(
   'theme:cart:change',
   function (event) {
-      console.log(event.detail.cart.item_count)
       if(event.detail.cart.item_count==0){
-        document.querySelector('.header__cart__status_drawer').innerHTML==''
+        document.querySelector('.header__cart__status_drawer').innerHTML = ''
       }
       else if (event.detail.cart.item_count==1){
         document.querySelector('.header__cart__status_drawer').innerHTML = `(${event.detail.cart.item_count} ITEM)`;

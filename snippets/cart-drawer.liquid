@@ -31,7 +31,7 @@
 {%- endunless -%}
 
 {%- capture upsell_products -%}
-  {%- render 'cart-line-items', part: 'upsell-items' -%}
+  {%- render 'cart-line-items-drawer', part: 'upsell-items' -%}
 {%- endcapture -%}
 
 <div class="drawer drawer--cart" id="cart-drawer" data-cart-drawer tabindex="0">

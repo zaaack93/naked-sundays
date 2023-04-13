@@ -2512,8 +2512,12 @@
               },
             })
           );
-
-          return fetch(theme.routes.cart + '?section_id=api-cart-items');
+            if(window.location.pathname!='/cart'){
+              return fetch(theme.routes.cart + '?section_id=api-cart-items-drawer');
+            }
+            else{
+              return fetch(theme.routes.cart + '?section_id=api-cart-items');
+            }
         })
         .then((response) => response.text())
         .then((response) => {
