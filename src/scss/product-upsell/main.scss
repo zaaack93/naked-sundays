@@ -1,0 +1,189 @@
+//for product page and cart page
+.product__commun_upsell {
+    .product-upsell {
+      border: 1px solid #F1F0F0;
+  
+      .product-upsell__image {
+        width: 126px;
+      }
+  
+      .product-upsell__content {
+        background-color: white;
+        width: calc(100% - 126px);
+        padding: 15px 26px 16px;
+  
+        .product-upsell__title {
+          font-family: inherit;
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 24px;
+          color: #000000;
+          margin-bottom: 10px;
+        }
+  
+        .product-upsell__price {
+          margin: 0;
+          font-weight: 400;
+          font-size: 15px;
+          line-height: 20px;
+          color: #000000;
+        }
+  
+        .product-upsell__btn {
+          position: relative;
+          top: initial;
+          right: initial;
+          bottom: initial;
+          margin-top: 10px;
+          padding: 6px 34px 7px 35px;
+          background: #FFA3E1;
+          border-radius: 20px;
+  
+          .btn__plus {
+            display: none;
+          }
+  
+          .btn__text {
+            width: auto;
+            opacity: 1;
+            visibility: visible;
+            font-family: 'Poppins';
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 21px;
+            letter-spacing: 0.02em;
+            text-transform: uppercase;
+            color: #000000;
+          }
+  
+          &.is-loading,
+          &.is-added {
+            .btn__text {
+              opacity: 0;
+            }
+          }
+        }
+      }
+  
+      @media only screen and (max-width: 989px) {
+        .product-upsell__content {
+          padding: 24px 7px 24px 18px;
+  
+          .product-upsell__title {
+            font-size: 14px;
+            line-height: 18px;
+            margin-bottom: 4px;
+          }
+  
+          .product-upsell__price {
+            font-size: 12px;
+            line-height: 16px;
+          }
+  
+          .product-upsell__btn {
+            margin-top: 9px;
+            padding: 6px 24px;
+            min-width: 134px;
+  
+            .btn__text {
+              font-size: 10px;
+              line-height: 15px;
+            }
+          }
+        }
+      }
+  
+      @media only screen and (min-width: 990px) {
+        .product-upsell__content {
+          padding: 15px 26px 16px;
+  
+          .product-upsell__title {
+            font-size: 18px;
+            line-height: 24px;
+          }
+  
+          .product-upsell__price {
+            font-size: 15px;
+            line-height: 20px;
+          }
+  
+          .product-upsell__btn {
+            padding: 6px 34px 7px 35px;
+  
+            .btn__text {
+              font-size: 14px;
+              line-height: 21px;
+            }
+          }
+        }
+      }
+    }
+  }  
+
+.cart_upsell_container{
+    .product-upsell__image {
+        width: 90px;
+      }
+  
+      .product-upsell__content {
+        background-color: white;
+        width: calc(100% - 90px);
+        padding: 0px 26px;
+        
+        .product-upsell__skip{
+            display: none;
+        }
+        .product-upsell__title {
+          font-family: inherit;
+          font-weight: 500;
+          font-size: 12px;
+          line-height: 16px;
+          color: #000000;
+          margin-bottom: 7px;
+        }
+  
+        .product-upsell__price {
+          margin: 0;
+          font-weight: 400;
+          font-size: 10px;
+          line-height: 14px;
+          color: #000000;
+        }
+  
+        .product-upsell__btn {
+          position: relative;
+          top: initial;
+          right: initial;
+          bottom: initial;
+          margin-top: 7px;
+          padding: 6px 20px;
+          background: #FFA3E1;
+          border-radius: 20px;
+  
+          .btn__plus {
+            display: none;
+          }
+  
+          .btn__text {
+            width: auto;
+            opacity: 1;
+            visibility: visible;
+            font-family: 'Poppins';
+            font-weight: 500;
+            font-size: 10px;
+            line-height: 15px;
+            letter-spacing: 0.02em;
+            text-transform: uppercase;
+            color: #000000;
+          }
+  
+          &.is-loading,
+          &.is-added {
+            .btn__text {
+              opacity: 0;
+            }
+          }
+        }
+      }
+
+}

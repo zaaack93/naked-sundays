@@ -424,7 +424,7 @@
       "to": "To",
       "complementary_products_title": "Pairs well with",
       "upsell_title": "Complete the look:",
-      "upsell_add_to_cart": "Add",
+      "upsell_add_to_cart": "Add to cart",
       "upsell_out_of_stock": "Out of stock",
       "upsell_error_title": "Choose an upsell product",
       "upsell_error_info": "Use metafields to show a product here. Empty upsells will not show on live site.",
