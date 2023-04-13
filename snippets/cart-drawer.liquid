@@ -56,7 +56,15 @@
       {%- assign animation_delay = animation_delay | plus: animation_delay_increment -%}
     >
       <h3>{{ 'cart.general.title' | t }}</h3>
-  
+      <span
+        class="header__cart__status_drawer">
+      {% if cart.item_count == 1 %}
+        ({{ cart.item_count }} ITEM)
+      {%elsif cart.item_count > 1 %}
+        ({{ cart.item_count }} ITEMS)
+      {%endif%}
+      
+      </span>
       <button type="button" class="drawer__close" data-cart-toggle aria-label="{{ 'general.accessibility.close' | t }} {{ 'cart.general.title' | t }}">
         {%- render 'icon-cancel' -%}
       </button>
@@ -178,7 +186,7 @@
         data-items-holder
         style="--base-animation-delay: {{ animation_delay }}ms">
   
-        {%- render 'cart-line-items', part: 'line-items' -%}
+        {%- render 'cart-line-items-drawer', part: 'line-items' -%}
         {%- liquid
           comment
             Incraese animation delay by using the cart item count limited up to 3
@@ -476,13 +484,13 @@
             data-animation-duration="{{ animation_duration }}"
             data-animation-delay="{{ animation_delay }}"
             {%- assign animation_delay = animation_delay | plus: animation_delay_increment -%}>
-            <button type="submit" name="checkout" class="btn btn--primary btn--solid btn--full cart__checkout">
+            <a href="/cart" name="checkout" class="btn btn--primary btn--solid btn--full cart__checkout">
               {%- if settings.show_lock_icon -%}
                 {%- render 'animated-icon', filename: 'icon-lock' -%}
               {%- endif -%}
               
               {{- 'cart.general.checkout' | t -}}
-            </button>
+            </a>
           </div>
   
           <em class="cart__note"
@@ -490,7 +498,7 @@
             data-animation-duration="{{ animation_duration }}"
             data-animation-delay="{{ animation_delay }}"
             {%- assign animation_delay = animation_delay | plus: animation_delay_increment -%}>
-            {{- 'cart.general.subtotal_note' | t -}}
+            {{- 'cart.general.subtotal_note_optimized' | t -}}
           </em>
         </div>
   
