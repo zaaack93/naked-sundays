@@ -203,6 +203,34 @@ endif
           </div>
         </div>
       {%- endif -%}
+      {%- if block.settings.show_product_bundle and product.metafields.custom.product_bundle_list.value != blank -%}
+        <div class="accordion-row product-bundle-container">
+          <p
+            class="accordion-toggle"
+            tabindex="0"
+            data-focus-element
+            data-not-toggled
+            data-accordion-toggle>
+            {{ 'products.general.product_bundle' | t }}
+
+            {%- render 'icon-plus' -%}
+            {%- render 'icon-minus' -%}
+          </p>
+
+          <div class="rte accordion-content" data-accordion-body>
+            <div class="accordion-content__holder accordion-content__holder--truncate" {{ truncated_holder }}>
+              <div class="accordion-content__inner">
+                <div class="accordion-content__entry" data-truncated-content="accordion-content__entry--truncate">
+                  {% for productItem in product.metafields.custom.product_bundle_list.value %}
+                    {% render 'line-item-product-bundle' with line_item: productItem.product.value, description: productItem.short_description %}
+                  {% endfor %}
+                </div>
+                {% render 'tab-prod-to-be' %}
+              </div>
+            </div>
+          </div>
+        </div>
+      {%- endif -%}
 
       {{ accordion_blocks_html }}
     </div>
