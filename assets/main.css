@@ -337,6 +337,74 @@
     line-height: 16px;
   }
 }
+.template-product .product__selectors .custom-variant-picker-continer .radio__fieldset {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+  border-bottom: 0px;
+}
+.template-product .product__selectors .custom-variant-picker-continer .radio__fieldset .radio__legend {
+  margin: 0px;
+}
+.template-product .product__selectors .custom-variant-picker-continer .radio__fieldset .radio__legend .radio__legend__option-name {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  text-transform: capitalize;
+  color: #000000;
+  letter-spacing: 0px;
+}
+.template-product .product__selectors .custom-variant-picker-continer .radio__fieldset .radio__legend .radio__legend__value {
+  display: none;
+}
+.template-product .product__selectors .custom-variant-picker-continer .radio__fieldset .radio__buttons {
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+  row-gap: 6px;
+}
+.template-product .product__selectors .custom-variant-picker-continer .radio__fieldset .radio__buttons .radio__button {
+  padding: 0px;
+}
+.template-product .product__selectors .custom-variant-picker-continer .radio__fieldset .radio__buttons .radio__button label {
+  border: 1px solid #F0F0F0;
+  border-radius: 5px;
+  padding: 3px 5px;
+  display: flex;
+  -moz-column-gap: 26px;
+       column-gap: 26px;
+  align-items: center;
+}
+@media only screen and (max-width: 749px) {
+  .template-product .product__selectors .custom-variant-picker-continer .radio__fieldset .radio__buttons .radio__button label {
+    -moz-column-gap: 12px;
+         column-gap: 12px;
+  }
+}
+.template-product .product__selectors .custom-variant-picker-continer .radio__fieldset .radio__buttons .radio__button label img {
+  width: 55px;
+  height: 55px;
+  border-radius: 2px;
+}
+@media only screen and (max-width: 749px) {
+  .template-product .product__selectors .custom-variant-picker-continer .radio__fieldset .radio__buttons .radio__button label img {
+    width: 48px;
+    height: 48px;
+  }
+}
+.template-product .product__selectors .custom-variant-picker-continer .radio__fieldset .radio__buttons .radio__button label span {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: capitalize;
+  color: #000000;
+  letter-spacing: 0px;
+  text-align: left;
+}
 
 .product__commun_upsell .product-upsell {
   border: 1px solid #F1F0F0;

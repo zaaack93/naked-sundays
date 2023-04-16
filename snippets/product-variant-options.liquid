@@ -193,13 +193,14 @@
       name="properties[{{ 'products.product.sale_type' | t }}]"
       value="{{ 'products.product.pre_order' | t }}">
   {%- endif -%}
-
   {%- capture form_fields -%}
     {%- unless product.has_only_default_variant -%}
       {%- assign selects_counter = 0 -%}
       <div class="product__selectors">
         {%- for option in product.options_with_values -%}
           {%- assign option_name_handle_separator = option.name | handle | prepend: ',' | append: ',' -%}
+          {% assign prodOptionImgs = product.metafields.details.option_image | split: '|' %}
+          {% assign prodOptionImgset = prodOptionImgs[forloop.index0] | split: ',' %}
 
             {%- if settings.color_swatches -%}
             {% comment %} Determine if current option matches swatch handle translations {% endcomment %}
@@ -226,8 +227,7 @@
       assign show_size_link_inline = true
     endif
   endif -%}
-
-          <div class="selector-wrapper{% if settings.variant_lines and is_size_option %} selector-wrapper--size{% elsif settings.variant_lines or is_swatch_option %} selector-wrapper--fullwidth{% endif %}" data-option-position="{{ option.position }}">
+          <div class="selector-wrapper{% if settings.variant_lines and is_size_option %} selector-wrapper--size{% elsif settings.variant_lines or is_swatch_option %} selector-wrapper--fullwidth{% endif %} {%if product.template_suffix == 'choose-your-own' and product.metafields.details.option_image != blank %} custom-variant-picker-continer {%endif%}" data-option-position="{{ option.position }}">
             {%- if settings.variant_lines or is_swatch_option -%}
               {%- assign current_value = current_variant.options[forloop.index0] -%}
               <fieldset>
@@ -280,6 +280,9 @@
                             id="{{ input_id }}"
                             {% if value == current_value %}checked{% endif %}>
                           <label for="{{ input_id }}">
+                            {%if product.template_suffix == 'choose-your-own' and prodOptionImgset[forloop.index0] != blank %}
+                              <img src="{{ prodOptionImgset[forloop.index0]}}">
+                            {%endif%}
                             <span>{{ value | escape_once }}</span>
                           </label>
                         </span>
