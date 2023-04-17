@@ -224,7 +224,7 @@
                         label {
                             border: 1px solid #F0F0F0;
                             border-radius: 5px;
-                            padding: 3px 5px;
+                            padding: 3px 5px 3px 10px;
                             display: flex;
                             column-gap: 26px;
                             align-items: center;
@@ -244,7 +244,7 @@
                             }
 
                             span {
-                                font-family: inherit;
+                                font-family: 'Avenir Next Rounded';
                                 font-style: normal;
                                 font-weight: 500;
                                 font-size: 13px;

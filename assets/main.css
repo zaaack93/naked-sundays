@@ -371,7 +371,7 @@
 .template-product .product__selectors .custom-variant-picker-continer .radio__fieldset .radio__buttons .radio__button label {
   border: 1px solid #F0F0F0;
   border-radius: 5px;
-  padding: 3px 5px;
+  padding: 3px 5px 3px 10px;
   display: flex;
   -moz-column-gap: 26px;
        column-gap: 26px;
@@ -395,7 +395,7 @@
   }
 }
 .template-product .product__selectors .custom-variant-picker-continer .radio__fieldset .radio__buttons .radio__button label span {
-  font-family: inherit;
+  font-family: "Avenir Next Rounded";
   font-style: normal;
   font-weight: 500;
   font-size: 13px;
