@@ -31,6 +31,7 @@
 document.addEventListener(
   'theme:cart:change',
   function (event) {
+    if(document.querySelector('.header__cart__status_drawer')!=null){
       if(event.detail.cart.item_count==0){
         document.querySelector('.header__cart__status_drawer').innerHTML = ''
       }
@@ -40,6 +41,10 @@ document.addEventListener(
       else if (event.detail.cart.item_count>1){
         document.querySelector('.header__cart__status_drawer').innerHTML = `(${event.detail.cart.item_count} ITEMS)`;
       }
+    }
+
+    //trigger gift cart
+    console.log(event.detail.cart)
 })
 
   // ^^ Keep your scripts inside this IIFE function call to

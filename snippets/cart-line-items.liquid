@@ -186,7 +186,7 @@
           {%- endif -%}
         </p>
 
-        <div class="cart__quantity" data-quantity-holder>
+        <div class="cart__quantity" data-quantity-holder {% if line_item.product.tags contains 'free-gift' %}style="visibility:hidden;"{% endif %}>
           <button
             class="cart__quantity-minus"
             type="button"

@@ -3154,6 +3154,27 @@
       } else {
         this.cartDiscountHolder.classList.add(classes$L.hidden);
       }
+
+      var freeGiftProductHandles = [];
+      var freeGiftProductVariants = [];
+        var containsFreeProduct = false;
+        document.querySelectorAll('.free_gift_product .product-item').forEach(item => {
+          var handle = item.getAttribute("data-handle");
+          var variantID = item.getAttribute("data-variantid");
+          freeGiftProductHandles.push(handle);
+          freeGiftProductVariants.push(variantID);
+          containsFreeProduct = true;
+        });
+        if(data.total_price < 5000 && containsFreeProduct){
+          for(i=0; i<freeGiftProductHandles.length; i++) {
+            if(document.querySelectorAll('.cart-item[data-handle="'+freeGiftProductHandles[i]+'"]').length) {
+              alert(document.querySelectorAll('.cart-item[data-handle="'+freeGiftProductHandles[i]+'"]')[0].querySelector(".cart-item__remove").length);
+            }
+          }
+          setTimeout(function () {
+                    // location.reload();
+                   }, 1000);
+        }
     }
 
     /**

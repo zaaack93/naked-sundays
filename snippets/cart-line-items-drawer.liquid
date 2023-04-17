@@ -35,6 +35,7 @@
       data-animation-duration="500"
       data-animation-delay="{{ animation_delay }}"
       {%- assign animation_delay = animation_delay | plus: animation_delay_increment -%}
+      {% if line_item.product.tags contains 'free-gift' %}data-gift-item{%endif%}
     >
       <div class="cart__item__image">
         <a href="{{ line_item.url }}" aria-label="{{ line_item.title | escape }}">
@@ -188,7 +189,7 @@
           </div>
 
 
-        <div class="cart__quantity" data-quantity-holder>
+        <div class="cart__quantity" data-quantity-holder {% if line_item.product.tags contains 'free-gift' %}style="visibility:hidden;"{% endif %}>
           <button
             class="cart__quantity-minus"
             type="button"

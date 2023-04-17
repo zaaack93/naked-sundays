@@ -559,6 +559,121 @@
   opacity: 0;
 }
 
+/*****************************  cart page css *********************/
+.free_gift_message {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.free_gift_message .message-bg {
+  background-color: var(--COLOR-PRIMARY);
+  padding: 15px 15px;
+  font-size: 15px;
+}
+
+.free_gift_product {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.free_gift_product .message-bg {
+  background-color: var(--COLOR-PRIMARY);
+  padding: 15px 15px;
+  font-size: 15px;
+}
+
+.free_gift_product .gift_product {
+  margin: 0;
+  border: 1px solid #f0f0f0;
+  padding: 15px;
+  border-top: none;
+}
+
+.free_gift_product .gift_product .product-grid {
+  margin: 0 -15px;
+  justify-content: center;
+  row-gap: 0px;
+}
+
+.free_gift_product .gift_product .product-grid .product-item {
+  padding: 0 15px;
+}
+
+.free_gift_product .gift_product .product-grid .product-item .product-information {
+  padding: 15px 5px;
+}
+
+.free_gift_product .gift_product .product-grid .product-item .product-information .product_add {
+  display: block;
+}
+
+.free_gift_product .gift_product .product-grid .product-item .product-information .product_add .btn {
+  border-radius: 0;
+  margin-top: 10px;
+  display: block;
+  cursor: pointer;
+}
+
+.free_gift_product .gift_product .product-grid .product-item .product-information .product_add .btn.disabled {
+  color: #888;
+  background: transparent;
+  border: 1px solid #dadada;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.btn-wrap {
+  width: 100%;
+  grid-column: 1/-1;
+}
+
+.active .btn {
+  color: #888;
+  background: transparent;
+  border: 1px solid #dadada;
+}
+
+.imdone a {
+  color: #000;
+}
+
+@media (max-width: 675px) {
+  .cart {
+    margin: 0;
+  }
+}
+@media (max-width: 543px) {
+  .free_gift_product .gift_product .product-grid {
+    margin: 0 -8px;
+  }
+}
+#sca-fg-slider-cart {
+  display: none !important;
+}
+
+.congrates {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.congrates:after {
+  content: "";
+  border: solid black;
+  border-width: 0 1px 1px 0;
+  display: inline-block;
+  padding: 5px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.congrates.open:after {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+  margin-top: 7px;
+}
+
 .header__cart__status__holder .header__cart__status {
   background-color: #FFA3E1;
 }
