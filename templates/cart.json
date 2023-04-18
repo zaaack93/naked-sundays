@@ -3,7 +3,7 @@
     "main": {
       "type": "cart",
       "settings": {
-        "padding_top": 80,
+        "padding_top": 40,
         "padding_bottom": 50,
         "enable_freegift": true,
         "free_gift_limit": "20",
