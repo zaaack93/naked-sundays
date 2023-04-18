@@ -417,6 +417,7 @@
       "product_bundle": "What’s Included",
       "read_more": "Read more",
       "view_product": "View Product",
+      "notif_me":"Notify me when in stock",
       "reviews_with_count": {
         "one": "{{ count }} Review",
         "other": "{{ count }} Reviews"
@@ -438,6 +439,7 @@
       "sale_type": "Sale type",
       "pre_order": "Pre-order",
       "on_sale": "Sale",
+      "discount_html": "Save {{ savings }}",
       "unavailable": "Unavailable",
       "compare_at": "Compare at",
       "unit_price_label": "Unit price",

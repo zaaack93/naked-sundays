@@ -1,0 +1,54 @@
+.product-item{
+    .badge-box,.sale-box{
+        font-family: 'Avenir Next Rounded';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 20px;
+        /* identical to box height, or 167% */
+        font-variant: all-small-caps;
+        color: #E774B7;
+        padding: 0px 10px;
+        background: #FFFFFF;
+    }
+    .product-item__title{
+        font-family: 'Avenir Next Rounded';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        color: #000000;
+        margin-bottom: 6px;
+        @media only screen and (max-width: 749px) {
+            font-size: 15px;
+        }
+    }
+
+    .price{
+        margin: 0;
+        .sold-out{
+            font-family: 'Avenir Next Rounded';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 20px;
+            color: #E774B7;
+        }
+        .reback_to_stock{
+            font-family: 'Avenir Next Rounded';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            font-variant: all-small-caps;
+            color: #474747;
+            text-transform: uppercase;
+            padding: 0px;
+        }
+    }
+    .price:has(.sold-out){
+        display: flex;
+        justify-content: space-between;
+        column-gap: 10px;
+    }
+}

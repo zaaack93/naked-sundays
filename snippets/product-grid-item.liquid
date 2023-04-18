@@ -226,11 +226,13 @@
       data-aos-duration="{{ aos_duration }}"
       data-aos-anchor="{{ aos_anchor }}">{{ 'products.product.pre_order' | t }}</span>
   {%- elsif on_sale and sold_out == false -%}
+  
+    {%- capture savings -%}{{ product.compare_at_price | minus: product.price | money_without_trailing_zeros }}{%- endcapture -%}
     <span class="sale-box"
       data-aos="fade"
       data-aos-delay="{{ aos_image_delay }}"
       data-aos-duration="{{ aos_duration }}"
-      data-aos-anchor="{{ aos_anchor }}">{{ 'products.product.on_sale' | t }}</span>
+      data-aos-anchor="{{ aos_anchor }}">{{ 'products.product.discount_html' | t: savings: savings }}</span>
   {%- endif -%}
 
   {%- if settings.quickview_enable and current_variant -%}
@@ -442,6 +444,9 @@
     {% endif %}
   {% else %}
     <span class="sold-out">{{ 'products.product.sold_out' | t }}</span>
+    {% unless product.available %}
+      <button id="restock-{{ product.handle }}" class="reback_to_stock">{{ 'products.general.notif_me' | t }}</button>
+    {% endunless %}
   {% endif %}
 </span>
 {% if current_variant.unit_price %}
@@ -461,7 +466,10 @@
 {% endif %}
           </div>
         </div>
+        {% render 'product-callout-tags' with product:product%}
       </a>
+
+      
 
       {%- if siblings_html != blank -%}
         {{ siblings_html }}
