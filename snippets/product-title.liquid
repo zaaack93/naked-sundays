@@ -32,7 +32,7 @@
         <a href="{{ product.url }}">{{ product.title | strip_html }}</a>
       {%- endunless -%}
     </h1>
-
+    {% render 'product-callout-tags' with product:product%}
     {%- if block.settings.show_rating and product.metafields.reviews.rating.value != blank -%}
       <div class="product__badge">
         <button type="button" class="product__badge-link" data-scroll-to="#reviews-{{ product.id }}">

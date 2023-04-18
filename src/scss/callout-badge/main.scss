@@ -24,3 +24,25 @@
         max-width: 180px;
     }
 }
+.template-product{
+    .callout-container{
+        margin-top: 7px;
+        margin-bottom: 13px;
+        .callout-badge{
+            font-size: 11px;
+            padding-left: 14px;
+            padding-right: 14px;
+        }
+        @media only screen and (max-width: 450px) {
+            margin-top: 12px;
+            margin-bottom: 6px;
+            width: initial;
+            max-width: initial;
+            display: inline-block;
+            .callout-badge{
+                width: auto;
+                text-align: initial;
+            }
+        }
+    }
+}
