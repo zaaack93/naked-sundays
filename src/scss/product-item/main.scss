@@ -1,4 +1,10 @@
 .product-item{
+    .product-item__info{
+        padding-bottom: 32px;
+        .product-link{
+            padding-bottom: 0px;
+        }
+    }
     .badge-box,.sale-box{
         font-family: 'Avenir Next Rounded';
         font-style: normal;
@@ -50,5 +56,7 @@
         display: flex;
         justify-content: space-between;
         column-gap: 10px;
+        flex-wrap: wrap;
+        align-content: flex-start;
     }
 }

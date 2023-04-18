@@ -405,6 +405,28 @@
   letter-spacing: 0px;
   text-align: left;
 }
+.template-product .product__submit__item .btn--primary {
+  --BTN-PRIMARY-BG-COLOR:#FFA3E1;
+  --BTN-PRIMARY-BG-COLOR-BRIGHTER: #fface4;
+  letter-spacing: 0.05em;
+  font-weight: 500;
+  line-height: 22px;
+}
+@media only screen and (max-width: 749px) {
+  .template-product .product__submit__item .btn--primary {
+    font-size: 12px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    line-height: 18px;
+  }
+}
+.template-product .product__submit__item .select-popout {
+  height: 100%;
+}
+.template-product .product__submit__item .select-popout .select-popout__toggle {
+  height: 100%;
+  border-color: #FFA3E1;
+}
 
 .product__commun_upsell .product-upsell {
   border: 1px solid #F1F0F0;
@@ -776,6 +798,12 @@
   text-align: center;
 }
 
+.product-item .product-item__info {
+  padding-bottom: 32px;
+}
+.product-item .product-item__info .product-link {
+  padding-bottom: 0px;
+}
 .product-item .badge-box, .product-item .sale-box {
   font-family: "Avenir Next Rounded";
   font-style: normal;
@@ -829,6 +857,8 @@
   justify-content: space-between;
   -moz-column-gap: 10px;
        column-gap: 10px;
+  flex-wrap: wrap;
+  align-content: flex-start;
 }
 
 .callout-badge {
@@ -881,8 +911,4 @@
     width: auto;
     text-align: initial;
   }
-}
-
-.product-grid .product-item .product-link {
-  padding-bottom: 20px;
 }

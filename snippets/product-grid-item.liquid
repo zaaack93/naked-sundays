@@ -403,7 +403,7 @@
           <span class="stamped-product-reviews-badge stamped-main-badge" data-id="{{ product.id }}" data-product-title="{{ product.title | escape }}" data-product-type="{{ product.type }}" style="display: block;"></span>
 
         <p class="product-item__title">{{ product.title | strip_html | escape }}</p>
-
+      </a>
 
 
 
@@ -467,7 +467,6 @@
           </div>
         </div>
         {% render 'product-callout-tags' with product:product%}
-      </a>
 
       
 

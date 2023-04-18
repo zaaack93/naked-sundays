@@ -259,6 +259,30 @@
                 }
             }
         }
-
     }
+    //add to cart quntity selector
+    .product__submit__item {
+        .btn--primary {
+            --BTN-PRIMARY-BG-COLOR:#FFA3E1;
+            --BTN-PRIMARY-BG-COLOR-BRIGHTER: #fface4;
+            letter-spacing: 0.05em;
+            font-weight: 500;
+            line-height: 22px;
+            @media only screen and (max-width: 749px) {
+                font-size: 12px;
+                padding-top: 9px;
+                padding-bottom: 9px;
+                line-height: 18px;
+            }
+        }
+        .select-popout{
+            height: 100%;
+            .select-popout__toggle{
+                height: 100%;
+                border-color: #FFA3E1;
+            }
+        }
+        
+    }
+
 }
