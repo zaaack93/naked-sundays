@@ -805,16 +805,17 @@
   padding-bottom: 0px;
 }
 .product-item .badge-box, .product-item .sale-box {
-  font-family: inherit;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 17px;
-  font-variant: all-petite-caps;
-  color: #ffa3ea;
   background: #FFFFFF;
-  padding: 0 15px;
-  line-height: 34px;
-  letter-spacing: normal;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  border-radius: 40px;
+  letter-spacing: 0.05em;
+  color: #F2A7E6;
+  line-height: 18px;
+  padding-top: 9px;
+  padding-bottom: 7px;
 }
 .product-item .product-item__title {
   font-family: "Avenir Next Rounded";
