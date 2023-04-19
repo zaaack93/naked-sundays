@@ -226,8 +226,10 @@
       data-aos-duration="{{ aos_duration }}"
       data-aos-anchor="{{ aos_anchor }}">{{ 'products.product.pre_order' | t }}</span>
   {%- elsif on_sale and sold_out == false -%}
-  
-    {%- capture savings -%}{{ product.compare_at_price | minus: product.price | money_without_trailing_zeros }}{%- endcapture -%}
+
+  {% assign sale = product.compare_at_price_max | minus: product.price | divided_by:100 | round %}
+      {%assign amount = sale | times:100 %}
+    {%- capture savings -%}{{ amount | money_without_trailing_zeros }}{%- endcapture -%}
     <span class="sale-box"
       data-aos="fade"
       data-aos-delay="{{ aos_image_delay }}"

@@ -6,16 +6,16 @@
         }
     }
     .badge-box,.sale-box{
-        font-family: 'Avenir Next Rounded';
+        font-family: inherit;
         font-style: normal;
         font-weight: 600;
-        font-size: 12px;
-        line-height: 20px;
-        /* identical to box height, or 167% */
-        font-variant: all-small-caps;
-        color: #E774B7;
-        padding: 0px 10px;
+        font-size: 17px;
+        font-variant: all-petite-caps;
+        color: #ffa3ea;
         background: #FFFFFF;
+        padding: 0 15px;
+        line-height: 34px;
+        letter-spacing: normal;
     }
     .product-item__title{
         font-family: 'Avenir Next Rounded';

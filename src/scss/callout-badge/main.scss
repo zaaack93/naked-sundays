@@ -1,48 +1,56 @@
 .callout-badge{
     display: inline-block;
-    font-family: 'Avenir Next Rounded';
+    font-family: "Avenir Next Rounded";
     font-style: normal;
     font-weight: 500;
-    font-size: 10px;
+    font-size: 14px;
     line-height: 20px;
-    padding-left: 11px;
-    padding-right: 11px;
+    padding: 4px 15px;
     color: #000000;
     background: #E1DEF9;
     border-radius: 20px;
-    margin-top: 6px;
-    @media only screen and (max-width: 450px) {
-        padding-left: 6px;
-        padding-right: 6px;
-        width: 100%;
+    margin-top: 10px;
+    @media only screen and (max-width: 769px) {
         text-align: center;
-    }
-}
-@media only screen and (max-width: 450px) {
-    .callout-container{
-        width: calc(100% + 7px);
-        max-width: 180px;
+        font-size: 11px;
+        line-height: 20px;
+        padding: 4px 11px;
     }
 }
 .template-product{
-    .callout-container{
-        margin-top: 7px;
-        margin-bottom: 13px;
-        .callout-badge{
-            font-size: 11px;
-            padding-left: 14px;
-            padding-right: 14px;
-        }
-        @media only screen and (max-width: 450px) {
-            margin-top: 12px;
-            margin-bottom: 6px;
-            width: initial;
-            max-width: initial;
-            display: inline-block;
-            .callout-badge{
-                width: auto;
-                text-align: initial;
-            }
+    .callout-badge{
+        margin-top: 17px;
+        margin-bottom: 10px;
+        @media only screen and (max-width: 769px) {
+            padding: 4px 15px;
+            font-size: 14px;
         }
     }
 }
+// @media only screen and (max-width: 450px) {
+//     .callout-container{
+//         width: calc(100% + 7px);
+//         max-width: 180px;
+//     }
+// }
+// .template-product{
+//     .callout-container{
+//         margin-top: 7px;
+//         margin-bottom: 19px;
+//         .callout-badge{
+//             font-size: 14px;
+//             padding: 4px 15px;
+//         }
+//         @media only screen and (max-width: 769px) {
+//             margin-top: 12px;
+//             margin-bottom: 6px;
+//             // width: initial;
+//             // max-width: initial;
+//             // display: inline-block;
+//             // .callout-badge{
+//             //     width: auto;
+//             //     text-align: initial;
+//             // }
+//         }
+//     }
+// }
