@@ -868,19 +868,26 @@
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
-  line-height: 20px;
-  padding: 4px 15px;
+  line-height: 19px;
+  padding: 7px 17px 7px 12px;
   color: #000000;
-  background: #E1DEF9;
-  border-radius: 20px;
+  border-radius: 20em;
   margin-top: 10px;
+  display: inline-flex;
+  align-items: center;
+  -moz-column-gap: 9px;
+       column-gap: 9px;
+}
+.callout-badge .badge-icon {
+  width: 16px;
+  height: 16px;
 }
 @media only screen and (max-width: 769px) {
   .callout-badge {
-    text-align: center;
-    font-size: 11px;
-    line-height: 20px;
-    padding: 4px 11px;
+    text-align: left;
+    font-size: 12px;
+    line-height: 16px;
+    padding: 9px 15px;
   }
 }
 
@@ -890,7 +897,6 @@
 }
 @media only screen and (max-width: 769px) {
   .template-product .callout-badge {
-    padding: 4px 15px;
     font-size: 14px;
   }
 }
