@@ -229,19 +229,22 @@
             </div>
             
             <div class="free_gift_product {% if subtotal <= freegiftlimit %}hide{% endif %}" data-cart-free-product>
-              <div class="message-bg congrates open">Congrats! You are now eligible for 1 free gift.</div>
+              {% assign productsHandlesInCart  = ''%}
+                  
+              {% for item in cart.items %}
+                {% if item.product.tags contains 'free-gift' %}
+                  {% assign isGiftAdded  = true %}
+                {% endif %}
+                {% assign productsHandlesInCart = productsHandlesInCart | append : "," | append : item.product.handle %}
+              {% endfor %}
+              {% if isGiftAdded == true %}
+                <div class="message-bg congrates open">Congrats, your free gift is added to cart!</div>
+              {%else%}
+                <div class="message-bg congrates open">Congrats! You are now eligible for 1 free gift.</div>
+              {%endif%}
               
               <div class="gift_product">
                 <div class="product-grid">
-                  {% assign productsHandlesInCart  = ''%}
-                  
-                  {% for item in cart.items %}
-                    {% if item.product.tags contains 'free-gift' %}
-                    {% assign isGiftAdded  = true %}
-                    {% endif %}
-                    {% assign productsHandlesInCart = productsHandlesInCart | append : "," | append : item.product.handle %}
-                  {% endfor %}
-                  
                   {%- if giftcollection != blank and giftcollection.products.size > 0 -%}
                   {% assign isProductInCart  = false %}
                   {%- for product in giftcollection.products  -%}
