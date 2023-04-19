@@ -89,6 +89,7 @@
           "settings": {
             "show_quantity": true,
             "show_payment_button": false,
+            "padding_top": 10,
             "padding_bottom": 8
           }
         },
@@ -130,6 +131,7 @@
             "raw_content_4": "",
             "title_5": "",
             "raw_content_5": "",
+            "show_product_bundle": true,
             "padding_bottom": 30
           }
         },
