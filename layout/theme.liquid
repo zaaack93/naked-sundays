@@ -347,22 +347,22 @@
 
     <!--Changes on the collection pages-->
 
-      {% if template == "collection" %}
+      {% comment %} {% if template == "collection" %}
 
         <style>
 
-.stamped-badge-caption[data-reviews][data-label][data-version="2"] > span,
-.stamped-badge-caption {
-  font-size: 0;
-}
+        .stamped-badge-caption[data-reviews][data-label][data-version="2"] > span,
+        .stamped-badge-caption {
+          font-size: 0;
+        }
 
-.stamped-product-reviews-badge .stamped-badge-caption[data-reviews][data-label][data-version="2"]:after {
-  content: '('attr(data-reviews)') ' !Important;
-  font-size: 14px;
-}
-</style>
+        .stamped-product-reviews-badge .stamped-badge-caption[data-reviews][data-label][data-version="2"]:after {
+          content: '('attr(data-reviews)') ' !Important;
+          font-size: 14px;
+        }
+        </style>
 
-  {% endif %}
+  {% endif %} {% endcomment %}
 
     <!--Changes on the collection pages-->
 

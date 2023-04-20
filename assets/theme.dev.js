@@ -12799,6 +12799,11 @@
             if (relatedProducts.length > 4 && relatedSection.querySelector(selectors$9.slider)) {
               new Slider(relatedSection);
             }
+
+            //renit badges
+            if(StampedFn){
+              StampedFn.loadBadges();
+            }
           } else {
             relatedSection.dispatchEvent(
               new CustomEvent('theme:tab:hide', {

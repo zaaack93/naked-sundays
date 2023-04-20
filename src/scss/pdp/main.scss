@@ -75,6 +75,9 @@
             align-items: center;
             left: 0;
         }
+        .product__price{
+            color: #E774B7;
+        }
     }
 
 
@@ -261,13 +264,15 @@
         }
     }
     //add to cart quntity selector
-    .product__submit__item {
+    .product__submit__item,.cart-bar__submit {
         .btn--primary {
             --BTN-PRIMARY-BG-COLOR:#FFA3E1;
             --BTN-PRIMARY-BG-COLOR-BRIGHTER: #fface4;
             letter-spacing: 0.05em;
             font-weight: 500;
             line-height: 22px;
+            height: initial;
+            min-height: initial;
             @media only screen and (max-width: 749px) {
                 font-size: 12px;
                 padding-top: 9px;

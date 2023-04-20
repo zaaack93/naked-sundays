@@ -1,4 +1,16 @@
 .product-item{
+
+    //stamped product
+    .stamped-badge-caption[data-reviews][data-label][data-version="2"] > span,
+    .stamped-badge-caption {
+      font-size: 0;
+    }
+
+    .stamped-product-reviews-badge .stamped-badge-caption[data-reviews][data-label][data-version="2"]:after {
+      content: '('attr(data-reviews)') ' !Important;
+      font-size: 14px;
+    }
+
     .product-item__info{
         padding-bottom: 32px;
         .product-link{
@@ -13,7 +25,7 @@
         font-size: 12px;
         border-radius: 40px;
         letter-spacing: 0.05em;
-        color: #F2A7E6;
+        color: #E774B7;
         line-height: 18px;
         padding-top: 9px;
         padding-bottom: 7px;
@@ -39,6 +51,9 @@
             font-weight: 400;
             font-size: 15px;
             line-height: 20px;
+            color: #E774B7;
+        }
+        .new-price{
             color: #E774B7;
         }
         .reback_to_stock{
