@@ -251,12 +251,6 @@
   align-items: center;
   left: 0;
 }
-.template-product .price_with_reviews_container .product__price {
-  color: #E774B7;
-}
-.template-product .price_with_reviews_container .product__price .product__price--sale {
-  color: #E774B7;
-}
 .template-product .product-bundle-container .accordion-content {
   padding-top: 10px;
   padding-bottom: 0px;
@@ -863,10 +857,6 @@
   font-weight: 400;
   font-size: 15px;
   line-height: 20px;
-  color: #E774B7;
-}
-.product-item .price .new-price {
-  color: #E774B7;
 }
 .product-item .price .reback_to_stock {
   font-family: "Avenir Next Rounded";

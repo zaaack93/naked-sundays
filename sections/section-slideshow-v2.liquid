@@ -208,11 +208,11 @@
                   assign desktop_modifier = 'desktop'
                 endif
 
-                render 'image-hero', image: desktop_image, desktop_height: desktop_height, mobile_height: mobile_height, modifier: desktop_modifier, fetchpriority: fetchpriority
+                render 'image-hero-v2', image: desktop_image, desktop_height: desktop_height, mobile_height: mobile_height, modifier: desktop_modifier, fetchpriority: fetchpriority
 
                 if mobile_image != blank
                   assign mobile_modifier = 'mobile'
-                  render 'image-hero', image: mobile_image, desktop_height: mobile_height, modifier: mobile_modifier, fetchpriority: fetchpriority
+                  render 'image-hero-v2', image: mobile_image, desktop_height: mobile_height, modifier: mobile_modifier, fetchpriority: fetchpriority
                 endif
               -%}
               </div>
