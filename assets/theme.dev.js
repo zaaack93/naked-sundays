@@ -12859,6 +12859,10 @@
             if (recentProducts.length > 4 && recentlyViewedHolder.querySelector(selectors$9.slider)) {
               new Slider(recentlyViewedHolder);
             }
+             //renit badges
+            if(StampedFn){
+              StampedFn.loadBadges();
+            }
           }
         },
       });

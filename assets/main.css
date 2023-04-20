@@ -254,6 +254,9 @@
 .template-product .price_with_reviews_container .product__price {
   color: #E774B7;
 }
+.template-product .price_with_reviews_container .product__price .product__price--sale {
+  color: #E774B7;
+}
 .template-product .product-bundle-container .accordion-content {
   padding-top: 10px;
   padding-bottom: 0px;
