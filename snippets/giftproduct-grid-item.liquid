@@ -79,7 +79,7 @@
 {%- assign animation_anchor_default = item_unique | prepend: '.' -%}
 {%- assign animation_anchor = animation_anchor | default: animation_anchor_default -%}
 
-<div class="product-item one-quarter medium--one-half product-item--centered product-item--borderless" data-product-grid-item {{ additional_attributes }} data-handle="{{product.handle}}" data-variantid="{{product.selected_or_first_available_variant.id}}">
+<div class="product-item one-quarter medium-down--one-half product-item--centered product-item--borderless" data-product-grid-item {{ additional_attributes }} data-handle="{{product.handle}}" data-variantid="{{product.selected_or_first_available_variant.id}}">
   {%- capture over_image_content -%}
     {%- assign product_tags = product.tags | join: ',' | append: ',' -%}
     {%- assign preorder = false -%}
@@ -212,10 +212,6 @@
         {{ product.title | strip_html | escape }}
       </p>
 
-<!-- Stamped - Begin badge -->
-<span class="stamped-product-reviews-badge" data-id="{{ product.id }}" data-product-title="{{ product.title | escape }}" data-product-type="{{ product.type }}" style="display: block;"></span>
-<!-- Stamped - End badge -->
-
       <span class="price{% if sca_compare_at_price > sca_price %} sale{% endif %}">
         {% if product.available %}
           <span class="new-price">
@@ -261,7 +257,7 @@
     
     <div class="product_add">
        {%- assign variant = product.selected_or_first_available_variant -%}
-      <span class="add-btn-text btn btn--full btn--primary btn--solid ajax-add-to-cart {% if isProductInCart %} disabled{% endif %} {% if isGiftAdded %}disabled{% endif %}" data-variantid="{{variant.id}}">{% if isProductInCart %}Added{% else %}Add{% endif %}</span>
+      <span class="add-btn-text btn btn--full btn--primary btn--solid ajax-add-to-cart {% if isProductInCart %} disabled{% endif %} {% if isGiftAdded %}disabled{% endif %}" data-variantid="{{variant.id}}">{% if isProductInCart %}Added{% else %}Add to cart{% endif %}</span>
     </div>
      
   </div>

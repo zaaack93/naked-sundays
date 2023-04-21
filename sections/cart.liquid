@@ -195,7 +195,17 @@
 
       <div class="cart__inner">
         <div class="cart__content">
-          <h1 class="cart__title">{{ 'cart.general.title' | t }}</h1>
+          <h1 class="cart__title">{{ 'cart.general.title' | t }}
+          <span
+            class="header__cart__status_drawer">
+          {% if cart.item_count == 1 %}
+            ({{ cart.item_count }} ITEM)
+          {%elsif cart.item_count > 1 %}
+            ({{ cart.item_count }} ITEMS)
+          {%endif%}
+          </span>
+          </h1>
+          
 
           <a class="btn btn--outline btn--primary" href="{{ routes.all_products_collection_url }}">
             <span>{{ 'cart.general.continue_shopping' | t }}</span>
