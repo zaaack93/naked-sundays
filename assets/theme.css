@@ -18332,6 +18332,9 @@ input[type=radio].variant-input {
     text-align: left;
   }
 }
+
+/* edit style for cart item remove */
+@media only screen and (min-width: 750px) {
 .cart__items .cart__item__remove {
   position: static;
   display: block;
@@ -18347,7 +18350,7 @@ input[type=radio].variant-input {
 .cart__items .cart__item__remove .icon {
   display: none;
 }
-@media only screen and (max-width: 749px) {
+
   .cart__items .cart__item__remove {
     position: absolute;
     top: auto;

@@ -590,6 +590,10 @@
             </em>
           </div>
 
+          {% if template.name == 'cart' %}
+            {% render 'cart-page-benefits'%}
+          {%endif%}
+
           {%- if settings.enable_additional_buttons and additional_checkout_buttons -%}
             <span class="cart__or">&mdash; {{ 'cart.general.or' | t }} &mdash;</span>
 

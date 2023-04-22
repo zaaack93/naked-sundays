@@ -1,4 +1,5 @@
 $(document).on("click",".ajax-add-to-cart",function() {
+  if(!$(this).hasClass('isTheCurrentProduct')){
     var addFreeGiftId = $(this).data('variantid');
     
     if($('.cart-item.free-pdp').length > 0){
@@ -18,13 +19,16 @@ $(document).on("click",".ajax-add-to-cart",function() {
     } else {
       addToCartJS(1,$(this).data('variantid')); 
     }
+  }
   });
-
-$('.imdone').click(function(){ 
+$(document).on("click",".isTheCurrentProduct",function() {
+  document.querySelector('[data-gift-item]')?.querySelector('.cart__item__remove').click();
+})
+$(document).on("click",".imdone",function() {  
     $('.congrates').click();  
 });
 
-$('.congrates').click(function(){
+$(document).on("click",".congrates",function() {
   $(this).toggleClass('open');
     $(this).closest('.free_gift_product').find('.gift_product').slideToggle();
 });

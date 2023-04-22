@@ -8,28 +8,34 @@
 /***/ (function() {
 
 $(document).on("click", ".ajax-add-to-cart", function () {
-  var addFreeGiftId = $(this).data('variantid');
-  if ($('.cart-item.free-pdp').length > 0) {
-    var deleteFreeIdKey = $('.free-pdp.cart-item ').attr('data-id');
-    $.ajax({
-      type: "POST",
-      url: "/cart/change.js",
-      dataType: "json",
-      data: {
-        id: deleteFreeIdKey,
-        quantity: 0
-      }
-    }).then(function (data) {
-      addToCartJS(1, addFreeGiftId);
-    });
-  } else {
-    addToCartJS(1, $(this).data('variantid'));
+  if (!$(this).hasClass('isTheCurrentProduct')) {
+    var addFreeGiftId = $(this).data('variantid');
+    if ($('.cart-item.free-pdp').length > 0) {
+      var deleteFreeIdKey = $('.free-pdp.cart-item ').attr('data-id');
+      $.ajax({
+        type: "POST",
+        url: "/cart/change.js",
+        dataType: "json",
+        data: {
+          id: deleteFreeIdKey,
+          quantity: 0
+        }
+      }).then(function (data) {
+        addToCartJS(1, addFreeGiftId);
+      });
+    } else {
+      addToCartJS(1, $(this).data('variantid'));
+    }
   }
 });
-$('.imdone').click(function () {
+$(document).on("click", ".isTheCurrentProduct", function () {
+  var _document$querySelect;
+  (_document$querySelect = document.querySelector('[data-gift-item]')) === null || _document$querySelect === void 0 ? void 0 : _document$querySelect.querySelector('.cart__item__remove').click();
+});
+$(document).on("click", ".imdone", function () {
   $('.congrates').click();
 });
-$('.congrates').click(function () {
+$(document).on("click", ".congrates", function () {
   $(this).toggleClass('open');
   $(this).closest('.free_gift_product').find('.gift_product').slideToggle();
 });

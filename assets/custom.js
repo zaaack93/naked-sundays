@@ -43,8 +43,30 @@ document.addEventListener(
       }
     }
 
-    //trigger gift cart
-    console.log(event.detail.cart)
+    //gift functionnaly
+    if(window.location.pathname=='/cart'){
+      if(document.querySelector('[data-gift-item].is-removed')){
+        const elements = document.querySelectorAll('.add-btn-text')
+        for (let i = 0; i < elements.length; i++) {
+          elements[i].classList.remove('disabled');
+          elements[i].classList.remove('isTheCurrentProduct');
+          elements[i].innerHTML='Add to cart';
+        }
+        document.querySelector('.btn-wrap').innerHTML="";
+      }
+
+      //if only item in the cart is gift item i should clear the cart
+      if(event.detail.cart.item_count==1 && document.querySelector('[data-gift-item]') && document.querySelector('[data-gift-item].is-removed')==null){
+        $.ajax({
+          type: 'POST',
+          url: '/cart/clear.js',
+          dataType: 'json',
+          success: function(cart){location.reload();},
+          error: function(err){location.reload();}
+        });
+      }
+      
+    }
 })
 
   // ^^ Keep your scripts inside this IIFE function call to

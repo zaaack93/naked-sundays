@@ -3166,7 +3166,7 @@
           containsFreeProduct = true;
         });
         if(data.total_price < 5000 && containsFreeProduct){
-          for(i=0; i<freeGiftProductHandles.length; i++) {
+          for(let i=0; i<freeGiftProductHandles.length; i++) {
             if(document.querySelectorAll('.cart-item[data-handle="'+freeGiftProductHandles[i]+'"]').length) {
               alert(document.querySelectorAll('.cart-item[data-handle="'+freeGiftProductHandles[i]+'"]')[0].querySelector(".cart-item__remove").length);
             }
