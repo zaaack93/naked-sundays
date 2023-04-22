@@ -54,18 +54,10 @@ document.addEventListener(
         }
         document.querySelector('.btn-wrap').innerHTML="";
       }
-
-      //if only item in the cart is gift item i should clear the cart
-      if(event.detail.cart.item_count==1 && document.querySelector('[data-gift-item]') && document.querySelector('[data-gift-item].is-removed')==null){
-        $.ajax({
-          type: 'POST',
-          url: '/cart/clear.js',
-          dataType: 'json',
-          success: function(cart){location.reload();},
-          error: function(err){location.reload();}
-        });
-      }
-      
+    }
+    //if only item in the cart is gift item i should clear the cart
+    if(event.detail.cart.item_count==1 && document.querySelector('[data-gift-item]') && document.querySelector('[data-gift-item].is-removed')==null){
+      document.querySelector('[data-gift-item]')?.querySelector('.cart__item__remove').click();
     }
 })
 
