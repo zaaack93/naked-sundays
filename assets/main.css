@@ -429,6 +429,9 @@
   height: 100%;
   border-color: #FFA3E1;
 }
+.template-product .PRODUCT_PAGE-notify-button {
+  width: 100%;
+}
 
 .product__commun_upsell .product-upsell {
   border: 1px solid #F1F0F0;

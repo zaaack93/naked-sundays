@@ -98,6 +98,9 @@
         name="id"
         value="{{ current_variant.id }}">
       {{ form | payment_terms }}
+      {% unless product.available %}
+        <button id="restock-{{ product.handle }}" class="restock-alerts-notify-button PRODUCT_PAGE-notify-button notifyButtonStyle shopify-payment-button__button btn button Button button-primary Button-primary button--primary Button--primary" style="justify-content: center; align-items: center !important; display: flex !important;">NOTIFY ME WHEN BACK IN STOCK!</button>
+      {% endunless %}
     {%- endform -%}
   </div>
 </div>
