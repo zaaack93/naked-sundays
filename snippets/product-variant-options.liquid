@@ -405,8 +405,9 @@
 {%- endcapture -%}
 
 {%- unless product_variant_options == blank -%}
+  {% unless product.has_only_default_variant %}
   <div
-    class="product__block{% if settings.show_lines %} product__block--lines{% endif %}{% if settings.form_style == 'classic' %} product__block--classic{% endif %} product__form__holder {% if product.has_only_default_variant %} selector-with-only-variant {% endif %}"
+    class="product__block{% if settings.show_lines %} product__block--lines{% endif %}{% if settings.form_style == 'classic' %} product__block--classic{% endif %} product__form__holder"
     {{ block_style }}
     {{ block.shopify_attributes }}>
     <div
@@ -419,6 +420,7 @@
       {{ product_variant_options }}
     </div>
   </div>
+{%- endunless -%}
 {%- endunless -%}
 
 {%- if product_variant_options == blank and request.design_mode -%}

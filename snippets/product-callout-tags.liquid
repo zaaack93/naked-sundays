@@ -1,6 +1,6 @@
 {%if product.metafields.custom.callout_badge.value != blank%}
     <div class="callout-container">
-        <span class="callout-badge" style="background-color:{{product.metafields.custom.callout_badge.value.background_color}}">
+        <span class="callout-badge" style="background-color:{{product.metafields.custom.callout_badge.value.background_color}};padding-top:{{spacing}}px !important;">
             {% if product.metafields.custom.callout_badge.value.icon != blank %}
                 <img src="{{ product.metafields.custom.callout_badge.value.icon | img_url:"master" }}" class="badge-icon"/>
             {% endif %}
