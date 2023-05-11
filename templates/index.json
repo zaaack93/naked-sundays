@@ -32,8 +32,8 @@
         "template--16720755917058__5f5af74b-0113-4994-b2ab-f942f40a46ca-167949130042901170-0": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/tgp_6957_edit_f0420fd9-7f10-49a8-9fb5-f1d2f972dc34.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/WhatsApp_Image_2022-09-19_at_12.24.53_PM_f556715d-49ec-453d-9eda-aaf76a244fd2.jpg",
+            "image": "shopify:\/\/shop_images\/tgp_6957_edit_552f38ac-ada9-4c3f-943f-923d0bfc97b5_1.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/WhatsApp_Image_2022-09-19_at_12.24.53_PM_f556715d-49ec-453d-9eda-aaf76a244fd2_1.jpg",
             "overlay_opacity": 0,
             "overlay_color": "#000000",
             "show_overlay_text": false,
@@ -143,8 +143,32 @@
         "padding_bottom": 40
       }
     },
+    "98c3eaf8-337e-495e-83dd-6aac8c00aed8": {
+      "type": "section-collection",
+      "settings": {
+        "heading": "SPF ESSENTIALS",
+        "description": "<p>Shop our Best Selling SPF Essentials below. <\/p>",
+        "layout": "center",
+        "link_text": "",
+        "link_url": "",
+        "button_type": "btn--primary",
+        "button_size": "",
+        "button_style": "btn--solid",
+        "show_arrow": false,
+        "featured_collection": "all",
+        "style": "grid",
+        "grid": 4,
+        "rows": 2,
+        "layout_mobile": "2",
+        "bg_color": "",
+        "color": "",
+        "padding_top": 50,
+        "padding_bottom": 50
+      }
+    },
     "a3473369-da2f-473c-be68-ecc18d54fc2b": {
       "type": "section-tab-collections",
+      "disabled": true,
       "blocks": {
         "template--16696976507138__a3473369-da2f-473c-be68-ecc18d54fc2b-1678100436b3ec2915-0": {
           "type": "collection",
@@ -766,6 +790,7 @@
     "225ff90c-3487-4e28-804a-5be2aec799e2",
     "5f5af74b-0113-4994-b2ab-f942f40a46ca",
     "logos",
+    "98c3eaf8-337e-495e-83dd-6aac8c00aed8",
     "a3473369-da2f-473c-be68-ecc18d54fc2b",
     "d63c2c88-85d6-452d-80d8-ad29995b9403",
     "c5175ed1-9d0d-4aef-b1cc-f032ade42334",
