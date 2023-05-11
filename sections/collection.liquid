@@ -2,6 +2,7 @@
 
 {%- liquid
   assign show_sort = section.settings.enable_sort
+  assign show_top_filtring = section.settings.enable_top_filtring
   assign filter_layout = section.settings.filter_layout
 
   assign show_group_filters = false
@@ -85,6 +86,9 @@
     {%- if show_sort -%}
       {%- assign align_classes = align_classes | append: ' collection__nav--sort ' -%}
     {%- endif -%}
+    {%- if show_top_filtring -%}
+      {%- assign align_classes = align_classes | append: ' collection__nav--bar-filtring ' -%}
+    {%- endif -%}
 
     {%- if show_filter or show_group_filter -%}
       {% assign align_classes = align_classes | append: ' collection__nav--filter ' %}
@@ -142,7 +146,9 @@
             </button>
           </div>
         {%- endif -%}
-
+        {% if show_top_filtring %}
+          {% render 'top-bar-filtring' %}
+        {% endif %}
         {%- if show_sort -%}
           {% render 'collection-sorting' %}
         {%- endif -%}
@@ -303,6 +309,12 @@
         "type": "checkbox",
         "id": "enable_sort",
         "label": "Show sorting",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "enable_top_filtring",
+        "label": "Show top bar filtring",
         "default": true
       },
       {
