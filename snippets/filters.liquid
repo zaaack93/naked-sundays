@@ -53,7 +53,11 @@
       {%- case filter.type -%}
         {%- when 'list' or 'boolean' -%}
           <ul class="collection-nav">
+            
+            {% assign filtring_categories = "bundles,mineral,mists,lip oils,balms,merch,travel size," | split : "," %}
             {%- for filter_value in filter.values -%}
+              {% assign filter_value = filter_value.value | append : ','%}
+              {% unless filter.label == 'Product type' and filtring_categories contains filter_value  %}
               <li class="sidebar__item{% if filter_value.active %} sidebar__item--active link--remove{% elsif filter_value.count == 0 and filter_value.active == false %} link--disable{% else %} link--add{% endif %}{% if forloop.index > 10 %} is-hidden{% endif %}"{% if forloop.index > 10 %} data-link-hidden{% endif %}>
                 <input type="checkbox"
                   name="{{ filter_value.param_name }}"
@@ -69,9 +73,8 @@
                   {{ filter_value.label }}
                 </label>
               </li>
+            {% endunless %}
             {%- endfor -%}
-            {% assign filtring_categories = "bundles,mineral,mists,lip oils,balms,merch,travel size" | split : "," %}
-            
             {% unless filter.label == 'Product type'%}
               {%for option in filtring_categories%}
               <li class="sidebar__item link--add">

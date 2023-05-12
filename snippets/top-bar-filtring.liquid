@@ -1,41 +1,49 @@
-<div class="nav_top-filter-container">
+<div class="nav_top-filter-container" data-collection-topbar>
+    {% assign filters_active = ""%}
+    {% assign count_nbr_active = 0 %}
+    {%- assign filters_default = search.filters | default: collection.filters -%}
+        {%- for filter in filters_default -%}
+            {%- for filter_value in filter.values -%}
+            {% assign filter_check_count = filter.values | where: 'count', 0 %}
+            {% if filter_value.active %}
+                {% assign filters_active = filters_active | append : ',' | append : filter_value.label | escape %}
+                {% assign count_nbr_active = count_nbr_active | plus : 1 %}
+            {%endif%}
+        {%- endfor -%}
+    {%endfor%}
     <div class="nav_top-filter-inner">
         <span class="top-filter-text">
             Filter by :
-            {%- assign filters_default = search.filters | default: collection.filters -%}
-            {%- for filter in filters_default -%}
-                {%- for filter_value in filter.values -%}
-                    {{filter_value.active}}
-                    {{filter_value.type}}
-                    {{filter_value.name}}
-                {%- endfor -%}
-            {%endfor%}
         </span>
         
-        {% assign filtring_categories = "bundles,mineral,mists,lip oils,balms,merch,travel size" | split : "," %}
+        {% assign filtring_categories = "bundles,mineral,mists,lip oils,balms,merch,travel size," | split : "," %}
         <div class="top-filter-checks">
             <div class="top-filter-checks-item">
                 <input type="checkbox" id="filter-for-all" value="all" name="filter.p.product_type">
-                <label for="filter-for-all">All</label>
+                <label for="filter-for-all" id="label-for-all">All</label>
             </div>
             {%for option in filtring_categories%}
                 <div class="top-filter-checks-item">
-                    <label for="filter-Product type-{{option}}">{{option}}</label>
+                    <label for="filter-Product type-{{option}}" id="label-for-{{option}}">{{option}}</label>
                 </div>
             {%endfor%}
         </div>
     </div>
+    <style>
+        {%for option in filtring_categories%}
+            {% assign option = option | append : ','%}
+            {% if filters_active contains option %}
+                #label-for-{{option}} {
+                    background: #E1DEF7;
+                    border: 0.8px solid #EAE4FF;
+                }
+            {%endif%}
+        {%endfor%}
+        {% if count_nbr_active == 0 and collection.products.size > 0%}
+            #label-for-all {
+                background: #E1DEF7;
+                border: 0.8px solid #EAE4FF;
+            }
+        {%endif%}
+    </style>
 </div>
-<style>
-{%for option in filtring_categories%}
-{% comment %} label[for="filter-Product type-{{option}}"]:checked  {
-    background-color: #0f0;
-    color: #fff;
-} {% endcomment %}
-
-
-.collection-nav input[type="checkbox"]:checked + label[for="filter-Product type-{{option}}"] {
-    border-color: black;
-}
-{%endfor%}
-</style>

@@ -9540,6 +9540,7 @@
 
   const selectors$r = {
     collectionSidebar: '[data-collection-sidebar]',
+    collectionTopbar: '[data-collection-topbar]',
     form: '[data-collection-filters-form]',
     input: 'input',
     select: 'select',
@@ -9576,6 +9577,7 @@
       this.section = section;
       this.container = this.section.container;
       this.sidebar = this.container.querySelector(selectors$r.collectionSidebar);
+      this.topbar = this.container.querySelector(selectors$r.collectionTopbar);
       this.form = this.container.querySelector(selectors$r.form);
       this.sort = this.container.querySelector(`[${selectors$r.sort}]`);
       this.productsContainer = this.container.querySelector(selectors$r.productsContainer);
@@ -9723,6 +9725,8 @@
                   counter.classList.toggle(classes$n.hidden, activeFiltersCount < 1);
                 });
               }
+              //top bar also
+              this.topbar.innerHTML = new DOMParser().parseFromString(data, 'text/html').querySelector(selectors$r.collectionTopbar).innerHTML;
             }
 
             if (this.form) {
