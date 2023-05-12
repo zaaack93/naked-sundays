@@ -1185,7 +1185,7 @@
 @media only screen and (min-width: 990px) {
   .collection__nav--bar-filtring .nav_top-filter-container {
     width: calc(100% - 140px);
-    padding-left: 80px;
+    padding-left: 5rem;
     padding-right: 30px;
   }
 }
@@ -1243,11 +1243,6 @@
 .collection__nav--bar-filtring .nav_top-filter-container .nav_top-filter-inner .top-filter-checks .top-filter-checks-item input[type=checkbox] {
   display: none;
 }
-.collection__nav--bar-filtring .nav_top-filter-container .nav_top-filter-inner .top-filter-checks input[type=checkbox]:checked + label {
-  /* Add styles to the label when the associated checkbox is checked */
-  background: #E1DEF7;
-  border: 0.8px solid #EAE4FF;
-}
 .collection__nav--bar-filtring .nav_top-filter-container .nav_top-filter-inner .top-filter-checks label {
   cursor: pointer;
   font-style: normal;
@@ -1265,6 +1260,7 @@
   border: 0.8px solid #EAE4FF;
   border-radius: 5050px;
   caret-color: transparent;
+  white-space: nowrap;
 }
 @media only screen and (max-width: 989px) {
   .collection__nav--bar-filtring .nav_top-filter-container .nav_top-filter-inner .top-filter-checks label {
@@ -1287,4 +1283,9 @@
   .collection__nav--bar-filtring .popout--sort .popout__toggle {
     display: none;
   }
+}
+.sidebar__item input[type=checkbox]:checked ~ .button-for-check {
+  /* Add styles to the label when the associated checkbox is checked */
+  background: #E1DEF7;
+  border: 0.8px solid #EAE4FF;
 }

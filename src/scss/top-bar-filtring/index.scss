@@ -13,7 +13,7 @@
         }
         @media only screen and (min-width: 990px){
             width: calc(100% - 140px);
-            padding-left: 80px;
+            padding-left: 5rem;
             padding-right: 30px;
         }
         .nav_top-filter-inner{
@@ -60,11 +60,6 @@
                        display: none;
                     }
                 }
-                input[type="checkbox"]:checked + label {
-                    /* Add styles to the label when the associated checkbox is checked */
-                    background: #E1DEF7;
-                    border: 0.8px solid #EAE4FF;
-                }
                 label {
                     cursor: pointer;
                     font-style: normal;
@@ -82,7 +77,7 @@
                     border: 0.8px solid #EAE4FF;
                     border-radius: 5050px;
                     caret-color: transparent;
-                      
+                    white-space: nowrap;
                     @media only screen and (max-width: 989px){
                         height: 31px;
                         min-width: 54px;
@@ -110,4 +105,12 @@
             display: none;
         }
     }
+    .popout--group{
+        //display: none;
+    }
+}
+.sidebar__item input[type="checkbox"]:checked ~ .button-for-check {
+    /* Add styles to the label when the associated checkbox is checked */
+    background: #E1DEF7;
+    border: 0.8px solid #EAE4FF;
 }

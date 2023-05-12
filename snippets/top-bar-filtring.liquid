@@ -2,41 +2,40 @@
     <div class="nav_top-filter-inner">
         <span class="top-filter-text">
             Filter by :
+            {%- assign filters_default = search.filters | default: collection.filters -%}
+            {%- for filter in filters_default -%}
+                {%- for filter_value in filter.values -%}
+                    {{filter_value.active}}
+                    {{filter_value.type}}
+                    {{filter_value.name}}
+                {%- endfor -%}
+            {%endfor%}
         </span>
-
+        
+        {% assign filtring_categories = "bundles,mineral,mists,lip oils,balms,merch,travel size" | split : "," %}
         <div class="top-filter-checks">
             <div class="top-filter-checks-item">
-                <input type="checkbox" id="filter-for-all">
+                <input type="checkbox" id="filter-for-all" value="all" name="filter.p.product_type">
                 <label for="filter-for-all">All</label>
             </div>
-            <div class="top-filter-checks-item">
-                <input type="checkbox" id="filter-for-bundles">
-                <label for="filter-for-bundles">Bundles</label>
-            </div>
-            <div class="top-filter-checks-item">
-                <input type="checkbox" id="filter-for-mineral">
-                <label for="filter-for-mineral">Mineral</label>
-            </div>
-            <div class="top-filter-checks-item">
-                <input type="checkbox" id="filter-for-mists">
-                <label for="filter-for-mists">Mists</label>
-            </div>
-            <div class="top-filter-checks-item">
-                <input type="checkbox" id="filter-for-mists">
-                <label for="filter-for-mists">Mists</label>
-            </div>
-            <div class="top-filter-checks-item">
-                <input type="checkbox" id="filter-for-mists">
-                <label for="filter-for-mists">Mists</label>
-            </div>
-            <div class="top-filter-checks-item">
-                <input type="checkbox" id="filter-for-mists">
-                <label for="filter-for-mists">Mists</label>
-            </div>
-            <div class="top-filter-checks-item">
-                <input type="checkbox" id="filter-for-mists">
-                <label for="filter-for-mists">Mists</label>
-            </div>
+            {%for option in filtring_categories%}
+                <div class="top-filter-checks-item">
+                    <label for="filter-Product type-{{option}}">{{option}}</label>
+                </div>
+            {%endfor%}
         </div>
     </div>
 </div>
+<style>
+{%for option in filtring_categories%}
+{% comment %} label[for="filter-Product type-{{option}}"]:checked  {
+    background-color: #0f0;
+    color: #fff;
+} {% endcomment %}
+
+
+.collection-nav input[type="checkbox"]:checked + label[for="filter-Product type-{{option}}"] {
+    border-color: black;
+}
+{%endfor%}
+</style>

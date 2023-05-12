@@ -34,7 +34,7 @@
       "type": "collection",
       "settings": {
         "enable_sort": true,
-        "enable_filters": false,
+        "enable_filters": true,
         "filter_layout": "inline-closed",
         "collection_linklist": "",
         "grid": 4,

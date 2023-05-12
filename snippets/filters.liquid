@@ -70,6 +70,17 @@
                 </label>
               </li>
             {%- endfor -%}
+            {% assign filtring_categories = "bundles,mineral,mists,lip oils,balms,merch,travel size" | split : "," %}
+            
+            {% unless filter.label == 'Product type'%}
+              {%for option in filtring_categories%}
+              <li class="sidebar__item link--add">
+                <input type="checkbox" name="filter.p.tag" value="{{option}}" id="filter-Product type-{{option}}">
+                <label for="filter-Product type-{{option}}">{{option}}
+                </label>
+              </li>
+              {%endfor%}
+            {%endunless%}
           </ul>
 
           {%- if filter.values.size > 10 -%}
