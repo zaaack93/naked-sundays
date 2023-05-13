@@ -1211,7 +1211,7 @@
   font-size: 16px;
   line-height: 22px;
   color: #000000;
-  text-transform: uppercase;
+  text-transform: capitalize;
   white-space: nowrap;
 }
 @media only screen and (max-width: 989px) {
@@ -1224,8 +1224,8 @@
 .collection__nav--bar-filtring .nav_top-filter-container .nav_top-filter-inner .top-filter-checks {
   flex-grow: 1;
   display: flex;
-  -moz-column-gap: 25px;
-       column-gap: 25px;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
   flex-direction: row;
   overflow-x: scroll;
 }
@@ -1243,9 +1243,10 @@
 .collection__nav--bar-filtring .nav_top-filter-container .nav_top-filter-inner .top-filter-checks .top-filter-checks-item input[type=checkbox] {
   display: none;
 }
-.collection__nav--bar-filtring .nav_top-filter-container .nav_top-filter-inner .top-filter-checks label {
+.collection__nav--bar-filtring .nav_top-filter-container .nav_top-filter-inner .top-filter-checks button {
   cursor: pointer;
   font-style: normal;
+  position: relative;
   font-weight: 500;
   font-size: 16px;
   line-height: 22px;
@@ -1261,9 +1262,10 @@
   border-radius: 5050px;
   caret-color: transparent;
   white-space: nowrap;
+  text-transform: capitalize;
 }
 @media only screen and (max-width: 989px) {
-  .collection__nav--bar-filtring .nav_top-filter-container .nav_top-filter-inner .top-filter-checks label {
+  .collection__nav--bar-filtring .nav_top-filter-container .nav_top-filter-inner .top-filter-checks button {
     height: 31px;
     min-width: 54px;
     padding-left: 15px;
@@ -1275,15 +1277,11 @@
 }
 @media only screen and (min-width: 990px) {
   .collection__nav--bar-filtring .popout--sort .popout__toggle {
-    padding-top: 34px;
-    padding-bottom: 34px;
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
 }
-@media only screen and (max-width: 989px) {
-  .collection__nav--bar-filtring .popout--sort .popout__toggle {
-    display: none;
-  }
-}
+
 .sidebar__item input[type=checkbox]:checked ~ .button-for-check {
   /* Add styles to the label when the associated checkbox is checked */
   background: #E1DEF7;

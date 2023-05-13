@@ -85,87 +85,45 @@ function addToCartJS(qty, variantID) {
   xhr.send(data);
 }
 
-// // Attach event listeners to each checkbox
-// const checkboxes = document.querySelectorAll('.top-filter-checks input[type="checkbox"][name="filter.p.product_type"]');
-// const allCheckbox = document.querySelector('.top-filter-checks input[type="checkbox"][value="all"][name="filter.p.product_type"]');
+// Get all the spans with the specific class
+// const spans = document.querySelectorAll('.buttons-to-check');
+// // Loop through all the spans and add a click event listener to each of them
+// spans.forEach(span => {
+//   span.addEventListener('click', () => {
+//     // Get the data attribute value from the clicked span
+//     const dataAttrValue = span.getAttribute('data-for-id');
 
-// // Create an array to store the selected values
-// let selectedValues = [];
+//     // Get the label element with the corresponding id
+//     const label = document.querySelector(`label[for="${dataAttrValue}"]`);
 
-// // Add event listeners to the checkboxes
-// checkboxes.forEach((checkbox) => {
-//   checkbox.addEventListener('change', (event) => {
-//     const { value } = event.target;
-    
-//     if (event.target === allCheckbox) {
-//       // If the "all" checkbox is checked, uncheck all the other checkboxes and remove the "filter.p.product_type" parameter from the URL
-//       if (event.target.checked) {
-//         checkboxes.forEach((checkbox) => {
-//           if (checkbox !== allCheckbox && checkbox.checked) {
-//             checkbox.checked = false;
-//             const index = selectedValues.indexOf(checkbox.value);
-//             if (index > -1) {
-//               selectedValues.splice(index, 1);
-//             }
-//           }
-//         });
-        
-//         urlSearchParams.delete('filter.p.product_type');
-//       } else {
-//         // If the "all" checkbox is unchecked, remove it from the selectedValues array and update the URL with the selected values
-//         const index = selectedValues.indexOf(value);
-//         if (index > -1) {
-//           selectedValues.splice(index, 1);
-//         }
-        
-//         if (selectedValues.length > 0) {
-//           urlSearchParams.set('filter.p.product_type', selectedValues.join(','));
-//         } else {
-//           urlSearchParams.delete('filter.p.product_type');
-//         }
-//       }
-//     } else {
-//       // If a checkbox other than the "all" checkbox is checked, uncheck the "all" checkbox and update the selectedValues array and the URL
-//       allCheckbox.checked = false;
-      
-//       const index = selectedValues.indexOf(value);
-      
-//       if (event.target.checked) {
-//         if (index === -1) {
-//           selectedValues.push(value);
-//         }
-//       } else {
-//         if (index > -1) {
-//           selectedValues.splice(index, 1);
-//         }
-//       }
-      
-//       if (selectedValues.length > 0) {
-//         urlSearchParams.set('filter.p.product_type', selectedValues.join(','));
-//       } else {
-//         urlSearchParams.delete('filter.p.product_type');
-//       }
+//     // If the label element is found, trigger a click event on it
+//     if (label) {
+//       label.click();
 //     }
-    
-//     // Replace the current URL with the updated URL
-//     const queryString = urlSearchParams.toString().replaceAll('%2C', ',');
-//     const newUrl = queryString ? `${window.location.pathname}?${queryString}` : window.location.pathname;
-//     window.history.replaceState(null, null, newUrl);
 //   });
 // });
+// Add a click event listener to all the spans with the specific class
+$(document).on("click", ".buttons-to-check", function () {
+  // Get the data attribute value from the clicked span
+  const dataAttrValue = "label."+$(this).attr('data-for-id');
 
-// // When the page loads, check the checkboxes based on the URL parameters
-// const urlSearchParams = new URLSearchParams(window.location.search);
-// const selectedTypes = urlSearchParams.get('filter.p.product_type');
+  // Get the label element with the corresponding id
+  const label = $(dataAttrValue);
+  // if(!$(label).parent('.sidebar__item').hasClass('!sidebar__item--active')){
+  //   $(this).css({ background: "#E1DEF7" },{ border: "0.8px solid #EAE4FF" })
+  // }
+  // If the label element is found, trigger a click event on it
+  if (label.length > 0) {
+    label.click();
+  }
+});
 
-// if (selectedTypes) {
-//   selectedValues = selectedTypes.split(',');
-  
-//   checkboxes.forEach((checkbox) => {
-//     if (selectedValues.includes(checkbox.value)) {
-//       checkbox.checked = true;
-//     }
-//   });
-// } else {
-//   allCheckbox.checked = true;
-// }
+//trigger click to all
+$(document).on("click", "#label-for-all", function () {
+  // Get the reset button
+  const label = $(`a[data-filter-reset-all]`);
+  // If the label element is found, trigger a click event on it
+  if (label.length > 0) {
+    label[0].click();
+  }
+});

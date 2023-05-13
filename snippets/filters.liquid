@@ -56,8 +56,6 @@
             
             {% assign filtring_categories = "bundles,mineral,mists,lip oils,balms,merch,travel size," | split : "," %}
             {%- for filter_value in filter.values -%}
-              {% assign filter_value = filter_value.value | append : ','%}
-              {% unless filter.label == 'Product type' and filtring_categories contains filter_value  %}
               <li class="sidebar__item{% if filter_value.active %} sidebar__item--active link--remove{% elsif filter_value.count == 0 and filter_value.active == false %} link--disable{% else %} link--add{% endif %}{% if forloop.index > 10 %} is-hidden{% endif %}"{% if forloop.index > 10 %} data-link-hidden{% endif %}>
                 <input type="checkbox"
                   name="{{ filter_value.param_name }}"
@@ -65,7 +63,7 @@
                   id="filter-{{ filter.label }}-{{ forloop.index }}"
                   {% if filter_value.active -%}checked{%- endif %}
                   {% if filter_value.count == 0 and filter_value.active == false -%}disabled{%- endif %}>
-                <label for="filter-{{ filter.label }}-{{ forloop.index }}">
+                <label for="filter-{{ filter.label }}-{{ forloop.index }}" class="filter-Product-type-{{filter_value.label | replace: " ", ""}}">
                   {%- if is_swatch_option -%}
                     <span class="swatch__button swatch__button--{{ settings.swatch_style }}" data-swatch="{{ filter_value.label | escape_once }}"></span>
                   {%- endif -%}
@@ -73,17 +71,7 @@
                   {{ filter_value.label }}
                 </label>
               </li>
-            {% endunless %}
             {%- endfor -%}
-            {% unless filter.label == 'Product type'%}
-              {%for option in filtring_categories%}
-              <li class="sidebar__item link--add">
-                <input type="checkbox" name="filter.p.tag" value="{{option}}" id="filter-Product type-{{option}}">
-                <label for="filter-Product type-{{option}}">{{option}}
-                </label>
-              </li>
-              {%endfor%}
-            {%endunless%}
           </ul>
 
           {%- if filter.values.size > 10 -%}

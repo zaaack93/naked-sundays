@@ -33,7 +33,7 @@
                 font-size: 16px;
                 line-height: 22px;
                 color: #000000;
-                text-transform: uppercase;
+                text-transform: capitalize;
                 white-space: nowrap;
                 @media only screen and (max-width: 989px){
                     font-weight: 400;
@@ -44,7 +44,7 @@
             .top-filter-checks{
                 flex-grow: 1;
                 display: flex;
-                column-gap: 25px;
+                column-gap: 20px;
                 flex-direction: row;
                 overflow-x: scroll;
                 &::-webkit-scrollbar {
@@ -60,9 +60,10 @@
                        display: none;
                     }
                 }
-                label {
+                button {
                     cursor: pointer;
                     font-style: normal;
+                    position: relative;
                     font-weight: 500;
                     font-size: 16px;
                     line-height: 22px;
@@ -78,6 +79,7 @@
                     border-radius: 5050px;
                     caret-color: transparent;
                     white-space: nowrap;
+                    text-transform: capitalize;
                     @media only screen and (max-width: 989px){
                         height: 31px;
                         min-width: 54px;
@@ -96,17 +98,9 @@
     //callout sorting
     @media only screen and (min-width: 990px){
         .popout--sort .popout__toggle{
-            padding-top: 34px;
-            padding-bottom: 34px;
+            padding-top: 32px;
+            padding-bottom: 32px;
         }
-    }
-    @media only screen and (max-width: 989px){
-        .popout--sort .popout__toggle{
-            display: none;
-        }
-    }
-    .popout--group{
-        //display: none;
     }
 }
 .sidebar__item input[type="checkbox"]:checked ~ .button-for-check {
