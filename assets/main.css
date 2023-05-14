@@ -1263,6 +1263,8 @@
   caret-color: transparent;
   white-space: nowrap;
   text-transform: capitalize;
+  overflow: hidden;
+  position: relative;
 }
 @media only screen and (max-width: 989px) {
   .collection__nav--bar-filtring .nav_top-filter-container .nav_top-filter-inner .top-filter-checks button {

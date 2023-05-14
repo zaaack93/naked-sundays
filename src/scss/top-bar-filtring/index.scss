@@ -80,6 +80,8 @@
                     caret-color: transparent;
                     white-space: nowrap;
                     text-transform: capitalize;
+                    overflow: hidden;
+                    position: relative;
                     @media only screen and (max-width: 989px){
                         height: 31px;
                         min-width: 54px;
