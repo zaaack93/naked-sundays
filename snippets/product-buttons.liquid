@@ -95,6 +95,7 @@
             data-add-to-cart
             data-focus-element
             {% unless current_variant.available %}disabled="disabled"{% endunless %}>
+            <span class="btn_add_to_cart_product_price">{{ current_variant.price | money }} - </span>
             <span class="btn__text" data-add-to-cart-text>{{ button_text }}</span>
             <span class="btn__added">&nbsp;</span>
 
