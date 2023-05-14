@@ -61,6 +61,17 @@ document.addEventListener(
     }
 })
 
+//change variant listner
+document.addEventListener(
+  'theme:variant:change',
+  function (event) {
+    const productPriceWrap = document.querySelector('.product__price__wrap');
+    const productPrice = productPriceWrap.querySelector('[data-product-price]').textContent;
+
+    const productPriceAddToCart = document.querySelector('.btn_add_to_cart_product_price');
+    productPriceAddToCart.textContent = productPrice+" - ";
+})
+
   // ^^ Keep your scripts inside this IIFE function call to
   // avoid leaking your variables into the global scope.
 })();

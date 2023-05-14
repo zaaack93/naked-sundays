@@ -200,15 +200,16 @@
 .template-product .product__images {
   position: relative;
 }
-.template-product .product__images .badge-box, .template-product .product__images .sale-box {
-  background: #FFFFFF;
+.template-product .product__images .badge-box,
+.template-product .product__images .sale-box {
+  background: #ffffff;
   font-family: "Poppins";
   font-style: normal;
   font-weight: 700;
   font-size: 12px;
   border-radius: 40px;
   letter-spacing: 0.05em;
-  color: #E774B7;
+  color: #e774b7;
   line-height: 18px;
   padding-top: 9px;
   padding-bottom: 7px;
@@ -221,39 +222,114 @@
   margin-bottom: 5px;
 }
 .template-product .rc-widget {
-  padding-bottom: 15px !important;
+  padding: 0px !important;
 }
 .template-product .rc-widget .rc-subscription-details {
   display: none;
 }
+.template-product .rc-widget .rc-radio-group__options {
+  border: none;
+  border-radius: 0px;
+  display: flex;
+  -moz-column-gap: 15px;
+       column-gap: 15px;
+}
+.template-product .rc-widget .rc-radio:not(:first-child) {
+  border: none;
+}
+.template-product .rc-widget .rc-radio {
+  border: 1px solid var(--COLOR-A20) !important;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  width: 50%;
+}
+.template-product .rc-widget .rc-radio input[type=radio] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #F2A7DE;
+  cursor: pointer;
+  padding: 0px;
+  position: relative;
+}
+.template-product .rc-widget .rc-radio input[type=radio]:checked:before {
+  content: "";
+  background-color: #F2A7DE;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.template-product .rc-widget .rc-radio--active {
+  background-color: #fceef8 !important;
+  border-color: #fceef8 !important;
+}
+.template-product .rc-widget .rc-radio--active .discount-label {
+  color: var(--COLOR-TEXT);
+  font-weight: 500 !important;
+}
+.template-product .rc-widget .rc-radio__label {
+  margin: 0px;
+  flex-grow: 1;
+  justify-content: center;
+}
+.template-product .rc-widget .rc-radio__label .price-label {
+  display: none;
+}
+.template-product .rc-widget .rc-radio__label .discount-label {
+  color: var(--COLOR-TEXT);
+  font-weight: 500;
+  font-size: 14px;
+}
+.template-product .rc-widget input[type=radio] {
+  margin: 0;
+}
+.template-product .radio__button label {
+  border-radius: 0px;
+}
 .template-product .radio__button input[type=radio]:checked + label {
-  background: #E2DEF9;
+  background: #fceef8;
+  border-color: #fceef8;
   /* add any other styles you want for the active state */
+}
+.template-product .radio__legend__label .radio__legend__value {
+  font-weight: 600;
 }
 .template-product ul.tab-proud-be {
   list-style: none;
   display: flex;
-  margin-top: 20px;
   flex-wrap: wrap;
   margin-left: 0px;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .template-product ul.tab-proud-be div.item {
-  width: calc(50% - 5px);
+  width: 25%;
+  max-width: 80px;
   display: flex;
   align-items: center;
   padding-bottom: 10px;
-}
-.template-product ul.tab-proud-be div.item img {
-  max-width: 70px;
-  height: auto;
-  margin: 10px 20px 10px 0px !important;
+  flex-direction: column;
+  row-gap: 5px;
+  padding-bottom: 0px;
 }
 @media only screen and (max-width: 749px) {
-  .template-product ul.tab-proud-be div.item img {
-    max-width: 50px !important;
-    margin: 10px 10px 10px 0 !important;
+  .template-product ul.tab-proud-be div.item {
+    width: 18%;
   }
+}
+.template-product ul.tab-proud-be div.item img {
+  width: 100%;
+  height: auto;
+}
+.template-product ul.tab-proud-be div.item li {
+  text-align: center;
 }
 .template-product .price_with_reviews_container {
   display: flex;
@@ -268,6 +344,16 @@
   display: flex;
   align-items: center;
   left: 0;
+}
+.template-product .price_with_reviews_container .product__price {
+  font-size: 35px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+@media only screen and (max-width: 749px) {
+  .template-product .price_with_reviews_container .product__price {
+    font-size: 28px;
+  }
 }
 .template-product .product-bundle-container .accordion-content {
   padding-top: 10px;
@@ -387,7 +473,7 @@
   padding: 0px;
 }
 .template-product .product__selectors .custom-variant-picker-continer .radio__fieldset .radio__buttons .radio__button label {
-  border: 1px solid #F0F0F0;
+  border: 1px solid #f0f0f0;
   border-radius: 5px;
   padding: 3px 5px 3px 10px;
   display: flex;
@@ -423,29 +509,39 @@
   letter-spacing: 0px;
   text-align: left;
 }
-.template-product .product__submit__item .btn--primary, .template-product .cart-bar__submit .btn--primary {
-  --BTN-PRIMARY-BG-COLOR:#FFA3E1;
+.template-product .product__submit__item,
+.template-product .cart-bar__submit {
+  grid-template-columns: minmax(0, 5.5rem) minmax(0, 100%);
+}
+.template-product .product__submit__item .btn--primary,
+.template-product .cart-bar__submit .btn--primary {
+  --BTN-PRIMARY-BG-COLOR: #ffa3e1;
   --BTN-PRIMARY-BG-COLOR-BRIGHTER: #fface4;
   letter-spacing: 0.05em;
+  border-radius: 0px;
   font-weight: 500;
   line-height: 22px;
   height: initial;
   min-height: initial;
 }
 @media only screen and (max-width: 749px) {
-  .template-product .product__submit__item .btn--primary, .template-product .cart-bar__submit .btn--primary {
+  .template-product .product__submit__item .btn--primary,
+  .template-product .cart-bar__submit .btn--primary {
     font-size: 12px;
     padding-top: 9px;
     padding-bottom: 9px;
     line-height: 18px;
   }
 }
-.template-product .product__submit__item .select-popout, .template-product .cart-bar__submit .select-popout {
+.template-product .product__submit__item .select-popout,
+.template-product .cart-bar__submit .select-popout {
   height: 100%;
 }
-.template-product .product__submit__item .select-popout .select-popout__toggle, .template-product .cart-bar__submit .select-popout .select-popout__toggle {
+.template-product .product__submit__item .select-popout .select-popout__toggle,
+.template-product .cart-bar__submit .select-popout .select-popout__toggle {
+  border-radius: 0;
   height: 100%;
-  border-color: #FFA3E1;
+  border-color: #e1e0e0;
 }
 .template-product .PRODUCT_PAGE-notify-button {
   width: 100%;
