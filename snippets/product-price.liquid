@@ -10,7 +10,7 @@
 
   <div class="product__block review-flex" {{ block_style }}>
   <div class="price_with_reviews_container">
-    <div class="product__price__wrap">
+    <div class="product__price__wrap --{%- if product.compare_at_price_max > product.price -%}- with__sold_price{%- endif -%}">
       <div class="product__price{% if has_units %} product__price--has-units{% endif %}" data-price-wrapper>
         <span
           data-product-price

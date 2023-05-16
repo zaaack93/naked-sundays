@@ -340,6 +340,9 @@
   align-content: flex-start;
   row-gap: 10px;
 }
+.template-product .price_with_reviews_container .product__price__wrap {
+  align-items: center;
+}
 .template-product .price_with_reviews_container .stamped-badge {
   display: flex;
   align-items: center;
@@ -353,6 +356,14 @@
 @media only screen and (max-width: 749px) {
   .template-product .price_with_reviews_container .product__price {
     font-size: 28px;
+  }
+}
+.template-product .with__sold_price .product__price {
+  font-size: 30px;
+}
+@media only screen and (max-width: 749px) {
+  .template-product .with__sold_price .product__price {
+    font-size: 22px;
   }
 }
 .template-product .product-bundle-container .accordion-content {
