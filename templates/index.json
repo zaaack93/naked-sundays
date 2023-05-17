@@ -228,6 +228,7 @@
     },
     "d63c2c88-85d6-452d-80d8-ad29995b9403": {
       "type": "section-before-after",
+      "disabled": true,
       "settings": {
         "heading": "Where Beauty Meets SPF",
         "description": "<p>Transform your morning (and lunchtime and afternoon!) skin routine, with Naked Sundays science-backed SPF that can be worn with or OVER your makeup, the world's only SPF brand created with topping up your SPF at the forefront of our mission to decrease melanoma rates. <\/p><p>Our world-first formulations & unique delivery mechanisms, means your skin gets extra protection without interrupting your makeup. <\/p><p>Going where most SPF hasn't gone before; eyelids, lips, under your eyes... Gentle, 100% Vegan, Cruelty Free, and cute to boot. <\/p><p>Winner of multiple awards, with makeup artists tick of approval. Don't leave home without us! <\/p><p><em>RIGHT: SEE OUR <\/em><a href=\"\/products\/spf50-100-mineral-glow-collagen-sunscreen-naked-sundays\" title=\"SPF50+ Collagen Glow 100% Mineral Perfecting Priming Lotion\"><em>100% MINERAL PERFECTING PRIMING LOTION<\/em><\/a><em> with our exclusive Vegan Collagen Blend for a flawless finish<\/em><\/p>",
@@ -240,6 +241,27 @@
         "image_1": "shopify:\/\/shop_images\/product_only.jpg",
         "image_2": "shopify:\/\/shop_images\/bare_skin.jpg",
         "aspect_ratio": 1,
+        "width": "wrapper",
+        "bg_color": "#e2def9",
+        "color": "",
+        "padding_top": 50,
+        "padding_bottom": 50
+      }
+    },
+    "1caaa719-09b3-44e1-ae6f-73d8f81d4e91": {
+      "type": "section-before-after",
+      "settings": {
+        "heading": "Where Beauty Meets SPF",
+        "description": "<p>Our mission is simple: to decrease melanoma rates by making SPF a seamless part of your daily routine. <\/p><p>With science-backed formulations and innovative delivery mechanisms, our world-first products provide the extra protection your skin needs, without disrupting your makeup. <\/p><p>Going where most SPF hasn't gone before; eyelids, lips, under your eyes... Gentle, 100% Vegan, Cruelty Free, and cute to boot. <\/p>",
+        "link_text": "SHOP MINERAL LOTION",
+        "link_url": "shopify:\/\/products\/spf50-100-mineral-glow-collagen-sunscreen-naked-sundays",
+        "button_type": "btn--secondary hero__btn",
+        "button_size": "btn--large",
+        "button_style": "btn--solid",
+        "show_arrow": false,
+        "image_1": "shopify:\/\/shop_images\/product_only.jpg",
+        "image_2": "shopify:\/\/shop_images\/bare_skin.jpg",
+        "aspect_ratio": 1.1,
         "width": "wrapper",
         "bg_color": "#e2def9",
         "color": "",
@@ -367,7 +389,7 @@
             "icon_size": 60,
             "icon_alignment": "icon--top",
             "icon_color": "#545454",
-            "title": "100% VEGAN",
+            "title": "100% Vegan",
             "heading_size": 5,
             "text": "<p>Making sunscreen is no easy feat and we fight to ensure that our products are 100% vegan and of course, cruelty free. We are only tested on SPF-loving humans and all our ingredients are sustainably sourced.<\/p>",
             "text_size": 3
@@ -606,6 +628,7 @@
     },
     "d4148cce-b701-4e61-ac94-70d0941f4b23": {
       "type": "section-collections-list-hover",
+      "disabled": true,
       "blocks": {
         "template--16719977808130__d4148cce-b701-4e61-ac94-70d0941f4b23-16793514144f6483e6-0": {
           "type": "collection",
@@ -716,6 +739,7 @@
     },
     "75d0398b-4990-421f-880d-4af0f1270179": {
       "type": "section-columns",
+      "disabled": true,
       "blocks": {
         "a8117010-5499-4558-a540-5d8f8b40b6e3": {
           "type": "image",
@@ -793,6 +817,7 @@
     "98c3eaf8-337e-495e-83dd-6aac8c00aed8",
     "a3473369-da2f-473c-be68-ecc18d54fc2b",
     "d63c2c88-85d6-452d-80d8-ad29995b9403",
+    "1caaa719-09b3-44e1-ae6f-73d8f81d4e91",
     "c5175ed1-9d0d-4aef-b1cc-f032ade42334",
     "fb80c6f7-db35-47da-98c3-98b67edf0858",
     "22179801-27bd-4e3b-9c1c-43be4bc983d9",

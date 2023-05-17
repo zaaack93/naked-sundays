@@ -10,7 +10,7 @@
             "show_rating": false,
             "enable_star_rating": true,
             "show_rating_count": false,
-            "padding_bottom": 10
+            "padding_bottom": 18
           }
         },
         "price": {
@@ -34,7 +34,7 @@
           "settings": {
             "title": "",
             "text": "<p>{{ product.metafields.my_fields.short_description | metafield_tag }}<\/p>",
-            "padding_bottom": 16
+            "padding_bottom": 20
           }
         },
         "354bcc6f-2b5a-4be8-847c-ac0140464160": {
@@ -104,7 +104,7 @@
             "icon_color": "#ffa3e1",
             "title": "Free AU Shipping over $49",
             "width": "half",
-            "padding_bottom": 10
+            "padding_bottom": 16
           }
         },
         "icon_1": {
@@ -116,7 +116,7 @@
             "icon_color": "#ffa3e1",
             "title": "Afterpay & Zip Available",
             "width": "half",
-            "padding_bottom": 10
+            "padding_bottom": 16
           }
         },
         "tabs": {

@@ -2,9 +2,68 @@
   "type": "custom.pre_footer",
   "name": "Pre-footer",
   "sections": {
+    "66395318-71c7-4470-a7a7-1e53cfac43ba": {
+      "type": "section-text-row",
+      "disabled": true,
+      "blocks": {
+        "sections--16720749723906__66395318-71c7-4470-a7a7-1e53cfac43ba-1684296498e19fc015-0": {
+          "type": "icon",
+          "settings": {
+            "icon_name": "icon-shield",
+            "icon_size": 20,
+            "icon_color": "#545454",
+            "title": "Made in Australia",
+            "heading_size": 4,
+            "text": "<p>Transactions are handled with bank-grade security.<\/p>",
+            "text_size": 3
+          }
+        },
+        "sections--16720749723906__66395318-71c7-4470-a7a7-1e53cfac43ba-1684296498e19fc015-1": {
+          "type": "icon",
+          "settings": {
+            "icon_name": "icon-trophy",
+            "icon_size": 20,
+            "icon_color": "#545454",
+            "title": "Simple checkout",
+            "heading_size": 4,
+            "text": "<p>Our secure checkout is quick and easy to use.<\/p>",
+            "text_size": 3
+          }
+        },
+        "sections--16720749723906__66395318-71c7-4470-a7a7-1e53cfac43ba-1684296498e19fc015-2": {
+          "type": "icon",
+          "settings": {
+            "icon_name": "icon-chat",
+            "icon_size": 20,
+            "icon_color": "#545454",
+            "title": "Get in touch",
+            "heading_size": 4,
+            "text": "<p>Have questions? Get in touch with us at any time.<\/p>",
+            "text_size": 3
+          }
+        }
+      },
+      "block_order": [
+        "sections--16720749723906__66395318-71c7-4470-a7a7-1e53cfac43ba-1684296498e19fc015-0",
+        "sections--16720749723906__66395318-71c7-4470-a7a7-1e53cfac43ba-1684296498e19fc015-1",
+        "sections--16720749723906__66395318-71c7-4470-a7a7-1e53cfac43ba-1684296498e19fc015-2"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": 5,
+        "align_text": "text-left",
+        "icon_alignment": "icon--top",
+        "align_columns": "flex-align-top",
+        "width": "wrapper--full-padded",
+        "bg_color": "#f7f9fa",
+        "color": "",
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "layout_mobile": "carousel"
+      }
+    },
     "section-newsletter": {
       "type": "section-newsletter",
-      "disabled": true,
       "blocks": {
         "newsletter-0": {
           "type": "image",
@@ -68,6 +127,7 @@
     }
   },
   "order": [
+    "66395318-71c7-4470-a7a7-1e53cfac43ba",
     "section-newsletter"
   ]
 }

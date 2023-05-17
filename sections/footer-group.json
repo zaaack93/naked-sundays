@@ -26,29 +26,31 @@
           "settings": {
             "linklist": "support",
             "title": "",
-            "column_width": 33
+            "column_width": 25
           }
         },
         "footer-2": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "image_width": 150,
             "title": "Get in Touch",
             "text": "<p>Address:<br\/>Email:<br\/>Phone:<\/p>",
-            "column_width": 33
+            "column_width": 20
           }
         },
         "b22242d2-dd55-409a-9429-84846ea721db": {
           "type": "text",
           "settings": {
             "image_width": 50,
-            "title": "",
+            "title": "Acknowledgement of Country",
             "text": "<p><em>Naked Sundays acknowledges the Traditional Custodians of country throughout Australia and their connections to land, sea, and community. We pay our respect to their Elders past and present and extend that respect to all Aboriginal and Torres Strait Islander peoples today.<\/em><\/p>",
-            "column_width": 100
+            "column_width": 41
           }
         },
         "e0b13d33-cf83-449a-aace-1e03c2a22ce3": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/NakedSundays-Logo_MultiColor_96377f91-8300-4353-82d8-04ad28d845cd.png",
             "image_width": 150,
@@ -66,11 +68,11 @@
         "e0b13d33-cf83-449a-aace-1e03c2a22ce3"
       ],
       "settings": {
-        "logo_image_width": 50,
+        "logo_image_width": 200,
         "overlay_opacity": 75,
         "overlay_color": "#ffffff",
-        "footer_secondary_linklist": "",
-        "footer_payment_enable": false,
+        "footer_secondary_linklist": "footer",
+        "footer_payment_enable": true,
         "show_locale_selector": false,
         "show_currency_selector": false,
         "type": "currency",
