@@ -37,7 +37,7 @@
         {%for option in filtring_categories%}
             {% assign option = option | prepend : ',' %}
             {% if filters_active contains option %}
-                #label-for-{{option}} {
+                #label-for-{{option | replace: " ", ""}} {
                     background: #E1DEF7;
                     border: 0.8px solid #EAE4FF;
                 }

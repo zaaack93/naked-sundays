@@ -86,7 +86,7 @@
     {%- if show_sort -%}
       {%- assign align_classes = align_classes | append: ' collection__nav--sort ' -%}
     {%- endif -%}
-    {%- if show_top_filtring -%}
+    {%- if show_top_filtring and request.path=='/collections/all' -%}
       {%- assign align_classes = align_classes | append: ' collection__nav--bar-filtring ' -%}
     {%- endif -%}
 
@@ -146,7 +146,7 @@
             </button>
           </div>
         {%- endif -%}
-        {% if show_top_filtring %}
+        {% if show_top_filtring and request.path=="/collections/all" %}
           {% render 'top-bar-filtring' %}
         {% endif %}
         {%- if show_sort -%}
