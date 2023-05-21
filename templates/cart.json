@@ -4,7 +4,7 @@
       "type": "cart",
       "settings": {
         "padding_top": 40,
-        "padding_bottom": 50,
+        "padding_bottom": 60,
         "enable_freegift": true,
         "free_gift_limit": "20",
         "collection": "free-gift"

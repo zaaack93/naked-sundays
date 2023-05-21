@@ -34,7 +34,7 @@
           "settings": {
             "title": "",
             "text": "<p>{{ product.metafields.my_fields.short_description | metafield_tag }}<\/p>",
-            "padding_bottom": 20
+            "padding_bottom": 30
           }
         },
         "354bcc6f-2b5a-4be8-847c-ac0140464160": {
@@ -93,7 +93,7 @@
             "show_quantity": true,
             "show_payment_button": false,
             "padding_top": 20,
-            "padding_bottom": 10
+            "padding_bottom": 16
           }
         },
         "icon_2": {
@@ -104,7 +104,7 @@
             "icon_color": "#ffa3e1",
             "title": "Free AU Shipping over $49",
             "width": "half",
-            "padding_bottom": 16
+            "padding_bottom": 24
           }
         },
         "icon_1": {

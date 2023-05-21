@@ -50,7 +50,7 @@
             "first_button_size": "btn--large",
             "first_button_style": "btn--solid",
             "first_button_show_arrow": true,
-            "second_button_text": "SHOP BESTSELLERS",
+            "second_button_text": "",
             "second_button_link": "shopify:\/\/collections",
             "second_button_type": "btn--secondary",
             "second_button_size": "btn--large",
