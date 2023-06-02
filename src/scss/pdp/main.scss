@@ -5,6 +5,7 @@
 
       .product__title {
         font-size: 20px;
+        margin-top: 25px;
       }
     }
   }
@@ -25,7 +26,7 @@
       padding-top: 9px;
       padding-bottom: 7px;
       top: 9px;
-      left: 10px;
+      left: 26px;
     }
   }
 
@@ -56,28 +57,54 @@
         column-gap: 10px;
         width: 50%;
 
+        // input[type="radio"] {
+        //   /* ...existing styles */
+        //   display: grid;
+        //   place-content: center;
+        // }
+        
+        // input[type="radio"]:before {
+        //   content: "";
+        //   width: 0.65em;
+        //   height: 0.65em;
+        //   border-radius: 50%;
+        //   transform: scale(0);
+        //   transition: 120ms transform ease-in-out;
+        //   box-shadow: inset 1em 1em var(--form-control-color);
+        // }
+        
+        // input[type="radio"]:checked:before {
+        //   transform: scale(1);
+        // }
+
         input[type="radio"] {
-            -webkit-appearance: none;
-            appearance: none;
-            border-radius: 50%;
-            width: 16px;
-            height: 16px;
-            border: 1px solid #F2A7DE;
-            cursor: pointer;
-            padding: 0px;
-            position: relative;
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          appearance: none;
+          border-radius: 50px;
+          width: 16px;
+          height: 16px;
+          min-width: 16px;
+          min-height: 16px;
+          max-height: 16px;
+          max-width: 16px;
+          border: 1px solid #F2A7DE;
+          cursor: pointer;
+          padding: 0;
+          position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: center;
           }
           
           input[type="radio"]:checked:before {
+            overflow: hidden;
             content: "";
-            background-color: #F2A7DE;
-            width: 10px;
-            height: 10px;
-            position: absolute;
-            border-radius: 50%;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+            background-color: #f2a7de;
+            border-radius: 50px;
+            position: relative;
+            width: 11.2Px;
+            height: 11.2Px;
           }
 
     }
@@ -87,6 +114,7 @@
         .discount-label{
             color: var(--COLOR-TEXT);
             font-weight: 500 !important;
+            line-height: 22px;
         }
     }
     .rc-radio__label{
@@ -100,6 +128,7 @@
             color: var(--COLOR-TEXT);
             font-weight: 500;
             font-size: 14px;
+            line-height: 22px;
         }
     }
     input[type=radio]{
@@ -132,7 +161,8 @@
     margin-left: 0px;
     justify-content: space-between;
     flex-wrap: wrap;
-
+    
+   
     div.item {
       width: 25%;
       max-width: 80px;
@@ -143,7 +173,13 @@
       row-gap: 5px;
       padding-bottom: 0px;
       @media only screen and (max-width: 749px) {
-        width: 18%;
+        width: 20%;
+        img {
+          max-width: 60px;
+        }
+        li{
+          font-size: 14px;
+        }
       }
 
       img {
@@ -152,8 +188,20 @@
       }
       li {
         text-align: center;
+        word-break: normal;
       }
     }
+
+    // div.item:not(:first-child) {
+    //   /* Add your styles here */
+    //   max-width: 100px;
+    //   @media only screen and (max-width: 749px) {
+    //     width: 20%;
+    //   }
+    //   img {
+    //     max-width: 80px;
+    //   }
+    // }
   }
 
   //product price with reviews
@@ -383,15 +431,16 @@
       --BTN-PRIMARY-BG-COLOR-BRIGHTER: #fface4;
       letter-spacing: 0.05em;
       border-radius: 0px;
-      font-weight: 500;
-      line-height: 22px;
-      height: initial;
-      min-height: initial;
+      font-weight: 600;
+      //line-height: 22px;
+      // height: initial;
+      // min-height: initial;
+      padding-top: 16px;
+      padding-bottom: 16px;
       @media only screen and (max-width: 749px) {
-        font-size: 12px;
-        padding-top: 9px;
-        padding-bottom: 9px;
-        line-height: 18px;
+        //font-size: 12px;
+        
+        //line-height: 18px;
       }
     }
     .select-popout {
@@ -404,9 +453,15 @@
     }
   }
   //notify me button
+ .shop-pay-terms{
+  margin: 0px;
   .PRODUCT_PAGE-notify-button {
     width: 100%;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
   }
+ } 
+
 
   //override recharge app
 

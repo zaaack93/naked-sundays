@@ -113,30 +113,7 @@
             endunless
           -%}
         
-          {%- if badge != '' -%}
-            <span class="badge-box"
-              data-aos="fade"
-              data-aos-delay="{{ aos_image_delay }}"
-              data-aos-duration="{{ aos_duration }}"
-              data-aos-anchor="{{ aos_anchor }}">{{ badge }}</span>
-          {%- elsif preorder and sold_out == false -%}
-            <span class="preorder-box"
-              data-aos="fade"
-              data-aos-delay="{{ aos_image_delay }}"
-              data-aos-duration="{{ aos_duration }}"
-              data-aos-anchor="{{ aos_anchor }}">{{ 'products.product.pre_order' | t }}</span>
-          {%- elsif on_sale and sold_out == false -%}
-        
-          {% assign sale = product.compare_at_price_max | minus: product.price | divided_by:100 | round %}
-              {%assign amount = sale | times:100 %}
-            {%- capture savings -%}{{ amount | money_without_trailing_zeros }}{%- endcapture -%}
-            <span class="sale-box"
-              data-aos="fade"
-              data-aos-delay="{{ aos_image_delay }}"
-              data-aos-duration="{{ aos_duration }}"
-              data-aos-anchor="{{ aos_anchor }}">{{ 'products.product.discount_html' | t: savings: savings }}</span>
-          {%- endif -%}
-          
+                   
           {%- if product.media.size > 0 -%}
             <div
               class="product__slides product-single__photos"
@@ -145,6 +122,31 @@
               data-product-single-media-group
               data-options='{"prevNextButtons": false, "contain": true, "adaptiveHeight": true, "fade": true}'>
               {%- for media in product.media -%}
+                {% if forloop.index0 == 0 %}
+                  {%- if badge != '' -%}
+                    <span class="badge-box"
+                      data-aos="fade"
+                      data-aos-delay="{{ aos_image_delay }}"
+                      data-aos-duration="{{ aos_duration }}"
+                      data-aos-anchor="{{ aos_anchor }}">{{ badge }}</span>
+                  {%- elsif preorder and sold_out == false -%}
+                    <span class="preorder-box"
+                      data-aos="fade"
+                      data-aos-delay="{{ aos_image_delay }}"
+                      data-aos-duration="{{ aos_duration }}"
+                      data-aos-anchor="{{ aos_anchor }}">{{ 'products.product.pre_order' | t }}</span>
+                  {%- elsif on_sale and sold_out == false -%}
+                
+                  {% assign sale = product.compare_at_price_max | minus: product.price | divided_by:100 | round %}
+                      {%assign amount = sale | times:100 %}
+                    {%- capture savings -%}{{ amount | money_without_trailing_zeros }}{%- endcapture -%}
+                    <span class="sale-box"
+                      data-aos="fade"
+                      data-aos-delay="{{ aos_image_delay }}"
+                      data-aos-duration="{{ aos_duration }}"
+                      data-aos-anchor="{{ aos_anchor }}">{{ 'products.product.discount_html' | t: savings: savings }}</span>
+                  {%- endif -%}
+                {%endif%}
                 {%- render 'media', media: media, featured_media: featured_media, enable_video_looping: enable_video_looping, sectionkey: unique, image_width: image_width -%}
               {%- endfor -%}
             </div>

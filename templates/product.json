@@ -16,7 +16,7 @@
         "price": {
           "type": "price",
           "settings": {
-            "padding_bottom": 10
+            "padding_bottom": 18
           }
         },
         "d0a39884-abaf-4ce6-bf85-5b725e5cde77": {
@@ -92,7 +92,7 @@
           "settings": {
             "show_quantity": true,
             "show_payment_button": false,
-            "padding_top": 20,
+            "padding_top": 18,
             "padding_bottom": 16
           }
         },

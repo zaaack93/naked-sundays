@@ -195,6 +195,7 @@
   }
   .template-product .product__title__wrapper .product__title {
     font-size: 20px;
+    margin-top: 25px;
   }
 }
 .template-product .product__images {
@@ -214,7 +215,7 @@
   padding-top: 9px;
   padding-bottom: 7px;
   top: 9px;
-  left: 10px;
+  left: 26px;
 }
 .template-product .selector-with-only-variant {
   border-bottom: none;
@@ -246,25 +247,30 @@
 .template-product .rc-widget .rc-radio input[type=radio] {
   -webkit-appearance: none;
   -moz-appearance: none;
-       appearance: none;
-  border-radius: 50%;
+  appearance: none;
+  border-radius: 50px;
   width: 16px;
   height: 16px;
+  min-width: 16px;
+  min-height: 16px;
+  max-height: 16px;
+  max-width: 16px;
   border: 1px solid #F2A7DE;
   cursor: pointer;
-  padding: 0px;
+  padding: 0;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .template-product .rc-widget .rc-radio input[type=radio]:checked:before {
+  overflow: hidden;
   content: "";
-  background-color: #F2A7DE;
-  width: 10px;
-  height: 10px;
-  position: absolute;
-  border-radius: 50%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  background-color: #f2a7de;
+  border-radius: 50px;
+  position: relative;
+  width: 11.2Px;
+  height: 11.2Px;
 }
 .template-product .rc-widget .rc-radio--active {
   background-color: #fceef8 !important;
@@ -273,6 +279,7 @@
 .template-product .rc-widget .rc-radio--active .discount-label {
   color: var(--COLOR-TEXT);
   font-weight: 500 !important;
+  line-height: 22px;
 }
 .template-product .rc-widget .rc-radio__label {
   margin: 0px;
@@ -286,6 +293,7 @@
   color: var(--COLOR-TEXT);
   font-weight: 500;
   font-size: 14px;
+  line-height: 22px;
 }
 .template-product .rc-widget input[type=radio] {
   margin: 0;
@@ -321,7 +329,13 @@
 }
 @media only screen and (max-width: 749px) {
   .template-product ul.tab-proud-be div.item {
-    width: 18%;
+    width: 20%;
+  }
+  .template-product ul.tab-proud-be div.item img {
+    max-width: 60px;
+  }
+  .template-product ul.tab-proud-be div.item li {
+    font-size: 14px;
   }
 }
 .template-product ul.tab-proud-be div.item img {
@@ -330,6 +344,7 @@
 }
 .template-product ul.tab-proud-be div.item li {
   text-align: center;
+  word-break: normal;
 }
 .template-product .price_with_reviews_container {
   display: flex;
@@ -530,19 +545,9 @@
   --BTN-PRIMARY-BG-COLOR-BRIGHTER: #fface4;
   letter-spacing: 0.05em;
   border-radius: 0px;
-  font-weight: 500;
-  line-height: 22px;
-  height: initial;
-  min-height: initial;
-}
-@media only screen and (max-width: 749px) {
-  .template-product .product__submit__item .btn--primary,
-  .template-product .cart-bar__submit .btn--primary {
-    font-size: 12px;
-    padding-top: 9px;
-    padding-bottom: 9px;
-    line-height: 18px;
-  }
+  font-weight: 600;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 .template-product .product__submit__item .select-popout,
 .template-product .cart-bar__submit .select-popout {
@@ -554,8 +559,13 @@
   height: 100%;
   border-color: #e1e0e0;
 }
-.template-product .PRODUCT_PAGE-notify-button {
+.template-product .shop-pay-terms {
+  margin: 0px;
+}
+.template-product .shop-pay-terms .PRODUCT_PAGE-notify-button {
   width: 100%;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
 }
 
 .product__commun_upsell .product-upsell {
