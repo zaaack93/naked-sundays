@@ -10,18 +10,18 @@
             "show_rating": false,
             "enable_star_rating": true,
             "show_rating_count": false,
-            "padding_bottom": 8
+            "padding_bottom": 10
           }
         },
         "price": {
           "type": "price",
-          "disabled": true,
           "settings": {
-            "padding_bottom": 10
+            "padding_bottom": 18
           }
         },
         "d0a39884-abaf-4ce6-bf85-5b725e5cde77": {
           "type": "shopify:\/\/apps\/stamped-product-reviews-ugc\/blocks\/star-rating-badge\/a103faaf-2125-4b0e-89fa-de5149736723",
+          "disabled": true,
           "settings": {
             "use_metafields": false,
             "sku_tagtype": "sku",
@@ -37,6 +37,42 @@
             "padding_bottom": 30
           }
         },
+        "354bcc6f-2b5a-4be8-847c-ac0140464160": {
+          "type": "icon",
+          "disabled": true,
+          "settings": {
+            "icon_name": "icon-heart",
+            "icon_size": 20,
+            "icon_color": "#ffa3e1",
+            "title": "{{ product.metafields.custom.key_benefit_1.value }}",
+            "width": "full",
+            "padding_bottom": 10
+          }
+        },
+        "4daa77ee-af23-4026-b933-d80a5b825775": {
+          "type": "icon",
+          "disabled": true,
+          "settings": {
+            "icon_name": "icon-heart",
+            "icon_size": 20,
+            "icon_color": "#ffa3e1",
+            "title": "{{ product.metafields.custom.key_benefit_2.value }}",
+            "width": "full",
+            "padding_bottom": 10
+          }
+        },
+        "43f9c98e-061b-4757-8d43-fba3927464a7": {
+          "type": "icon",
+          "disabled": true,
+          "settings": {
+            "icon_name": "icon-heart",
+            "icon_size": 20,
+            "icon_color": "#ffa3e1",
+            "title": "{{ product.metafields.custom.key_benefit_3.value }}",
+            "width": "full",
+            "padding_bottom": 16
+          }
+        },
         "variants": {
           "type": "variants",
           "settings": {
@@ -47,7 +83,6 @@
         },
         "2019a4a1-fe94-43a2-89b9-5a280e901a20": {
           "type": "shopify:\/\/apps\/recharge-subscriptions\/blocks\/subscription-widget\/371eed76-0b44-4869-9813-730372ea378e",
-          "disabled": true,
           "settings": {
             "product": "{{product}}"
           }
@@ -84,39 +119,6 @@
             "padding_bottom": 16
           }
         },
-        "354bcc6f-2b5a-4be8-847c-ac0140464160": {
-          "type": "icon",
-          "settings": {
-            "icon_name": "icon-heart",
-            "icon_size": 20,
-            "icon_color": "#ffa3e1",
-            "title": "{{ product.metafields.custom.key_benefit_1.value }}",
-            "width": "full",
-            "padding_bottom": 10
-          }
-        },
-        "4daa77ee-af23-4026-b933-d80a5b825775": {
-          "type": "icon",
-          "settings": {
-            "icon_name": "icon-heart",
-            "icon_size": 20,
-            "icon_color": "#ffa3e1",
-            "title": "{{ product.metafields.custom.key_benefit_2.value }}",
-            "width": "full",
-            "padding_bottom": 10
-          }
-        },
-        "43f9c98e-061b-4757-8d43-fba3927464a7": {
-          "type": "icon",
-          "settings": {
-            "icon_name": "icon-heart",
-            "icon_size": 20,
-            "icon_color": "#ffa3e1",
-            "title": "{{ product.metafields.custom.key_benefit_3.value }}",
-            "width": "full",
-            "padding_bottom": 16
-          }
-        },
         "tabs": {
           "type": "tab_richtext",
           "settings": {
@@ -138,7 +140,6 @@
         },
         "upsell": {
           "type": "upsell",
-          "disabled": true,
           "settings": {
             "bg_color": "#f7f9fa",
             "padding_bottom": 30
@@ -162,14 +163,14 @@
         "price",
         "d0a39884-abaf-4ce6-bf85-5b725e5cde77",
         "fab81f98-3315-4186-b532-6c7401377e28",
+        "354bcc6f-2b5a-4be8-847c-ac0140464160",
+        "4daa77ee-af23-4026-b933-d80a5b825775",
+        "43f9c98e-061b-4757-8d43-fba3927464a7",
         "variants",
         "2019a4a1-fe94-43a2-89b9-5a280e901a20",
         "buttons",
         "icon_2",
         "icon_1",
-        "354bcc6f-2b5a-4be8-847c-ac0140464160",
-        "4daa77ee-af23-4026-b933-d80a5b825775",
-        "43f9c98e-061b-4757-8d43-fba3927464a7",
         "tabs",
         "upsell",
         "854ee2b3-f488-4675-b9f8-0a54c1159a11"

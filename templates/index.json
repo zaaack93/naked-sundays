@@ -2,6 +2,7 @@
   "sections": {
     "225ff90c-3487-4e28-804a-5be2aec799e2": {
       "type": "section-announcement",
+      "disabled": true,
       "blocks": {
         "template--16696976507138__225ff90c-3487-4e28-804a-5be2aec799e2-16768868190ffaacf1-0": {
           "type": "text",
@@ -32,19 +33,19 @@
         "template--16720755917058__5f5af74b-0113-4994-b2ab-f942f40a46ca-167949130042901170-0": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/tgp_6957_edit_552f38ac-ada9-4c3f-943f-923d0bfc97b5_1.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/WhatsApp_Image_2022-09-19_at_12.24.53_PM_f556715d-49ec-453d-9eda-aaf76a244fd2_1.jpg",
+            "image": "shopify:\/\/shop_images\/TGP_8278_Lowres.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/TGP_8236_Lowres_81857ff4-2e61-470d-9009-10cdab7a1306.jpg",
             "overlay_opacity": 0,
             "overlay_color": "#000000",
             "show_overlay_text": false,
-            "title": "<p><strong>AWARD-WINNING, <br\/>100% VEGAN SPF SKINCARE<\/strong><\/p>",
-            "heading_size": 5,
-            "description": "<p>World First Formulations<br\/>with Natural Australian Botanicals<\/p>",
+            "title": "<p>SPF FOR SKINCARE LOVERS<\/p>",
+            "heading_size": 8,
+            "description": "<p>100% Vegan. 100% Good Vibes.<\/p>",
             "text_size": 4,
             "flex_align": "align--middle-center",
             "bg_color": "",
             "color": "#ffffff",
-            "first_button_text": "SHOP ALL PRODUCTS",
+            "first_button_text": "GET STARTED",
             "first_button_link": "shopify:\/\/collections\/all",
             "first_button_type": "btn--primary",
             "first_button_size": "btn--large",
@@ -81,7 +82,7 @@
             "logo": "shopify:\/\/shop_images\/Harpers_Bazaar_logo_logotype.png",
             "logo_width": 140,
             "link": "",
-            "description": "<p>\"Naked Sundays SPF Face Mist is a genius product\"<\/p>",
+            "description": "",
             "heading_size": 5
           }
         },
@@ -91,7 +92,7 @@
             "logo": "shopify:\/\/shop_images\/Vanity_Fair_Logo_svg.png",
             "logo_width": 140,
             "link": "",
-            "description": "<p>\"Naked Sundays is practicality & brilliance come together\"<\/p>",
+            "description": "",
             "heading_size": 5
           }
         },
@@ -101,7 +102,7 @@
             "logo": "shopify:\/\/shop_images\/Mamamia-800x450_Large-removebg-preview.png",
             "logo_width": 140,
             "link": "",
-            "description": "<p>\"Sunscreen Queens Naked Sundays have done it again\"<\/p>",
+            "description": "",
             "heading_size": 5
           }
         },
@@ -111,7 +112,7 @@
             "logo": "shopify:\/\/shop_images\/Untitled_design-33.png",
             "logo_width": 140,
             "link": "",
-            "description": "<p>\"Made for multitasking, it can replace your primer and serum\"<\/p>",
+            "description": "",
             "heading_size": 5
           }
         },
@@ -121,7 +122,7 @@
             "logo": "shopify:\/\/shop_images\/vogue_ad2cba07-192e-413f-aef8-d9bef36547eb.png",
             "logo_width": 140,
             "link": "",
-            "description": "<p>\"Sunscreen is nonnegotiable on a daily basis\"<\/p>",
+            "description": "",
             "heading_size": 5
           }
         }
@@ -139,23 +140,46 @@
         "logo_opacity": 100,
         "bg_color": "#e2def9",
         "color": "",
-        "padding_top": 40,
-        "padding_bottom": 40
+        "padding_top": 33,
+        "padding_bottom": 35
       }
     },
     "98c3eaf8-337e-495e-83dd-6aac8c00aed8": {
       "type": "section-collection",
       "settings": {
-        "heading": "SPF ESSENTIALS",
-        "description": "<p>Shop our Best Selling SPF Essentials below. <\/p>",
+        "heading": "NEW ARRIVALS AND BESTSELLERS",
+        "description": "",
         "layout": "center",
-        "link_text": "",
-        "link_url": "",
+        "link_text": "SHOP ALL",
+        "link_url": "shopify:\/\/collections\/all",
         "button_type": "btn--primary",
         "button_size": "",
         "button_style": "btn--solid",
-        "show_arrow": false,
+        "show_arrow": true,
         "featured_collection": "all",
+        "style": "grid",
+        "grid": 4,
+        "rows": 2,
+        "layout_mobile": "2",
+        "bg_color": "#f7f9fa",
+        "color": "",
+        "padding_top": 50,
+        "padding_bottom": 50
+      }
+    },
+    "03b974bb-e03d-4adc-b037-9e30f1be9180": {
+      "type": "section-collection",
+      "settings": {
+        "heading": "SHOP BUNDLES & SAVE!",
+        "description": "<p>Get all your SPF in one cute AF bundle<\/p>",
+        "layout": "center",
+        "link_text": "Shop All Bundles",
+        "link_url": "shopify:\/\/collections\/summer-bundle-save",
+        "button_type": "btn--secondary",
+        "button_size": "btn--large",
+        "button_style": "btn--solid",
+        "show_arrow": true,
+        "featured_collection": "summer-bundle-save",
         "style": "grid",
         "grid": 4,
         "rows": 2,
@@ -164,6 +188,55 @@
         "color": "",
         "padding_top": 50,
         "padding_bottom": 50
+      }
+    },
+    "e0bf2292-a2b4-4886-b274-36bfc216ca17": {
+      "type": "section-double",
+      "blocks": {
+        "template--16720755917058__e0bf2292-a2b4-4886-b274-36bfc216ca17-16855927621fcaedb2-0": {
+          "type": "heading",
+          "settings": {
+            "title": "Welcome to Naked Sundays",
+            "text_size": 8
+          }
+        },
+        "template--16720755917058__e0bf2292-a2b4-4886-b274-36bfc216ca17-16855927621fcaedb2-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We're your multi-tasking, Aussie-made, skin-loving SPFs that play well with makeup (or on their own!) and look super cute on your shelfie.<\/p><p>Our mission is to decrease melanoma rates while increasing your love for wearing skin protection every single day. Made for topping up your SPF on the go, body & face ... you won't want to leave home without us!  <\/p>",
+            "text_size": 3,
+            "text_style": "font-body"
+          }
+        },
+        "template--16720755917058__e0bf2292-a2b4-4886-b274-36bfc216ca17-16855927621fcaedb2-2": {
+          "type": "buttons",
+          "settings": {
+            "button_text": "Learn more",
+            "button_url": "shopify:\/\/pages\/our-story-1",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false
+          }
+        }
+      },
+      "block_order": [
+        "template--16720755917058__e0bf2292-a2b4-4886-b274-36bfc216ca17-16855927621fcaedb2-0",
+        "template--16720755917058__e0bf2292-a2b4-4886-b274-36bfc216ca17-16855927621fcaedb2-1",
+        "template--16720755917058__e0bf2292-a2b4-4886-b274-36bfc216ca17-16855927621fcaedb2-2"
+      ],
+      "settings": {
+        "layout": "",
+        "height": "screen-height-two-thirds",
+        "mobile_height": "screen-height-two-thirds--mobile",
+        "width": "wrapper--full",
+        "image_1": "shopify:\/\/shop_images\/WhatsAppImage2022-09-19at12.24.53PM2_0f9a73a9-5776-4b8e-a0f5-496f868deabb.jpg",
+        "image_width": "one-half",
+        "text_alignment": "text-left",
+        "bg_color": "#e2def9",
+        "color": "",
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     },
     "a3473369-da2f-473c-be68-ecc18d54fc2b": {
@@ -226,30 +299,9 @@
         "padding_bottom": 35
       }
     },
-    "d63c2c88-85d6-452d-80d8-ad29995b9403": {
-      "type": "section-before-after",
-      "disabled": true,
-      "settings": {
-        "heading": "Where Beauty Meets SPF",
-        "description": "<p>Transform your morning (and lunchtime and afternoon!) skin routine, with Naked Sundays science-backed SPF that can be worn with or OVER your makeup, the world's only SPF brand created with topping up your SPF at the forefront of our mission to decrease melanoma rates. <\/p><p>Our world-first formulations & unique delivery mechanisms, means your skin gets extra protection without interrupting your makeup. <\/p><p>Going where most SPF hasn't gone before; eyelids, lips, under your eyes... Gentle, 100% Vegan, Cruelty Free, and cute to boot. <\/p><p>Winner of multiple awards, with makeup artists tick of approval. Don't leave home without us! <\/p><p><em>RIGHT: SEE OUR <\/em><a href=\"\/products\/spf50-100-mineral-glow-collagen-sunscreen-naked-sundays\" title=\"SPF50+ Collagen Glow 100% Mineral Perfecting Priming Lotion\"><em>100% MINERAL PERFECTING PRIMING LOTION<\/em><\/a><em> with our exclusive Vegan Collagen Blend for a flawless finish<\/em><\/p>",
-        "link_text": "SHOP MINERAL LOTION",
-        "link_url": "shopify:\/\/products\/spf50-100-mineral-glow-collagen-sunscreen-naked-sundays",
-        "button_type": "btn--secondary hero__btn",
-        "button_size": "btn--large",
-        "button_style": "btn--solid",
-        "show_arrow": false,
-        "image_1": "shopify:\/\/shop_images\/product_only.jpg",
-        "image_2": "shopify:\/\/shop_images\/bare_skin.jpg",
-        "aspect_ratio": 1,
-        "width": "wrapper",
-        "bg_color": "#e2def9",
-        "color": "",
-        "padding_top": 50,
-        "padding_bottom": 50
-      }
-    },
     "1caaa719-09b3-44e1-ae6f-73d8f81d4e91": {
       "type": "section-before-after",
+      "disabled": true,
       "settings": {
         "heading": "Where Beauty Meets SPF",
         "description": "<p>Our mission is simple: to decrease melanoma rates by making SPF a seamless part of your daily routine. <\/p><p>With science-backed formulations and innovative delivery mechanisms, our world-first products provide the extra protection your skin needs, without disrupting your makeup. <\/p><p>Going where most SPF hasn't gone before; eyelids, lips, under your eyes... Gentle, 100% Vegan, Cruelty Free, and cute to boot. <\/p>",
@@ -265,60 +317,6 @@
         "width": "wrapper",
         "bg_color": "#e2def9",
         "color": "",
-        "padding_top": 50,
-        "padding_bottom": 50
-      }
-    },
-    "c5175ed1-9d0d-4aef-b1cc-f032ade42334": {
-      "type": "section-reviews",
-      "disabled": true,
-      "blocks": {
-        "template--16696976507138__c5175ed1-9d0d-4aef-b1cc-f032ade42334-16778133845d221380-0": {
-          "type": "review",
-          "settings": {
-            "title": "Charlotte Begg",
-            "subheading": "Mamamia's lifestyle writer",
-            "review_text": "The first thing I noticed was the smell. The watermelon scent is refreshing, especially on a very hot day. \n\nThe other thing I observed was how lightweight it feels. The mist is extremely fine, and it dries almost instantly.",
-            "featured_image": "shopify:\/\/shop_images\/Screen_Shot_2023-03-03_at_2.49.54_pm.png",
-            "bio_image": "shopify:\/\/shop_images\/Screen_Shot_2023-03-03_at_2.51.47_pm.png",
-            "review_url": "shopify:\/\/blogs\/press\/mamamia-tried-tested-i-tried-the-luminous-new-sunscreen-mist-you-can-spray-over-makeup"
-          }
-        },
-        "template--16696976507138__c5175ed1-9d0d-4aef-b1cc-f032ade42334-16778133845d221380-1": {
-          "type": "review",
-          "settings": {
-            "title": "Ruby Feneley",
-            "subheading": "Popsugar Beauty Editor",
-            "review_text": "I am very happy to have a TGA-approved primer and sunscreen hybrid in my daily rotation. As usual, Naked Sundays has nailed identifying a gap in the market and delivering a clever product that makes our lives easier. I look forward to poreless, sun-safe days ahead.",
-            "featured_image": "shopify:\/\/shop_images\/Screen_Shot_2023-03-03_at_3.02.13_pm.png",
-            "bio_image": "shopify:\/\/shop_images\/Screen_Shot_2023-03-03_at_3.02.45_pm.png",
-            "review_url": ""
-          }
-        },
-        "template--16696976507138__c5175ed1-9d0d-4aef-b1cc-f032ade42334-16778133845d221380-2": {
-          "type": "review",
-          "settings": {
-            "title": "Kenneth Powell",
-            "subheading": "Industry Expert",
-            "review_text": "Use this text to showcase a review from one of your customers. A great review is honest and speaks to the concerns of your customers.",
-            "review_url": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--16696976507138__c5175ed1-9d0d-4aef-b1cc-f032ade42334-16778133845d221380-0",
-        "template--16696976507138__c5175ed1-9d0d-4aef-b1cc-f032ade42334-16778133845d221380-1",
-        "template--16696976507138__c5175ed1-9d0d-4aef-b1cc-f032ade42334-16778133845d221380-2"
-      ],
-      "settings": {
-        "show_featured_image": true,
-        "image_aspect_ratio": 1.2,
-        "show_quotation_marks": true,
-        "text_align": "text-left",
-        "text_size": 4,
-        "bg_color": "",
-        "color": "#000000",
-        "card_bg_color": "#f7f9fa",
         "padding_top": 50,
         "padding_bottom": 50
       }
@@ -378,6 +376,131 @@
         "padding_bottom": 0
       }
     },
+    "507a816a-9aa0-49a9-bd81-e089b05af352": {
+      "type": "section-columns",
+      "blocks": {
+        "template--16720755917058__507a816a-9aa0-49a9-bd81-e089b05af352-168568052982dae9ff-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Naked_Sundays_SPF_50_Hydrating_Glow_Mist_Top_Up_Honestly_most_SPF_setting_sprays_are_fine._Some_of_them_absolutely_get_the_spray_part_down_but_they_re_lacking_in_the_setting_departmen.png",
+            "title": "I Don’t Need to Wear Any Additional Makeup With This Tinted Moisturizer That Replaced 4 Steps in My Routine",
+            "heading_size": 4,
+            "text": "<p>Bonus, it has SPF! <\/p>",
+            "text_size": 3,
+            "button_text": "READ MORE",
+            "button_url": "https:\/\/www.instyle.com\/naked-sundays-collagen-glow-sunscreen-primer-review-7497275",
+            "button_type": "btn--secondary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": true
+          }
+        },
+        "template--16720755917058__507a816a-9aa0-49a9-bd81-e089b05af352-168568052982dae9ff-2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/17.png",
+            "title": "Naked Sundays is practicality & brilliance come together",
+            "heading_size": 4,
+            "text": "<p><em>\"The hemisphere is completely changed with Naked Sundays\"<\/em> - Vanity Fair Italia<\/p>",
+            "text_size": 3,
+            "button_text": "READ MORE",
+            "button_url": "",
+            "button_type": "btn--secondary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": true
+          }
+        },
+        "template--16720755917058__507a816a-9aa0-49a9-bd81-e089b05af352-168568052982dae9ff-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/19.png",
+            "title": "Lazy girl beauty products recommended by TikTokers",
+            "heading_size": 4,
+            "text": "<p>Naked Sundays invisible clear glow serum is that product<\/p>",
+            "text_size": 3,
+            "button_text": "READ MORE",
+            "button_url": "https:\/\/www.buzzfeed.com\/jenae_sitzes\/lazy-girl-makeup-beauty-tiktok",
+            "button_type": "btn--secondary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": true
+          }
+        }
+      },
+      "block_order": [
+        "template--16720755917058__507a816a-9aa0-49a9-bd81-e089b05af352-168568052982dae9ff-0",
+        "template--16720755917058__507a816a-9aa0-49a9-bd81-e089b05af352-168568052982dae9ff-2",
+        "template--16720755917058__507a816a-9aa0-49a9-bd81-e089b05af352-168568052982dae9ff-1"
+      ],
+      "settings": {
+        "title": "IN THE PRESS",
+        "heading_size": 7,
+        "align_text": "text-left",
+        "align_columns": "flex-align-top",
+        "width": "wrapper--full-padded",
+        "photo_aspect_ratio": 0.7,
+        "bg_color": "#f0f0f0",
+        "color": "",
+        "padding_top": 37,
+        "padding_bottom": 37,
+        "layout_mobile": "carousel"
+      }
+    },
+    "c5175ed1-9d0d-4aef-b1cc-f032ade42334": {
+      "type": "section-reviews",
+      "disabled": true,
+      "blocks": {
+        "template--16696976507138__c5175ed1-9d0d-4aef-b1cc-f032ade42334-16778133845d221380-0": {
+          "type": "review",
+          "settings": {
+            "title": "Charlotte Begg",
+            "subheading": "Mamamia's lifestyle writer",
+            "review_text": "The first thing I noticed was the smell. The watermelon scent is refreshing, especially on a very hot day. \n\nThe other thing I observed was how lightweight it feels. The mist is extremely fine, and it dries almost instantly.",
+            "featured_image": "shopify:\/\/shop_images\/Screen_Shot_2023-03-03_at_2.49.54_pm.png",
+            "bio_image": "shopify:\/\/shop_images\/Screen_Shot_2023-03-03_at_2.51.47_pm.png",
+            "review_url": "shopify:\/\/blogs\/press\/mamamia-tried-tested-i-tried-the-luminous-new-sunscreen-mist-you-can-spray-over-makeup"
+          }
+        },
+        "template--16696976507138__c5175ed1-9d0d-4aef-b1cc-f032ade42334-16778133845d221380-1": {
+          "type": "review",
+          "settings": {
+            "title": "Ruby Feneley",
+            "subheading": "Popsugar Beauty Editor",
+            "review_text": "I am very happy to have a TGA-approved primer and sunscreen hybrid in my daily rotation. As usual, Naked Sundays has nailed identifying a gap in the market and delivering a clever product that makes our lives easier. I look forward to poreless, sun-safe days ahead.",
+            "featured_image": "shopify:\/\/shop_images\/Screen_Shot_2023-03-03_at_3.02.13_pm.png",
+            "bio_image": "shopify:\/\/shop_images\/Screen_Shot_2023-03-03_at_3.02.45_pm.png",
+            "review_url": ""
+          }
+        },
+        "template--16696976507138__c5175ed1-9d0d-4aef-b1cc-f032ade42334-16778133845d221380-2": {
+          "type": "review",
+          "settings": {
+            "title": "Kenneth Powell",
+            "subheading": "Industry Expert",
+            "review_text": "Use this text to showcase a review from one of your customers. A great review is honest and speaks to the concerns of your customers.",
+            "review_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16696976507138__c5175ed1-9d0d-4aef-b1cc-f032ade42334-16778133845d221380-0",
+        "template--16696976507138__c5175ed1-9d0d-4aef-b1cc-f032ade42334-16778133845d221380-1",
+        "template--16696976507138__c5175ed1-9d0d-4aef-b1cc-f032ade42334-16778133845d221380-2"
+      ],
+      "settings": {
+        "show_featured_image": true,
+        "image_aspect_ratio": 1.2,
+        "show_quotation_marks": true,
+        "text_align": "text-left",
+        "text_size": 4,
+        "bg_color": "",
+        "color": "#000000",
+        "card_bg_color": "#f7f9fa",
+        "padding_top": 50,
+        "padding_bottom": 50
+      }
+    },
     "22179801-27bd-4e3b-9c1c-43be4bc983d9": {
       "type": "section-multicolumn",
       "blocks": {
@@ -430,12 +553,12 @@
         "template--16719977808130__22179801-27bd-4e3b-9c1c-43be4bc983d9-16793496224672f7cf-2"
       ],
       "settings": {
-        "title": "Our Values We Stand For",
+        "title": "We are...",
         "heading_size": 5,
         "align_text": "text-left",
         "align_columns": "flex-align-top",
         "width": "wrapper--full-padded",
-        "bg_color": "",
+        "bg_color": "#f7e3f0",
         "color": "",
         "padding_top": 50,
         "padding_bottom": 50,
@@ -444,6 +567,7 @@
     },
     "2fe7d0b3-0def-4a86-a25c-cf00b9c897c4": {
       "type": "section-custom-content",
+      "disabled": true,
       "blocks": {
         "template--16720755917058__2fe7d0b3-0def-4a86-a25c-cf00b9c897c4-1679355286a553e2bf-0": {
           "type": "image",
@@ -505,6 +629,7 @@
     },
     "45414fc8-0094-492c-98fc-addb168077a1": {
       "type": "section-announcement",
+      "disabled": true,
       "blocks": {
         "template--16696976507138__45414fc8-0094-492c-98fc-addb168077a1-16771490071b2d9372-3": {
           "type": "text",
@@ -527,29 +652,6 @@
         "color": "",
         "padding_top": 0,
         "padding_bottom": 0
-      }
-    },
-    "03b974bb-e03d-4adc-b037-9e30f1be9180": {
-      "type": "section-collection",
-      "settings": {
-        "heading": "Shop Bundles",
-        "description": "<p>We are suckers for a good skincare routine around here (and a bargain).<\/p>",
-        "layout": "center",
-        "link_text": "Shop All Bundles",
-        "link_url": "shopify:\/\/collections\/summer-bundle-save",
-        "button_type": "btn--primary hero__btn",
-        "button_size": "btn--large",
-        "button_style": "btn--solid",
-        "show_arrow": true,
-        "featured_collection": "summer-bundle-save",
-        "style": "grid",
-        "grid": 4,
-        "rows": 2,
-        "layout_mobile": "2",
-        "bg_color": "",
-        "color": "",
-        "padding_top": 50,
-        "padding_bottom": 50
       }
     },
     "fcec5d1c-384d-4e1e-9f85-e613f0a948f3": {
@@ -815,15 +917,16 @@
     "5f5af74b-0113-4994-b2ab-f942f40a46ca",
     "logos",
     "98c3eaf8-337e-495e-83dd-6aac8c00aed8",
+    "03b974bb-e03d-4adc-b037-9e30f1be9180",
+    "e0bf2292-a2b4-4886-b274-36bfc216ca17",
     "a3473369-da2f-473c-be68-ecc18d54fc2b",
-    "d63c2c88-85d6-452d-80d8-ad29995b9403",
     "1caaa719-09b3-44e1-ae6f-73d8f81d4e91",
-    "c5175ed1-9d0d-4aef-b1cc-f032ade42334",
     "fb80c6f7-db35-47da-98c3-98b67edf0858",
+    "507a816a-9aa0-49a9-bd81-e089b05af352",
+    "c5175ed1-9d0d-4aef-b1cc-f032ade42334",
     "22179801-27bd-4e3b-9c1c-43be4bc983d9",
     "2fe7d0b3-0def-4a86-a25c-cf00b9c897c4",
     "45414fc8-0094-492c-98fc-addb168077a1",
-    "03b974bb-e03d-4adc-b037-9e30f1be9180",
     "fcec5d1c-384d-4e1e-9f85-e613f0a948f3",
     "42acbffd-cd87-4523-8c0f-678d874bc275",
     "d4148cce-b701-4e61-ac94-70d0941f4b23",
