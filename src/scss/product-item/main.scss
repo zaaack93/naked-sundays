@@ -29,6 +29,8 @@
         line-height: 18px;
         padding-top: 9px;
         padding-bottom: 7px;
+        right: var(--left-spacing);
+        left: inherit;
     }
     .product-item__title{
         font-family: 'Avenir Next Rounded';
